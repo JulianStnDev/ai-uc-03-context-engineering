@@ -235,3 +235,45 @@ beide Stände:
 
 Bei contextual #3 und #26 steht die alte Seite als gültig da, dort bleibt es
 beim Fehler.
+
+## 2026-09-23: Lauf v2 – geschärfter Antwort-Prompt (nur articles und corpus)
+
+Kontext: In Lauf 1 fielen articles und corpus vor allem bei `treu` ab
+(je 21/27). Die Ursachen waren kleine Ausschmückungen („Drittländer wie die
+USA“, „vielleicht ein veralteter Browser-Cache“) und ein geschwätziger Ton.
+
+Änderung am Antwort-Prompt, alles andere identisch (Modell, Kontext, Judge,
+Goldset):
+- knapp antworten
+- keine Aussagen, die nicht im Kontext stehen, auch keine naheliegenden
+  Folgerungen oder Beispiele
+- sachlicher Ton ohne Emojis und ohne Floskeln
+- bei Widerspruch die neuere Quelle nennen und die ältere als veraltet
+  kennzeichnen
+
+Die Ergebnisse von Lauf 1 bleiben unverändert erhalten
+(`data/answers.jsonl`, `evals/answer_results.md`). v2 liegt in `*_v2`.
+
+Ergebnis (`evals/answer_results_v2.md`):
+
+| Variante | alles_ok v1 → v2 | treu v1 → v2 | Kosten / 1000 | Median-Latenz | Ø Wörter |
+|---|---|---|---|---|---|
+| articles | 19 → **23**/27 | 21 → 25 | 3,45 → 3,29 USD | 3,19 → 2,62 s | 93 → 70 |
+| corpus | 20 → 20/27 | 21 → 21 | 3,17 → 2,87 USD | 3,46 → 3,29 s | 101 → 74 |
+
+Beobachtungen:
+- Bei `articles` wirkt der Prompt wie beabsichtigt: 4 von 6 Treue-Verstößen
+  sind weg, und die Antworten sind rund 25 % kürzer.
+- Bei `corpus` verschieben sich die Fehler nur. Neue Fehler entstehen durch
+  Kürze: Bei #10 und #27 fehlt die Erstattungsregel aus dem zweiten Artikel.
+  Dazu kommen neue Erfindungen:
+  - #3 löst den Widerspruch mit einer ausgedachten Regel auf („Testphase nur
+    im App Store“).
+  - #8 behauptet „keine Importfunktion“.
+  - #19 widerspricht sich selbst.
+- „Knapp“ und „keine Folgerungen“ stehen im Konflikt mit Mehrquellen-Fragen,
+  die genau das Zusammenführen zweier Regeln verlangen.
+
+Einschränkung: Es ist ein Lauf je Stand. Trotz temperature 0 ist Haiku nicht
+deterministisch. Unterschiede von 1–4 Fragen lassen sich ohne
+Wiederholungsläufe nicht sauber vom Rauschen trennen.
