@@ -230,12 +230,15 @@ def write_sample(rows):
         "# Judge-Stichprobe zur Kalibrierung",
         "",
         f"{SAMPLE_SIZE} zufällig gezogene Urteile von `claude-sonnet-5` (Seed {SAMPLE_SEED}, gestreut über Varianten, "
-        "Typen und Kriterien). Bitte je Urteil die letzte Spalte bzw. das Feld „Julian stimmt zu?“ ausfüllen.",
+        "Typen und Kriterien).",
+        "",
+        "**Aufgabe:** Je Urteil eintragen, ob du dem **Urteil des Judges** zustimmst – nicht, ob die Antwort gut ist. "
+        "Beispiel: Judge sagt `kernaussage_ok: ❌ nein` und du findest die Kernaussage auch verfehlt → „ja“.",
         "",
         "Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, den das Antwortmodell gesehen hat. "
         "Die Kontext-Dateien stehen dabei; der volle Kontext steht in `data/answers.jsonl`.",
         "",
-        "| Nr | Frage | Variante | Typ | Kriterium | Urteil | Julian stimmt zu? ja/nein |",
+        "| Nr | Frage | Variante | Typ | Kriterium | Urteil des Judges | Julian stimmt dem Judge zu? ja/nein |",
         "|---|---|---|---|---|---|---|",
     ]
     for i, (r, crit) in enumerate(picked, 1):
@@ -257,11 +260,11 @@ def write_sample(rows):
             "",
             f"**Kontext-Dateien:** {r['kontext_dateien']}",
             "",
-            f"**Urteil `{crit}`:** {'✅ ja' if r[crit] else '❌ nein'}",
+            f"**Urteil des Judges `{crit}`:** {'✅ ja' if r[crit] else '❌ nein'}",
             "",
             f"**Begründung:** {r[reason_key[crit]]}",
             "",
-            "**Julian stimmt zu? (ja/nein):** ",
+            "**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ",
         ]
     (EVALS / "judge_stichprobe.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
