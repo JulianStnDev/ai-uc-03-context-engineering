@@ -1,9 +1,9 @@
 # Korpus-Notizen (nur für Menschen – NICHT indexieren)
 
-Diese Datei beschreibt den FocusFlow-Korpus und seine absichtlich eingebauten
-Fallen. Sie dient als Grundlage zum Schreiben der Testfragen und darf **nicht**
-im Retrieval-Index oder im Kontextfenster landen. Loader sollten `CORPUS_NOTES.md`
-explizit ausschließen.
+Diese Datei beschreibt den FocusFlow-Korpus in `corpus/` und seine absichtlich
+eingebauten Fallen. Sie dient als Grundlage zum Schreiben der Testfragen und darf
+**nicht** im Retrieval-Index oder im Kontextfenster landen. Deshalb liegt sie in
+`docs/` und nicht im Korpus-Ordner.
 
 Stand: 23.09.2026 · 20 Artikel · je 208–263 Wörter · alle auf Deutsch
 

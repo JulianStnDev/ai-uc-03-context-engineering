@@ -12,8 +12,9 @@ Kontext zu geben:
 3. **Ganzer Korpus im Kontextfenster** – kein Retrieval, alle Artikel im Prompt
 
 Der Korpus enthält absichtlich Fallen (veraltete Seite, Lücken, Mehrquellen-Fragen,
-ähnlich klingende Artikel) – Details in `corpus/CORPUS_NOTES.md`. Die Datei ist
+ähnlich klingende Artikel) – Details in `docs/CORPUS_NOTES.md`. Die Datei ist
 Dokumentation für Menschen und darf **nie** Teil des Retrieval-Korpus oder Prompts sein.
+`corpus/` enthält ausschließlich die Hilfeartikel – jede `.md` dort wird indexiert.
 
 ## Erwartete Artefakte
 - README.md nach Schema (Problem, PM-Entscheidung, Architektur, Eval, Kosten/Latenz, Learnings)
