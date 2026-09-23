@@ -154,3 +154,54 @@ wenn mindestens ein Chunk des Artikels unter den Top-k ist. Das entspricht dem,
 was die Antwortstufe später als Kontext bekommt. Fragen vom Typ `luecke` gehen
 nicht in den Recall ein, für sie wird die Top-1-Ähnlichkeit berichtet. Für
 `mehrquellen` ist Recall@1 strukturell 0.
+
+## 2026-09-23: Wechsel des Embedding-Modells auf bge-m3
+
+Kontext: `multilingual-e5-base` war die ursprüngliche Wahl, `bge-m3` nur als
+kostenlose Gegenprobe gedacht. In der Retrieval-Eval
+(`evals/retrieval_results.md`) hat bge-m3 e5-base in fast allen Varianten
+geschlagen. Recall@3: sections 0.78 gegenüber 0.70, articles 1.00 gegenüber
+0.78, contextual gleichauf bei 0.83.
+
+Entscheidung: Ab jetzt ist `BAAI/bge-m3` das Embedding-Modell für die
+Antwortstufe.
+
+Begründung: Das Modell ist ein messbarer Hebel. Die höheren Kosten (größeres
+Modell, rund 2 ms mehr pro Query) sind lokal vernachlässigbar.
+
+## 2026-09-23: Aufbau der Antwortstufe
+
+Entscheidung:
+- **Vier Varianten**, alle mit bge-m3:
+  - (a) `sections`: Top-4 Abschnitte
+  - (b) `contextual`: Top-4 Abschnitte mit Kontextsatz
+  - (c) `articles`: Top-3 ganze Artikel
+  - (d) `corpus`: alle 20 Artikel im Kontext, mit Prompt Caching
+- **Antwortmodell** `claude-haiku-4-5` mit temperature 0. **Judge**
+  `claude-sonnet-5`.
+- **Ein gemeinsamer Antwort-Prompt** für alle Varianten:
+  - nur aus dem Kontext antworten
+  - Dateinamen in einer abschließenden Zeile „Quellen:“ nennen
+  - bei fehlender Info auf den Support verweisen, ohne inhaltliche Antwort
+  - bei Widerspruch gilt die Quelle mit dem neueren Datum
+- **Kontextformat:** Jede Quelle steht als
+  `<quelle datei=… titel=… aktualisiert=…>` im Kontext, das Datum ist also
+  überall sichtbar. Bei `sections` und `contextual` bekommt das Antwortmodell
+  damit Titel und Datum zu sehen, obwohl sie nicht embedded wurden.
+- **Bewertung in getrennten Spalten:**
+  - `quellen_ok`: automatisch nach der Scoring-Regel. Bei `veraltet` zählt
+    ein Zitat von `pro-funktionen-und-preise.md` als Fehler. Bei `luecke` ist
+    es ok, wenn nichts zitiert wird.
+  - `kernaussage_ok`: Judge, nur bei Typen ungleich `luecke`
+  - `treu`: Judge, Faithfulness. Der Judge sieht den Kontext, den das
+    Antwortmodell bekommen hat.
+  - `luecke_ok`: Judge, nur bei `luecke`. Richtig ist ausschließlich ein
+    Support-Verweis ohne inhaltliche Antwort.
+  - Dazu `alles_ok` als strenge Gesamtspalte.
+- **Judge-Aufruf:** einer pro Antwort mit Structured Output, der zwei Kriterien
+  prüft und je eine Begründung liefert. Beim Kriterium `luecke` wird bewusst
+  keine `kernaussage_ok` erhoben, weil die Kernaussage dort genau dem
+  Support-Verweis entspricht und die Spalte doppelt zählen würde.
+- **Kalibrierung:** 10 zufällige Urteile (Seed 42, gestreut über Varianten,
+  Typen und Kriterien) in `evals/judge_stichprobe.md`. Julian prüft sie von
+  Hand.
