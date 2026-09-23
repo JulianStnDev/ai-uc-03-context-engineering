@@ -1,6 +1,6 @@
 # Antwort-Eval: Lauf v2 – geschärfter Antwort-Prompt (knapp, keine Folgerungen/Beispiele, sachlicher Ton, ältere Quelle als veraltet kennzeichnen)
 
-Stand: 2026-09-23 14:08 · 27 Fragen × 2 Varianten · Antwortmodell `claude-haiku-4-5`, Judge `claude-sonnet-5`, Retrieval `bge-m3`
+Stand: 2026-09-23 16:15 · 27 Fragen × 2 Varianten · Antwortmodell `claude-haiku-4-5`, Judge `claude-sonnet-5`, Retrieval `bge-m3`
 
 Varianten: `articles` Top-3 ganze Artikel · `corpus` alle 20 Artikel (Prompt Caching)
 
@@ -84,7 +84,7 @@ Preise: Input 1,00 · Cache-Write 1,25 · Cache-Read 0,10 · Output 5,00 USD pro
 
 | Variante | Ø Input-Tokens | davon Cache-Read | Ø Output-Tokens | Input | Cache-Write | Cache-Read | Output | **Summe / 1000** |
 |---|---|---|---|---|---|---|---|---|
-| articles | 2,393 | 0 | 180 | 2.39 | 0.00 | 0.00 | 0.90 | **3.29 USD** |
+| articles | 2,396 | 0 | 180 | 2.40 | 0.00 | 0.00 | 0.90 | **3.29 USD** |
 | corpus | 13,181 | 12,654 | 191 | 0.04 | 0.61 | 1.27 | 0.96 | **2.87 USD** |
 
 Einordnung `corpus`: Im Lauf kam auf 27 Anfragen ein Cache-Write. Ohne Caching wären es **14.14 USD** pro 1000 Anfragen, bei durchgehend warmem Cache (nur Reads) **2.31 USD**. Der Cache hält 5 Minuten; bei weniger Traffic fallen mehr Writes an.
@@ -93,7 +93,7 @@ Einordnung `corpus`: Im Lauf kam auf 27 Anfragen ein Cache-Write. Ohne Caching w
 
 | Variante | Median | p95 | davon Retrieval Median |
 |---|---|---|---|
-| articles | 2.62 | 4.50 | 103 ms |
+| articles | 2.62 | 4.50 | 102 ms |
 | corpus | 3.29 | 6.35 | 0 ms |
 
 p95 aus 27 Messungen je Variante ist nur grob belastbar.
@@ -111,7 +111,7 @@ Gleiche Fragen, gleiches Modell, gleicher Kontext, gleicher Judge – nur der An
 
 | Variante | Lauf | quellen_ok | kernaussage_ok | treu | luecke_ok | **alles_ok** | Kosten / 1000 | Median | p95 | Ø Output-Tokens | Ø Wörter |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| articles | v1 | 26/27 | 21/23 | 21/27 | 4/4 | **19/27** | 3.45 USD | 3.19 s | 4.59 s | 232 | 93 |
+| articles | v1 | 26/27 | 21/23 | 21/27 | 4/4 | **19/27** | 3.45 USD | 3.19 s | 4.59 s | 233 | 93 |
 | articles | v2 | 26/27 | 21/23 | 25/27 | 4/4 | **23/27** | 3.29 USD | 2.62 s | 4.50 s | 180 | 70 |
 | corpus | v1 | 27/27 | 21/23 | 21/27 | 4/4 | **20/27** | 3.17 USD | 3.46 s | 5.32 s | 254 | 101 |
 | corpus | v2 | 24/27 | 19/23 | 21/27 | 3/4 | **20/27** | 2.87 USD | 3.29 s | 6.35 s | 191 | 74 |

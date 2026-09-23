@@ -1,6 +1,6 @@
 {
   "lauf": "v1",
-  "zeitpunkt": "2026-09-23T15:51:44",
+  "zeitpunkt": "2026-09-23T16:15:27",
   "antwortmodell": "claude-haiku-4-5",
   "judge": "claude-sonnet-5",
   "embedding": "BAAI/bge-m3",
@@ -31,10 +31,10 @@
     }
   },
   "antworten": 108,
-  "kosten_antworten_usd": 0.2995,
-  "kosten_judge_usd": 1.5508,
+  "kosten_antworten_usd": 0.3002,
+  "kosten_judge_usd": 1.5521,
   "judge_aufrufe": 119,
-  "judge_output_tokens_summe": 76312,
+  "judge_output_tokens_summe": 76315,
   "judge_latenz_median_s": 5.25,
   "stichprobe_seed": 42
 }

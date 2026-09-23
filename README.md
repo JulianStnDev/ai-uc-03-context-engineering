@@ -174,7 +174,7 @@ Alle Varianten im Vergleich:
 
 | Variante | Kosten / 1000 | Median | p95 |
 |---|---|---|---|
-| sections v1 | 2,00 USD | 2,67 s | 3,48 s |
+| sections v1 | 2,01 USD | 2,67 s | 3,48 s |
 | contextual v1 | 2,48 USD (+ einmalig 0,14 USD Indexierung) | 2,80 s | 3,69 s |
 | articles v1 / **v2** | 3,45 / **3,29 USD** | 3,19 / **2,62 s** | 4,59 / **4,50 s** |
 | corpus v1 / v2 | 3,17 / 2,87 USD | 3,46 / 3,29 s | 5,32 / 6,35 s |
@@ -191,7 +191,7 @@ Die Experimente haben insgesamt 2,92 USD gekostet: Kontextsätze 0,14, Lauf v1 m
 - **Scoring-Regel nach dem Lauf angepasst:** `quellen_ok` bei veralteten Seiten erlaubt jetzt ein Zitat der alten Seite, wenn die Antwort sie als veraltet kennzeichnet. Die strenge Regel hatte das gewünschte transparente Verhalten bestraft. Die Zahlen vor und nach der Änderung stehen in [docs/decisions.md](docs/decisions.md).
 - **Künstlicher Korpus:** 20 kurze, sauber strukturierte Artikel. Bei Hunderten von Artikeln oder unstrukturierter Doku kann das Ergebnis zugunsten von Retrieval kippen.
 - **Ein Judge-Modell:** Kalibriert wurde an 10 von rund 340 Urteilen.
-- **Nachträglicher Fund (MPS-Fehler im alten Stack):** torch 2.8 hat auf der Apple-GPU für Frage #7 (Lücke „Mengenrabatte“) ein falsches Query-Embedding berechnet. Der Recall ist nicht betroffen. Die Lücken-Ergebnisse zu #7 in den Retrieval-Varianten (4 Antworten) sind aber eher optimistisch, weil der Kontext falsch war. Details in [docs/decisions.md](docs/decisions.md). Seit dem Upgrade auf Python 3.13 und torch 2.14 rechnen GPU und CPU identisch.
+- **Nachträglicher Fund (MPS-Fehler im alten Stack):** torch 2.8 hat auf der Apple-GPU für Frage #7 (Lücke „Mengenrabatte“) ein falsches Query-Embedding berechnet. Der Recall ist nicht betroffen. Die Lücken-Ergebnisse zu #7 in den Retrieval-Varianten (4 Antworten) sind aber eher optimistisch, weil der Kontext falsch war. Details in [docs/decisions.md](docs/decisions.md). Seit dem Upgrade auf Python 3.13 und torch 2.14 rechnen GPU und CPU identisch. **Nachgemessen am 2026-09-23 mit dem neuen Stack, Ergebnis:** Alle vier Antworten zu #7 (sections, contextual und articles v1, articles v2) bestehen weiterhin `luecke_ok` und `treu`, obwohl der Kontext jetzt die preisnahen Artikel enthält, bei sections und contextual sogar die veraltete Preisseite. Die Qualitätstabellen bleiben unverändert. Die ersetzten Zeilen liegen in `data/superseded_q7.jsonl`. Nicht nachgemessen ist die Retrieval-Tabelle „Top-1-Ähnlichkeit der Lücken-Fragen“ in `evals/retrieval_results.md`, die nicht ins README eingeht.
 
 ## Learnings
 

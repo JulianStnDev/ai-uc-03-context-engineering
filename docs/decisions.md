@@ -352,6 +352,21 @@ Auswirkung auf die veröffentlichten UC3-Ergebnisse:
   gelöscht, und eine Prüfung würde 1,1 GB Download kosten.
 
 Entscheidung: dokumentieren, nicht neu messen, weil UC3 abgeschlossen ist und
-es keine weiteren API-Läufe geben soll. Lektion: **GPU-Ergebnisse
+es keine weiteren API-Läufe geben soll.
+
+**Nachtrag, 2026-09-23: doch nachgemessen.** Julian hat entschieden, die vier
+betroffenen Antworten zu #7 mit dem neuen Stack neu zu erzeugen und zu bewerten
+(4 Haiku- und 4 Judge-Aufrufe, etwa 2 Cent). Die alten Zeilen sind nach
+`data/superseded_q7.jsonl` verschoben. Mit korrektem Embedding enthält der
+Kontext jetzt `tarif-wechseln.md` und `erstattungen.md`, bei sections und
+contextual zusätzlich die veraltete Preisseite. **Ergebnis:** Alle vier
+bestehen weiterhin `luecke_ok` und `treu`. Haiku verweist trotz preisnahem
+Kontext sauber an den Support, ohne inhaltlich zu antworten. Die
+Qualitätstabellen in `evals/answer_results*.md` und im README bleiben
+unverändert. Die Kosten für sections v1 ändern sich im Rundungsbereich
+(2,00 → 2,01 USD pro 1000). Der Verdacht „eher optimistisch“ hat sich damit
+nicht bestätigt. Die Retrieval-Tabelle zur Top-1-Ähnlichkeit der
+Lücken-Fragen ist nicht neu berechnet, weil das den gelöschten e5-Download
+erfordern würde. Lektion: **GPU-Ergebnisse
 stichprobenartig gegen CPU prüfen**, besonders bei älteren
 torch-/MPS-Versionen.
