@@ -277,3 +277,26 @@ Beobachtungen:
 Einschränkung: Es ist ein Lauf je Stand. Trotz temperature 0 ist Haiku nicht
 deterministisch. Unterschiede von 1–4 Fragen lassen sich ohne
 Wiederholungsläufe nicht sauber vom Rauschen trennen.
+
+## 2026-09-23: Judge-Kalibrierung abgeschlossen
+
+Stichprobe: 10 zufällige Urteile von Sonnet 5 aus Lauf 1 (Seed 42, gestreut
+über Varianten, Typen und Kriterien). Details stehen in
+`evals/judge_stichprobe.md`, Julians Urteile in `evals/judge_kalibrierung.csv`.
+
+Ergebnis: Julian stimmt 10 von 10 Urteilen zu. Nr. 8 ist ein Grenzfall (#10
+articles, `kernaussage_ok`): Die Kernaussage enthielt zwei Aussagen, ohne dass
+gekennzeichnet war, welche davon Pflicht ist. Die Übereinstimmung liegt damit
+bei 9–10/10, **die Kalibrierung ist bestanden**. Der Judge wird ohne Änderung
+weiterverwendet.
+
+Arbeitsteilung:
+- Die Bewertungskriterien (`quellen_ok`, `kernaussage_ok`, `treu`,
+  `luecke_ok`, `veraltet_gekennzeichnet`) sind von Julian abgenommen.
+- Die fachliche Faktenprüfung gegen den Korpus übernimmt Claude, also die
+  Frage, ob eine Aussage zum fiktiven Unternehmen FocusFlow stimmt.
+- Julian entscheidet die Methode, Claude prüft die Domänenfakten.
+
+Lektion fürs nächste Goldset: **pro Frage genau eine Pflichtaussage**. Weitere
+Punkte nur als ausdrücklich gekennzeichnete optionale Ergänzungen. Mehrteilige
+Kernaussagen machen `kernaussage_ok` zur Ermessensfrage (siehe Nr. 8).

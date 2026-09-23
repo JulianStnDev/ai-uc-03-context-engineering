@@ -1,6 +1,6 @@
 {
   "lauf": "v1",
-  "zeitpunkt": "2026-09-23T13:58:29",
+  "zeitpunkt": "2026-09-23T15:51:44",
   "antwortmodell": "claude-haiku-4-5",
   "judge": "claude-sonnet-5",
   "embedding": "BAAI/bge-m3",

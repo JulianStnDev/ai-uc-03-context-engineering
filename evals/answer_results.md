@@ -1,6 +1,6 @@
 # Antwort-Eval: Lauf v1 – erster Antwort-Prompt
 
-Stand: 2026-09-23 13:58 · 27 Fragen × 4 Varianten · Antwortmodell `claude-haiku-4-5`, Judge `claude-sonnet-5`, Retrieval `bge-m3`
+Stand: 2026-09-23 15:51 · 27 Fragen × 4 Varianten · Antwortmodell `claude-haiku-4-5`, Judge `claude-sonnet-5`, Retrieval `bge-m3`
 
 Varianten: `sections` Top-4 Abschnitte · `contextual` Top-4 Abschnitte mit Kontextsatz · `articles` Top-3 ganze Artikel · `corpus` alle 20 Artikel (Prompt Caching)
 

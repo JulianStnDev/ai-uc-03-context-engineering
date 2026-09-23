@@ -6,18 +6,20 @@
 
 Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, den das Antwortmodell gesehen hat. Die Kontext-Dateien stehen dabei; der volle Kontext steht in `data/answers.jsonl`.
 
-| Nr | Frage | Variante | Typ | Kriterium | Urteil des Judges | Julian stimmt dem Judge zu? ja/nein |
-|---|---|---|---|---|---|---|
-| 1 | #19 | sections | mehrquellen | kernaussage_ok | ❌ nein |  |
-| 2 | #20 | articles | aehnlich | kernaussage_ok | ✅ ja |  |
-| 3 | #16 | sections | einfach | kernaussage_ok | ✅ ja |  |
-| 4 | #13 | contextual | einfach | treu | ✅ ja |  |
-| 5 | #13 | articles | einfach | treu | ✅ ja |  |
-| 6 | #23 | sections | aehnlich | treu | ✅ ja |  |
-| 7 | #10 | contextual | mehrquellen | treu | ✅ ja |  |
-| 8 | #10 | articles | mehrquellen | kernaussage_ok | ❌ nein |  |
-| 9 | #7 | corpus | luecke | luecke_ok | ✅ ja |  |
-| 10 | #8 | corpus | luecke | treu | ✅ ja |  |
+| Nr | Frage | Variante | Typ | Kriterium | Urteil des Judges | Julian stimmt dem Judge zu? ja/nein | Kommentar |
+|---|---|---|---|---|---|---|---|
+| 1 | #19 | sections | mehrquellen | kernaussage_ok | ❌ nein | ja |  |
+| 2 | #20 | articles | aehnlich | kernaussage_ok | ✅ ja | ja |  |
+| 3 | #16 | sections | einfach | kernaussage_ok | ✅ ja | ja |  |
+| 4 | #13 | contextual | einfach | treu | ✅ ja | ja |  |
+| 5 | #13 | articles | einfach | treu | ✅ ja | ja |  |
+| 6 | #23 | sections | aehnlich | treu | ✅ ja | ja |  |
+| 7 | #10 | contextual | mehrquellen | treu | ✅ ja | ja |  |
+| 8 | #10 | articles | mehrquellen | kernaussage_ok | ❌ nein | ja | Grenzfall: Kernaussage enthielt zwei Aussagen ohne Kennzeichnung der Pflichtaussage |
+| 9 | #7 | corpus | luecke | luecke_ok | ✅ ja | ja |  |
+| 10 | #8 | corpus | luecke | treu | ✅ ja | ja |  |
+
+**Ergebnis:** Julian stimmt 10 von 10 Judge-Urteilen zu (Quelle: `evals/judge_kalibrierung.csv`, Bewertung in `docs/decisions.md`).
 
 ---
 
@@ -45,7 +47,7 @@ Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, d
 
 **Begründung:** Die Antwort erklärt zwar korrekt den normalen Wechsel zurück auf monatlich (erst zum Jahresende), lässt aber die zentrale Aussage der Soll-Antwort – dass innerhalb von 14 Tagen eine Erstattung des gezahlten Betrags mit sofortiger Beendigung möglich ist – komplett aus und verweist stattdessen nur vage auf 'allgemeine Erstattungsrichtlinien' und den Support. Damit fehlt die Hauptaussage.
 
-**Julian stimmt dem Urteil des Judges zu? (ja/nein):** 
+**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ja
 
 ---
 
@@ -71,7 +73,7 @@ Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, d
 
 **Begründung:** Die Antwort enthält die Kernaussage, dass Pro normalerweise bis zum Ende des bezahlten Zeitraums weiterläuft und danach auf Free umgestellt wird; die Erwähnung 'keine weitere Abbuchung' fehlt zwar, ist aber ein tolerierbarer Nebenpunkt.
 
-**Julian stimmt dem Urteil des Judges zu? (ja/nein):** 
+**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ja
 
 ---
 
@@ -101,7 +103,7 @@ Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, d
 
 **Begründung:** Die Antwort bestätigt, dass es Android-Widgets ab Android 10 gibt, was die Hauptaussage abdeckt. Der Nebenpunkt zum Timer-Widget nur mit Pro fehlt, ist aber laut Kriterien als fehlender Nebenpunkt tolerierbar.
 
-**Julian stimmt dem Urteil des Judges zu? (ja/nein):** 
+**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ja
 
 ---
 
@@ -134,7 +136,7 @@ Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, d
 
 **Begründung:** Alle genannten Fakten – Vormerkung, 3–5 Werktage, Meldeschritte über Einstellungen>Hilfe>Kontakt, vollständige Erstattung und unberührter Pro-Zugang – sind wortgetreu im Kontext belegt, keine zusätzlichen unbelegten Behauptungen.
 
-**Julian stimmt dem Urteil des Judges zu? (ja/nein):** 
+**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ja
 
 ---
 
@@ -167,7 +169,7 @@ Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, d
 
 **Begründung:** Alle Aussagen (Vormerkung, 3-5 Werktage, Meldeweg, vollständige Erstattung, Pro-Zugang bleibt bestehen) sind wörtlich oder sinngemäß aus dem Kontext gedeckt.
 
-**Julian stimmt dem Urteil des Judges zu? (ja/nein):** 
+**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ja
 
 ---
 
@@ -196,7 +198,7 @@ Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, d
 
 **Begründung:** Alle Behauptungen (keine automatische Beendigung des Store-Abos, vorherige Kündigung nötig, Hinweis auf Abo-Kündigen-Artikel mit Datenerhalt und kostenloser Weiternutzung) sind direkt durch den Kontext gedeckt.
 
-**Julian stimmt dem Urteil des Judges zu? (ja/nein):** 
+**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ja
 
 ---
 
@@ -224,7 +226,7 @@ Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, d
 
 **Begründung:** Alle genannten Fakten (Testphase ohne Berechnung, automatischer Abo-Start danach, Fortlaufen des Pro-Zugangs bis Periodenende) sind direkt durch die Quellen abo-kuendigen.md und pro-funktionen-und-preise.md gedeckt; die Aussage zum fehlenden Restguthaben während der Testphase ist eine logisch zwingende Folgerung, und der Verweis auf den Support ist vorgegeben zulässig.
 
-**Julian stimmt dem Urteil des Judges zu? (ja/nein):** 
+**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ja
 
 ---
 
@@ -258,7 +260,7 @@ Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, d
 
 **Begründung:** Die Antwort behandelt nur die Erstattungsregeln, lässt aber den zentralen Punkt der Kündigung – dass Pro bis zum Ende des bezahlten Zeitraums weiterläuft und keine weitere Abbuchung erfolgt – komplett aus, obwohl dies laut Soll-Kernaussage ein Hauptbestandteil ist.
 
-**Julian stimmt dem Urteil des Judges zu? (ja/nein):** 
+**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ja – Grenzfall: Kernaussage enthielt zwei Aussagen ohne Kennzeichnung der Pflichtaussage
 
 ---
 
@@ -282,7 +284,7 @@ Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, d
 
 **Begründung:** Die Antwort sagt klar, dass keine Information zu Mengenrabatten vorliegt, verweist an den Support und gibt keine inhaltliche Teilantwort oder Vermutung.
 
-**Julian stimmt dem Urteil des Judges zu? (ja/nein):** 
+**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ja
 
 ---
 
@@ -306,4 +308,4 @@ Bei `treu` prüft der Judge, ob jede Behauptung durch den Kontext gedeckt ist, d
 
 **Begründung:** Die Antwort enthält keine inhaltlichen Behauptungen aus dem Kontext, sondern nur den vorgegebenen Support-Verweis, der immer als gedeckt gilt.
 
-**Julian stimmt dem Urteil des Judges zu? (ja/nein):** 
+**Julian stimmt dem Urteil des Judges zu? (ja/nein):** ja
