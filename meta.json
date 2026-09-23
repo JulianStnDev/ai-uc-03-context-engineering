@@ -1,6 +1,6 @@
 {
-  "title": "",
-  "status": "planned",
-  "tags": [],
-  "summary": ""
+  "title": "Context Engineering: Retrieval vs. Kontextfenster",
+  "status": "active",
+  "tags": ["rag", "context-engineering", "evals"],
+  "summary": "Support-Assistent für die FocusFlow-Hilfe-Doku: klassisches Chunking vs. Contextual Retrieval vs. ganzer Korpus im Kontextfenster"
 }
