@@ -47,7 +47,7 @@ def generate_context(client, article, section):
     response = client.messages.create(
         model=CONTEXT_MODEL,
         max_tokens=300,
-        temperature=0,
+        extra_body={"temperature": 0},  # SDK 1.x: nicht mehr in der Signatur, Haiku 4.5 honoriert es
         messages=[{"role": "user", "content": CONTEXT_PROMPT.format(
             document=article["text"], chunk=section["text"])}],
     )

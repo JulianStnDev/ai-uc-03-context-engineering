@@ -191,6 +191,7 @@ Die Experimente haben insgesamt 2,92 USD gekostet: Kontextsätze 0,14, Lauf v1 m
 - **Scoring-Regel nach dem Lauf angepasst:** `quellen_ok` bei veralteten Seiten erlaubt jetzt ein Zitat der alten Seite, wenn die Antwort sie als veraltet kennzeichnet. Die strenge Regel hatte das gewünschte transparente Verhalten bestraft. Die Zahlen vor und nach der Änderung stehen in [docs/decisions.md](docs/decisions.md).
 - **Künstlicher Korpus:** 20 kurze, sauber strukturierte Artikel. Bei Hunderten von Artikeln oder unstrukturierter Doku kann das Ergebnis zugunsten von Retrieval kippen.
 - **Ein Judge-Modell:** Kalibriert wurde an 10 von rund 340 Urteilen.
+- **Nachträglicher Fund (MPS-Fehler im alten Stack):** torch 2.8 hat auf der Apple-GPU für Frage #7 (Lücke „Mengenrabatte“) ein falsches Query-Embedding berechnet. Der Recall ist nicht betroffen. Die Lücken-Ergebnisse zu #7 in den Retrieval-Varianten (4 Antworten) sind aber eher optimistisch, weil der Kontext falsch war. Details in [docs/decisions.md](docs/decisions.md). Seit dem Upgrade auf Python 3.13 und torch 2.14 rechnen GPU und CPU identisch.
 
 ## Learnings
 
@@ -212,8 +213,8 @@ Die Experimente haben insgesamt 2,92 USD gekostet: Kontextsätze 0,14, Lauf v1 m
 ## Benutzung
 
 ```bash
-python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-echo "ANTHROPIC_API_KEY=..." > .env      # gitignored
+uv venv && uv pip install -r requirements.txt   # Python-Version aus .python-version (3.13)
+echo "ANTHROPIC_API_KEY=..." > .env              # gitignored
 
 .venv/bin/python chunk.py                 # Chunks + Kontextsätze (aus Cache: kostenlos)
 .venv/bin/python eval_retrieval.py        # Retrieval-Eval, lokal (lädt beim ersten Mal ~5 GB Modelle)
@@ -222,4 +223,4 @@ echo "ANTHROPIC_API_KEY=..." > .env      # gitignored
 .venv/bin/python score_answers.py v2      # Auswertung ohne API-Kosten, beliebig oft
 ```
 
-Alle Rohdaten liegen im Repo (`data/*.jsonl`). Die Auswertung lässt sich ohne API-Aufrufe reproduzieren. Python 3.9, sentence-transformers 5.1, anthropic 0.125, lauffähig auf einem Apple M5 mit 16 GB.
+Alle Rohdaten liegen im Repo (`data/*.jsonl`). Die Auswertung lässt sich ohne API-Aufrufe reproduzieren. Die Messungen liefen auf Python 3.9 mit sentence-transformers 5.1 und anthropic 0.125. Seit dem 2026-09-23 läuft das Repo auf Python 3.13 mit sentence-transformers 6.1 und anthropic 1.8 (Apple M5, 16 GB).
