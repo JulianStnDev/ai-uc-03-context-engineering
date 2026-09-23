@@ -1,0 +1,429 @@
+id,typ,herkunft,variante,frage,kernaussage,erwartete_quellen,antwort,zitiert,kontext_dateien,quellen_ok,kernaussage_ok,treu,luecke_ok,kernaussage_begruendung,treu_begruendung,luecke_begruendung,zitiert_veraltet,veraltet_gekennzeichnet,veraltet_begruendung,kosten_in_usd,kosten_cache_write_usd,kosten_cache_read_usd,kosten_out_usd,input_tokens,cache_write_tokens,cache_read_tokens,output_tokens,retrieval_s,llm_s,gesamt_s,alles_ok
+1,einfach,mensch,articles,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?","Link ist 60 Minuten gültig, nur einmal nutzbar; neuen Link anfordern",passwort-zuruecksetzen.md,"Der Link ist **60 Minuten** gültig und kann nur einmal verwendet werden.
+
+Da dein Link nicht mehr funktioniert, fordere einen neuen an: Gehe auf dem Anmeldebildschirm auf „Passwort vergessen?"" und gib deine E-Mail-Adresse erneut ein. Achte darauf, den Link diesmal innerhalb von 60 Minuten zu nutzen.
+
+Quellen: passwort-zuruecksetzen.md",passwort-zuruecksetzen.md,passwort-zuruecksetzen.md; verdaechtige-anmeldungen.md; konten-zusammenfuehren.md,1,1,1,,"Die Antwort nennt die 60-Minuten-Gültigkeit, die einmalige Nutzbarkeit und den Hinweis, einen neuen Link anzufordern – damit ist die Soll-Kernaussage vollständig enthalten.","Alle Aussagen (60 Minuten Gültigkeit, einmalige Nutzung, Vorgehen über „Passwort vergessen?“) sind wörtlich im Kontext belegt, keine Behauptung widerspricht der Quelle.",,0,,,0.002329,0.0,0.0,0.0006,2329,0,0,120,0.0498,2.144,2.194,1
+2,veraltet,mensch,articles,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?","Nein: aktuell 6,99 USD/Monat oder 59 USD/Jahr, keine Testphase",preise-und-tarife.md,"Das stimmt nicht ganz. Die Informationen auf der Website sind veraltet.
+
+Aktuell (Stand Juli 2026) kostet FocusFlow Pro:
+- **6,99 USD pro Monat** oder
+- **59 USD pro Jahr**
+
+Eine kostenlose Testphase für Pro wird derzeit **nicht angeboten**. Du kannst die Free-Version aber unbegrenzt nutzen und jederzeit zu Pro upgraden.
+
+Quellen: preise-und-tarife.md",preise-und-tarife.md,pro-funktionen-und-preise.md; preise-und-tarife.md; doppelte-abbuchung.md,1,1,1,,"Die Antwort enthält die korrekte Hauptaussage: 6,99 USD/Monat bzw. 59 USD/Jahr und keine Testphase, was der Soll-Kernaussage entspricht.","Alle Zahlen und die Aussage zur fehlenden Testphase sind wörtlich aus der aktuelleren Quelle preise-und-tarife.md gedeckt, auch der Hinweis auf Free-Version und Upgrade ist dort enthalten.",,0,,,0.002328,0.0,0.0,0.000615,2328,0,0,123,0.0852,2.004,2.089,1
+3,veraltet,mensch,articles,Gibt es eine Testphase für Pro,"Nein, eine Testphase wird nicht mehr angeboten, andere Info ist veraltet",preise-und-tarife.md,"Die Informationen zur kostenlosen Testphase widersprechen sich in den verfügbaren Artikeln:
+
+**Aktuelle Information (02.07.2026):** Eine kostenlose Testphase für Pro bieten wir derzeit nicht an. Du kannst die Free-Version aber unbegrenzt nutzen und jederzeit upgraden.
+
+**Ältere Information (14.03.2024):** Beim ersten Abschluss von Pro erhältst du eine 7-tägige kostenlose Testphase.
+
+Die aktuelle Regelung ist, dass es keine Testphase gibt.
+
+Quellen: preise-und-tarife.md; pro-funktionen-und-preise.md",preise-und-tarife.md; pro-funktionen-und-preise.md,pro-funktionen-und-preise.md; preise-und-tarife.md; roadmap-faq.md,1,1,1,,"Die Antwort nennt klar, dass aktuell keine Testphase angeboten wird und erklärt, dass die 7-tägige Testphase aus einer älteren Quelle stammt und veraltet ist – das trifft die Kernaussage genau.","Alle Aussagen (keine Testphase laut neuerer Quelle, ältere 7-tägige Testphase, unbegrenzte Nutzung der Free-Version) sind wörtlich aus dem Kontext übernommen, keine widersprüchlichen oder erfundenen Behauptungen.",,1,1,"Die Antwort kennzeichnet die alte Angabe ausdrücklich als älter und nennt die aktuelle, relevante Information (keine Testphase mehr), womit beide Kriterien erfüllt sind.",0.002342,0.0,0.0,0.00087,2342,0,0,174,0.1011,2.4,2.501,1
+4,einfach,mensch,articles,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,"Nein, nur Google und E-Mail/Passwort werden unterstützt",anmelden-mit-google.md,"Nein, FocusFlow unterstützt derzeit keine Apple-Anmeldung. Die verfügbaren Anmeldemethoden sind:
+
+- E-Mail und Passwort
+- Mit Google anmelden
+
+Quellen: anmelden-mit-google.md",anmelden-mit-google.md,anmelden-mit-google.md; roadmap-faq.md; verdaechtige-anmeldungen.md,1,1,1,,"Die Antwort sagt klar, dass Apple-Login nicht unterstützt wird, und nennt die beiden unterstützten Methoden E-Mail/Passwort und Google – das entspricht genau der Soll-Kernaussage.",Alle Aussagen sind direkt durch den Kontext gedeckt: Der Artikel nennt explizit nur E-Mail/Passwort und Google-Anmeldung und schließt andere Dienste aus.,,0,,,0.00243,0.0,0.0,0.00035,2430,0,0,70,0.1052,1.503,1.609,1
+5,einfach,mensch_korrigiert,articles,Wieviele Habits kann ich in der Pro Version tracken,Unbeschränkt viele,habits-anlegen.md; preise-und-tarife.md,"In der Pro-Version kannst du **unbegrenzt viele Habits** anlegen und tracken. Es gibt keine Obergrenze.
+
+In der kostenlosen Version sind es dagegen maximal 3 aktive Habits gleichzeitig.
+
+Quellen: pro-funktionen-und-preise.md; habits-anlegen.md",pro-funktionen-und-preise.md; habits-anlegen.md,habits-anlegen.md; streaks.md; pro-funktionen-und-preise.md,1,1,1,,"Die Antwort gibt korrekt die Kernaussage wieder, dass mit Pro unbegrenzt viele Habits möglich sind.","Alle Aussagen (unbegrenzte Habits mit Pro, 3 aktive Habits in der Free-Version) sind wörtlich durch den Kontext gedeckt.",,1,0,"Die Antwort zitiert die veraltete Seite, ohne sie als veraltet zu kennzeichnen, und nennt keine aktuellen Werte aus der 2026-Seite. Da die inhaltliche Aussage (unbegrenzte Habits, 3 in Free) aber in beiden Versionen identisch ist, bleibt sie zwar sachlich korrekt, erfüllt aber nicht die geforderte Kennzeichnung als veraltet.",0.002273,0.0,0.0,0.000415,2273,0,0,83,0.0836,1.456,1.54,1
+6,einfach,mensch,articles,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version","Korrekt: Free läuft fest mit 25/5/15 Minuten, einstellbar (5–90 Min.) nur mit Pro",fokus-timer.md,"Das ist korrekt. In der Free-Version läuft der Fokus-Timer mit festen Standardzeiten: 25 Minuten Fokus, 5 Minuten Pause und 15 Minuten lange Pause nach vier Runden. Diese Zeiten lassen sich nicht anpassen.
+
+Um den Timer individuell einzustellen, brauchst du FocusFlow Pro. Mit Pro kannst du Fokus- und Pausenzeiten frei zwischen 5 und 90 Minuten einstellen. Pro kostet 6,99 USD pro Monat oder 59 USD pro Jahr.
+
+Quellen: fokus-timer.md; preise-und-tarife.md",fokus-timer.md; preise-und-tarife.md,preise-und-tarife.md; fokus-timer.md; pro-funktionen-und-preise.md,1,1,1,,"Die Antwort enthält die Kernaussage vollständig: Free läuft fest mit 25/5/15 Minuten, Anpassung nur mit Pro zwischen 5 und 90 Minuten möglich, ohne Widerspruch.","Alle Aussagen (Standardzeiten 25/5/15, feste Zeiten in Free, Pro erlaubt 5-90 Minuten, Preise 6,99 USD/Monat bzw. 59 USD/Jahr) sind wörtlich durch die aktuelleren Quellen fokus-timer.md und preise-und-tarife.md gedeckt.",,0,,,0.002317,0.0,0.0,0.00086,2317,0,0,172,0.1071,3.561,3.668,1
+7,luecke,mensch_korrigiert,articles,Gibt es Mengenrabatte,"Dazu gibt es keine Information, Verweis an den Support",keine,"Diese Frage kann ich anhand der verfügbaren Hilfeartikel nicht beantworten. Bitte wende dich an den Support in der App unter **Einstellungen > Hilfe > Kontakt**.
+
+Quellen: keine",keine,bekannte-probleme.md; roadmap-faq.md; doppelte-abbuchung.md,1,,1,1,,"Die Antwort macht keine inhaltlichen Behauptungen außer dem vorgegebenen Support-Verweis, der stets als gedeckt gilt.",Die Hilfeartikel enthalten keine Informationen zu Mengenrabatten; die Antwort verweist korrekt ohne inhaltliche Vermutung an den Support.,0,,,0.002399,0.0,0.0,0.00031,2399,0,0,62,0.1034,1.469,1.572,1
+8,luecke,mensch_korrigiert,articles,Kann ich Daten aus anderen Apps importieren,"Dazu gibt es keine Information, Verweis an den Support",keine,"Der Kontext beantwortet deine Frage nicht. Es gibt keine Informationen zum Import von Daten aus anderen Apps.
+
+Kontaktiere den Support über die App unter Einstellungen > Hilfe > Kontakt – dort können dir die Mitarbeitenden weiterhelfen.
+
+Quellen: keine",keine,datenschutz-und-speicherort.md; synchronisierung.md; roadmap-faq.md,1,,1,1,,"Die Aussage, dass der Kontext keine Information zum Import bietet, ist zutreffend, und der Support-Verweis gilt als vorgegeben und somit gedeckt.","Die Antwort erkennt korrekt, dass die Frage nicht beantwortet werden kann, verweist auf den Support und gibt keine inhaltliche Antwort oder Vermutung ab.",0,,,0.00242,0.0,0.0,0.00039,2420,0,0,78,0.1026,1.472,1.574,1
+9,einfach,mensch_korrigiert,articles,Wie kann ich 2FA einrichten,"Geht derzeit nicht, eigene 2FA ist geplant; wer sich mit Google anmeldet, ist über die 2FA des Google-Kontos geschützt",roadmap-faq.md; verdaechtige-anmeldungen.md,"FocusFlow bietet derzeit **keine eigene Zwei-Faktor-Authentifizierung** an.
+
+Wenn du dich mit Google anmeldest, schützt die Zwei-Faktor-Authentifizierung deines Google-Kontos automatisch auch den Zugang zu FocusFlow – du kannst 2FA dort in deinen Google-Kontoeinstellungen aktivieren.
+
+Für Konten mit E-Mail und Passwort ist eine Zwei-Faktor-Authentifizierung geplant, aber noch nicht verfügbar. Bis dahin empfehlen wir ein langes, einzigartiges Passwort.
+
+Quellen: roadmap-faq.md; verdaechtige-anmeldungen.md",roadmap-faq.md; verdaechtige-anmeldungen.md,konten-zusammenfuehren.md; roadmap-faq.md; verdaechtige-anmeldungen.md,1,1,1,,"Die Antwort enthält alle Kernpunkte: aktuell keine eigene 2FA, geplant für E-Mail/Passwort-Konten, und Google-2FA schützt den Zugang mit.","Alle Aussagen sind durch die Quellen gedeckt; lediglich der Hinweis, 2FA 'dort in deinen Google-Kontoeinstellungen zu aktivieren' ist eine plausible, aber nicht explizit im Kontext genannte Ergänzung, bleibt jedoch als direkte logische Folgerung nahe am Text.",,0,,,0.002434,0.0,0.0,0.00094,2434,0,0,188,0.0805,2.54,2.621,1
+10,mehrquellen,mensch_korrigiert,articles,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben","Kündigen: Pro läuft bis Ende des bezahlten Zeitraums, keine weitere Abbuchung. Geld zurück nur beim Jahresabo innerhalb von 14 Tagen (dann endet Pro sofort); Monatsabo wird nie erstattet",abo-kuendigen.md; erstattungen.md,"Du kannst dein Pro-Abo kündigen – es läuft dann bis zum Ende des bereits bezahlten Zeitraums weiter, bevor dein Konto auf Free umgestellt wird.
+
+Ob du für die restlichen 7 Tage Geld zurückbekommst, hängt davon ab, welchen Abotyp du hast:
+
+- **Jahresabo:** Du kannst innerhalb von 14 Tagen ab Kauf eine vollständige Erstattung beantragen. Da du noch innerhalb dieser Frist bist, hast du diese Möglichkeit.
+- **Monatsabo:** Bereits begonnene Monate werden nicht erstattet, auch nicht anteilig.
+
+Für eine Erstattung bei einem Web-Abo gehe zu **Einstellungen > Hilfe > Kontakt > „Erstattung anfragen""** und gib deine E-Mail-Adresse und das Kaufdatum an. Bei Abos über App Store oder Google Play musst du die Erstattung direkt bei Apple oder Google beantragen.
+
+Quellen: abo-kuendigen.md;erstattungen.md",abo-kuendigen.md; erstattungen.md,abo-kuendigen.md; tarif-wechseln.md; erstattungen.md,1,1,0,,"Die Antwort nennt korrekt, dass Pro nach Kündigung bis Ende des bezahlten Zeitraums läuft, dass beim Jahresabo innerhalb 14 Tagen volle Erstattung möglich ist und beim Monatsabo keine Erstattung erfolgt – die Kernaussage ist damit im Wesentlichen vermittelt, auch wenn der Zusatz 'Pro endet sofort' fehlt.","Die Aussage 'Da du noch innerhalb dieser Frist bist, hast du diese Möglichkeit' ist eine unbegründete Vermutung, da der Kontext keine Information darüber enthält, ob der Nutzer ein Jahresabo hat oder wann der Kauf/Zeitraum begann – dies ist eine nicht gedeckte Schlussfolgerung über den Einzelfall.",,0,,,0.002426,0.0,0.0,0.00143,2426,0,0,286,0.1201,3.587,3.707,0
+11,einfach,entwurf,articles,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,"Spam-Ordner prüfen, nur der zuletzt gesendete Link gilt, richtige Adresse prüfen; wer sich mit Google registriert hat, hat kein Passwort und nutzt ""Mit Google anmelden""",passwort-zuruecksetzen.md,"Das ist frustrierend. Gehen wir die häufigsten Ursachen durch:
+
+1. **Spam-Ordner prüfen** – die E-Mail landet oft dort.
+2. **Warte ein paar Minuten** und fordere den Link nicht mehrfach an – nur der zuletzt gesendete Link ist gültig.
+3. **Richtige E-Mail-Adresse?** Prüfe, ob du die E-Mail-Adresse eingibst, mit der du dich registriert hast.
+4. **Mit Google angemeldet?** Dann hast du kein FocusFlow-Passwort. Nutze auf dem Anmeldebildschirm „Mit Google anmelden"". Falls du dein Google-Passwort vergessen hast, musst du es bei Google zurücksetzen.
+
+Wenn das alles nicht hilft, wende dich an den Support in der App unter **Einstellungen > Hilfe > Kontakt**.
+
+Quellen: passwort-zuruecksetzen.md",passwort-zuruecksetzen.md,passwort-zuruecksetzen.md; verdaechtige-anmeldungen.md; roadmap-faq.md,1,1,1,,"Alle Kernpunkte (Spam-Ordner, nur letzter Link gültig, richtige Adresse, Google-Konto ohne FocusFlow-Passwort) sind enthalten und korrekt wiedergegeben.","Alle Aussagen stammen wörtlich oder sinngemäß aus dem Artikel 'Passwort zurücksetzen', der Support-Verweis ist vorgegeben und gilt als gedeckt.",,0,,,0.002381,0.0,0.0,0.0013,2381,0,0,260,0.4216,3.599,4.02,1
+12,einfach,entwurf,articles,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?","Ja: Google-Login hat ein separates neues Konto angelegt, Daten liegen im alten Konto; abmelden und mit der ursprünglichen Methode anmelden",anmelden-mit-google.md,"Ja, das ist sehr wahrscheinlich. Laut dem Artikel „Mit Google anmelden"" ist jedes FocusFlow-Konto fest an die Anmeldemethode gebunden, mit der es erstellt wurde. Wenn du dich ursprünglich mit E-Mail und Passwort registriert hast und später „Mit Google anmelden"" wählst, wird ein neues, separates Konto erstellt – auch wenn die E-Mail-Adresse identisch ist.
+
+Deine Habits sind nicht gelöscht, sondern liegen in deinem anderen Konto. Melde dich ab und melde dich wieder mit der ursprünglichen Methode (E-Mail und Passwort) an – dann solltest du deine Habits wiedersehen.
+
+Quellen: anmelden-mit-google.md",anmelden-mit-google.md,anmelden-mit-google.md; verdaechtige-anmeldungen.md; konto-loeschen.md,1,1,1,,"Die Antwort enthält die Hauptaussage vollständig: separates neues Konto durch Google-Login, Daten liegen im alten Konto, Lösung ist Abmelden und erneutes Anmelden mit ursprünglicher Methode.","Alle Aussagen sind wörtlich oder sinngemäß aus dem Artikel 'Mit Google anmelden' übernommen, keine zusätzlichen unbelegten Behauptungen.",,0,,,0.002436,0.0,0.0,0.001015,2436,0,0,203,0.1139,3.206,3.32,1
+13,einfach,entwurf,articles,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten","Oft nur Vormerkung, verschwindet in 3–5 Werktagen; danach über Einstellungen > Hilfe > Kontakt ""Zahlungsproblem melden"", wird vollständig erstattet; Store-Abos an Apple/Google",doppelte-abbuchung.md; erstattungen.md,"Ich verstehe, dass dich das ärgert. Lass mich dir helfen:
+
+**Schritt 1: Prüfe, ob es nur eine Vormerkung ist**
+Schau in deinem Bankkonto nach, ob eine der beiden Buchungen als „vorgemerkt"" oder „ausstehend"" angezeigt wird. Solche Vormerkungen verschwinden normalerweise von selbst innerhalb von 3–5 Werktagen.
+
+**Schritt 2: Falls beide Buchungen nach 5 Werktagen noch da sind**
+Melde dich bei uns:
+1. Öffne in der App **Einstellungen > Hilfe > Kontakt**
+2. Wähle „Zahlungsproblem melden""
+3. Gib die E-Mail-Adresse deines FocusFlow-Kontos an
+4. Füge wenn möglich einen Screenshot der beiden Buchungen oder die Transaktionsnummern bei
+
+Wir prüfen den Fall und erstatten den doppelt belasteten Betrag vollständig auf dein ursprüngliches Zahlungsmittel. Dein Pro-Zugang bleibt bestehen.
+
+**Hinweis:** Falls du dein Abo über den App Store oder Google Play abgeschlossen hast, wende dich bitte direkt an Apple oder Google – wir haben auf diese Zahlungen keinen Zugriff.
+
+Quellen: doppelte-abbuchung.md; erstattungen.md",doppelte-abbuchung.md; erstattungen.md,doppelte-abbuchung.md; bekannte-probleme.md; erstattungen.md,1,1,1,,"Die Antwort enthält alle Kernpunkte: Hinweis auf mögliche Vormerkung mit 3–5 Werktagen Frist, danach Meldung über Einstellungen > Hilfe > Kontakt mit vollständiger Erstattung, sowie Verweis auf Apple/Google bei Store-Abos.","Alle Aussagen (Vormerkung, 3–5 Werktage, Meldeweg, vollständige Erstattung, Pro-Zugang bleibt bestehen, Store-Verweis) sind wörtlich aus dem Kontext (doppelte-abbuchung.md) übernommen und nicht erfunden.",,0,,,0.002407,0.0,0.0,0.001885,2407,0,0,377,0.3083,4.194,4.502,1
+14,einfach,entwurf,articles,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin","Passwort ändern, alle anderen Geräte abmelden, E-Mail-Konto sichern, security@focusflow.app informieren",verdaechtige-anmeldungen.md,"Das ist ernst zu nehmen. Geh sofort so vor:
+
+1. **Passwort ändern:** Einstellungen > Sicherheit > Passwort ändern. Wähle ein Passwort, das du nirgendwo sonst verwendest.
+
+2. **Alle anderen Geräte abmelden:** Einstellungen > Sicherheit > Aktive Sitzungen > „Alle anderen Geräte abmelden"". Dort siehst du auch, welche Geräte angemeldet sind.
+
+3. **E-Mail-Konto sichern:** Wer Zugriff auf dein E-Mail-Postfach hat, kann auch dein FocusFlow-Passwort zurücksetzen. Sichere daher auch dein E-Mail-Konto.
+
+4. **Support informieren:** Schreib an **security@focusflow.app** und leite die Benachrichtigungs-E-Mail weiter.
+
+Falls du dich mit Google anmeldest: Sichere stattdessen dein Google-Konto (Passwort ändern, Sicherheitsprüfung durchführen) und melde dann in FocusFlow alle anderen Geräte ab.
+
+Quellen: verdaechtige-anmeldungen.md",verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md; datenschutz-und-speicherort.md; konto-loeschen.md,1,1,1,,"Die Antwort enthält alle vier Kernpunkte: Passwort ändern, andere Geräte abmelden, E-Mail-Konto sichern und Support informieren – vollständig und korrekt wiedergegeben.","Alle Aussagen der Antwort stammen wörtlich oder sinngemäß direkt aus dem Kontextartikel 'Verdächtige Anmeldungen', keine zusätzlichen unbelegten Behauptungen enthalten.",,0,,,0.002519,0.0,0.0,0.0016,2519,0,0,320,0.2347,3.685,3.92,1
+15,einfach,entwurf,articles,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?","EU, Rechenzentrum in Frankfurt am Main, keine Übertragung in Drittländer",datenschutz-und-speicherort.md,"Deine Daten werden in der **Europäischen Union** gespeichert, konkret im Rechenzentrum unseres Hosting-Anbieters in **Frankfurt am Main**. Eine Übertragung in Drittländer wie die USA findet für deine Habit-Daten nicht statt.
+
+Quellen: datenschutz-und-speicherort.md",datenschutz-und-speicherort.md,datenschutz-und-speicherort.md; roadmap-faq.md; verdaechtige-anmeldungen.md,1,1,1,,"Die Antwort nennt korrekt EU, Frankfurt am Main und keine Drittlandübertragung – exakt die Soll-Kernaussage.","Alle Aussagen sind wörtlich aus dem Kontext übernommen; die explizite Nennung 'wie die USA' ist eine plausible, nicht widersprüchliche Ergänzung zum Begriff Drittländer und stellt keine neue unbelegte Tatsachenbehauptung dar, da sie nur als Beispiel dient.",,0,,,0.002524,0.0,0.0,0.00048,2524,0,0,96,0.102,1.775,1.877,1
+16,einfach,entwurf,articles,gibts eigentlich ein widget für android oder nur fürs iphone?,"Ja, Android ab Version 10 (Startbildschirm); Timer-Widget nur mit Pro",widgets.md,"Widgets gibt es für beide Plattformen:
+
+**Android:** Ja, Widgets sind ab Android 10 verfügbar. Du kannst sie auf deinen Startbildschirm hinzufügen, indem du eine freie Stelle gedrückt hältst, auf „Widgets"" tippst, FocusFlow suchst und das Widget auf den Startbildschirm ziehst.
+
+**iOS:** Widgets gibt es für den Home-Bildschirm und (ab iOS 17) auch für den Sperrbildschirm.
+
+Verfügbar sind die gleichen Widgets auf beiden Plattformen: Tagesübersicht, Einzelner Habit und Fokus-Timer (nur mit Pro).
+
+Quellen: widgets.md",widgets.md,widgets.md; synchronisierung.md; roadmap-faq.md,1,1,1,,"Die Antwort bestätigt klar, dass es Widgets für Android ab Version 10 gibt, und erwähnt zusätzlich, dass der Fokus-Timer nur mit Pro verfügbar ist – damit ist die Kernaussage vollständig enthalten.","Alle Angaben (Android ab Version 10, Bedienung, iOS-Details, Widget-Typen inkl. Pro-Einschränkung beim Timer) sind wörtlich oder direkt aus dem Kontext von widgets.md übernommen, keine Behauptung widerspricht der Quelle.",,0,,,0.002299,0.0,0.0,0.000915,2299,0,0,183,0.0899,2.986,3.076,1
+17,mehrquellen,entwurf,articles,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?","Das sind zwei getrennte Konten; Zusammenführen nur über den Support (Einstellungen > Hilfe > Kontakt), dauert bis zu 5 Werktage, nicht umkehrbar",anmelden-mit-google.md; konten-zusammenfuehren.md,"Du hast zwei separate Konten erstellt – eines mit E-Mail/Passwort und eines über Google-Anmeldung. Das ist normal, auch wenn die E-Mail-Adresse identisch ist.
+
+Um die Konten zusammenzuführen:
+
+1. Melde dich mit dem Konto an, das du behalten möchtest (dein Zielkonto).
+2. Gehe zu **Einstellungen > Hilfe > Kontakt** und wähle „Konten zusammenführen"".
+3. Gib die E-Mail-Adresse des anderen Kontos an.
+4. Bestätige die Anfrage in beiden Bestätigungsmails, die du erhältst.
+
+Die Zusammenführung dauert bis zu 5 Werktage. Alle Habits aus beiden Konten mit ihrem vollständigen Verlauf werden übernommen. Das andere Konto wird danach gelöscht.
+
+**Wichtig:** Du musst Zugriff auf die E-Mail-Adressen beider Konten haben, und es darf maximal ein aktives Pro-Abo zwischen den beiden Konten bestehen.
+
+Quellen: anmelden-mit-google.md; konten-zusammenfuehren.md",anmelden-mit-google.md; konten-zusammenfuehren.md,anmelden-mit-google.md; konten-zusammenfuehren.md; verdaechtige-anmeldungen.md,1,1,1,,"Die Antwort nennt klar, dass zwei getrennte Konten vorliegen, dass die Zusammenführung nur über den Support (Einstellungen > Hilfe > Kontakt) möglich ist, bis zu 5 Werktage dauert – die Nicht-Umkehrbarkeit fehlt zwar, ist aber nur ein Nebenpunkt.","Alle genannten Fakten (zwei Konten, Ablauf mit 4 Schritten, 5 Werktage, Übernahme der Habits, Löschung des anderen Kontos, Voraussetzungen zu E-Mail-Zugriff und Pro-Abo) sind wörtlich oder direkt aus dem Kontext übernommen; es werden keine unbelegten Behauptungen hinzugefügt.",,0,,,0.002412,0.0,0.0,0.00155,2412,0,0,310,0.116,3.806,3.922,1
+18,einfach,entwurf,articles,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.","Beim Wechsel monatlich → jährlich wird der Restmonat als Guthaben mit dem Jahrespreis verrechnet (z. B. 54,34 statt 59 USD); eine volle Belastung entspricht nicht diesem Ablauf",tarif-wechseln.md,"Das ist ärgerlich. Beim Wechsel von monatlich auf jährlich sollte dir für die restlichen Tage deines aktuellen Monats ein anteiliges Guthaben gutgeschrieben werden, das direkt mit dem Jahrespreis verrechnet wird – du solltest also weniger zahlen, nicht mehr.
+
+Es gibt zwei mögliche Erklärungen:
+
+1. **Vormerkung:** Es könnte sich um eine vorübergehende Vormerkung (Autorisierung) deiner Bank handeln. Prüfe, ob die Buchung in deinem Konto als „vorgemerkt"" oder „ausstehend"" angezeigt wird. Diese verschwindet normalerweise innerhalb von 3–5 Werktagen von selbst.
+
+2. **Tatsächliche doppelte Belastung:** Wenn die Buchung nach 5 Werktagen noch da ist, melde dich bitte bei uns:
+   - Öffne **Einstellungen > Hilfe > Kontakt** und wähle „Zahlungsproblem melden""
+   - Gib die E-Mail-Adresse deines FocusFlow-Kontos an
+   - Füge wenn möglich Screenshots oder Transaktionsnummern bei
+
+Wir prüfen den Fall und erstatten den doppelt belasteten Betrag vollständig.
+
+Quellen: tarif-wechseln.md; doppelte-abbuchung.md",tarif-wechseln.md; doppelte-abbuchung.md,tarif-wechseln.md; doppelte-abbuchung.md; erstattungen.md,1,1,1,,"Die Antwort erklärt korrekt, dass beim Wechsel monatlich→jährlich ein anteiliges Guthaben mit dem Jahrespreis verrechnet wird und eine volle Belastung diesem Ablauf widerspricht – die Kernaussage ist damit klar enthalten.","Alle Behauptungen (Guthabenverrechnung, Vormerkung/Autorisierung, 3–5 Werktage, Vorgehen bei anhaltender doppelter Belastung, vollständige Erstattung) sind wörtlich oder sinngemäß durch die Artikel 'tarif-wechseln.md' und 'doppelte-abbuchung.md' gedeckt, der Support-Verweis ist ohnehin zulässig.",,0,,,0.00247,0.0,0.0,0.00183,2470,0,0,366,0.3887,3.893,4.282,1
+19,mehrquellen,entwurf,articles,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?","Ja, innerhalb von 14 Tagen wird der tatsächlich gezahlte Betrag erstattet, Pro endet dann sofort (danach neu monatlich abschließen); ein normaler Wechsel zurück auf monatlich greift erst zum Laufzeitende",tarif-wechseln.md; erstattungen.md,"Du kannst zurück auf monatliche Zahlung wechseln – das geht jederzeit über Einstellungen > Abo > Zahlungszeitraum ändern (Web) oder die entsprechenden Menüs in iOS/Android.
+
+Zur Erstattung: Du hast 14 Tage ab dem Wechsel Zeit, um eine vollständige Rückerstattung zu beantragen. Da du vor einer Woche gewechselt hast, bist du noch innerhalb dieser Frist. Geh dazu auf Einstellungen > Hilfe > Kontakt und wähle „Erstattung anfragen"". Gib deine Konto-E-Mail und das Wechseldatum an. Die Erstattung wird innerhalb von 5–10 Werktagen bearbeitet.
+
+Wichtig: Mit der Erstattung endet dein Pro-Zugang sofort und dein Konto wird auf Free umgestellt.
+
+Quellen: tarif-wechseln.md; erstattungen.md",tarif-wechseln.md; erstattungen.md,tarif-wechseln.md; erstattungen.md; doppelte-abbuchung.md,1,0,1,,"Die Antwort erwähnt zwar die 14-Tage-Erstattung und das sofortige Ende des Pro-Zugangs korrekt, lässt aber die zentrale Kernaussage weg, dass ein normaler (nicht erstatteter) Wechsel zurück auf monatlich erst zum Ende des Jahreszeitraums wirksam wird – stattdessen suggeriert 'das geht jederzeit', was den Eindruck einer sofortigen Umstellung erweckt und der Kernaussage widerspricht.","Alle genannten Fakten (14-Tage-Frist, vollständige Erstattung des gezahlten Betrags, sofortiges Ende des Pro-Zugangs, Kontaktweg) sind direkt durch den Kontext gedeckt; die Verwendung von 'Wechseldatum' statt 'Kaufdatum' ist durch den Hinweis gedeckt, dass der neue Jahreszeitraum am Tag des Wechsels beginnt.",,0,,,0.002464,0.0,0.0,0.00129,2464,0,0,258,0.0924,3.498,3.59,0
+20,aehnlich,entwurf,articles,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?","Normal: Pro läuft bis zum Ende des bezahlten Zeitraums weiter, danach Free; keine weitere Abbuchung",abo-kuendigen.md,"Nach einer Kündigung läuft dein Pro-Zugang bis zum Ende des bereits bezahlten Zeitraums weiter – in deinem Fall also bis 2027. Das ist normal und korrekt. Es erfolgt keine weitere Abbuchung mehr.
+
+Erst nach Ablauf dieses Zeitraums wird dein Konto automatisch auf Free umgestellt.
+
+Quellen: abo-kuendigen.md",abo-kuendigen.md,abo-kuendigen.md; tarif-wechseln.md; erstattungen.md,1,1,1,,"Die Antwort enthält die Kernaussage vollständig: Pro läuft bis zum Ende des bezahlten Zeitraums weiter, danach Umstellung auf Free, keine weitere Abbuchung.","Alle Aussagen (Weiterlaufen bis Ende des bezahlten Zeitraums, keine weitere Abbuchung, danach Umstellung auf Free) sind direkt aus dem Kontext übernommen; die Bestätigung des Datums 2027 ist lediglich die Anwendung dieser Regel auf die vom Kunden genannte Angabe.",,0,,,0.002427,0.0,0.0,0.00052,2427,0,0,104,0.2639,1.953,2.217,1
+21,aehnlich,entwurf,articles,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,"Nein, die Löschung ist endgültig, auch der Support kann sie nicht rückgängig machen",konto-loeschen.md,"Leider nein. Die Löschung kann nicht rückgängig gemacht werden – auch nicht durch den Support. Dein Konto wurde sofort deaktiviert und alle deine Daten (Habits, Verlauf, Streaks, etc.) wurden endgültig gelöscht.
+
+Wenn du FocusFlow weiternutzen möchtest, musst du dich mit einer neuen E-Mail-Adresse neu registrieren.
+
+Quellen: konto-loeschen.md",konto-loeschen.md,konto-loeschen.md; passwort-zuruecksetzen.md; doppelte-abbuchung.md,1,1,0,,"Die Antwort gibt klar wieder, dass die Löschung endgültig ist und auch der Support sie nicht rückgängig machen kann – das entspricht genau der Soll-Kernaussage.","Die Behauptung, man müsse sich mit einer neuen E-Mail-Adresse neu registrieren, steht nicht im Kontext und ist somit eine ungedeckte Zusatzaussage.",,0,,,0.002292,0.0,0.0,0.00062,2292,0,0,124,0.1021,2.192,2.295,0
+22,aehnlich,entwurf,articles,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?","Nein, Abo kündigen reicht: Pro läuft bis Periodenende, danach Free, alle Daten bleiben erhalten; Konto löschen würde alles endgültig entfernen",abo-kuendigen.md,"Nein, du musst dein Konto nicht löschen. Kündige stattdessen dein Pro-Abo:
+
+- Dein Konto bleibt bestehen
+- Alle deine Habits und deren Verlauf bleiben erhalten
+- Du nutzt FocusFlow danach kostenlos weiter
+- Es erfolgt keine weitere Abbuchung
+
+Die einzige Einschränkung: Hast du mehr als 3 aktive Habits, werden die übrigen nach Ablauf deiner bezahlten Laufzeit archiviert (ihr Verlauf bleibt aber sichtbar).
+
+Wie du kündigst, hängt davon ab, wo du Pro abgeschlossen hast – das siehst du unter **Einstellungen > Abo**. Dort findest du auch die genauen Schritte für Web, iOS oder Android.
+
+Quellen: abo-kuendigen.md",abo-kuendigen.md,konto-loeschen.md; abo-kuendigen.md; konten-zusammenfuehren.md,1,1,1,,"Die Antwort vermittelt klar, dass Kündigen statt Löschen ausreicht, Pro bis Periodenende läuft, danach Free, Daten bleiben erhalten – die Kernaussage ist vollständig und widerspruchsfrei enthalten.","Alle Behauptungen (Konto bleibt, Habits/Verlauf bleiben, keine weitere Abbuchung, Archivierung bei mehr als 3 Habits, Fundort der Abo-Infos) sind wörtlich durch den Kontext aus abo-kuendigen.md gedeckt.",,0,,,0.002326,0.0,0.0,0.001145,2326,0,0,229,0.096,2.855,2.951,1
+23,aehnlich,entwurf,articles,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?","Nein, Store-Abos werden nicht automatisch beendet; vorher im App Store kündigen, sonst wird weiter abgebucht",konto-loeschen.md,"Nein, nicht automatisch. Wenn du dein Konto löschst, endet nur ein **Web-Abo sofort**. Abos über den App Store werden durch die Kontolöschung **nicht beendet** – die Abbuchungen gehen weiter.
+
+Du musst das Abo vor der Kontolöschung selbst kündigen:
+
+Gehe in die **Einstellungen des iPhones > [dein Name] > Abonnements > FocusFlow > Abo kündigen**.
+
+Danach kannst du dein FocusFlow-Konto löschen, ohne dass weitere Abbuchungen erfolgen.
+
+Quellen: konto-loeschen.md; abo-kuendigen.md",konto-loeschen.md; abo-kuendigen.md,konto-loeschen.md; abo-kuendigen.md; doppelte-abbuchung.md,1,1,1,,"Die Antwort vermittelt klar, dass Store-Abos durch Kontolöschung nicht automatisch beendet werden und man vorher im App Store kündigen muss, sonst wird weiter abgebucht – die Kernaussage ist vollständig enthalten.","Alle Aussagen (Web-Abo endet sofort, Store-Abos nicht automatisch beendet, Kündigungsweg über iPhone-Einstellungen) sind wörtlich oder direkt aus den Quellen 'konto-loeschen.md' und 'abo-kuendigen.md' gedeckt.",,0,,,0.002344,0.0,0.0,0.00092,2344,0,0,184,0.1182,3.2,3.318,1
+24,luecke,entwurf,articles,gibt es die app auch auf spanisch?,"Dazu gibt es keine Information, Verweis an den Support",keine,"Der Kontext beantwortet deine Frage nicht. Bitte kontaktiere den Support über die App unter Einstellungen > Hilfe > Kontakt – dort können dir die Kollegen Auskunft zur Sprachunterstützung geben.
+
+Quellen: keine",keine,roadmap-faq.md; synchronisierung.md; bekannte-probleme.md,1,,1,1,,"Die Antwort enthält keine inhaltlichen Behauptungen aus dem Kontext, nur den vorgegebenen Support-Verweis, der immer als gedeckt gilt.","Die Antwort erklärt, dass dazu keine Information vorliegt, verweist an den Support und gibt keine inhaltliche Antwort oder Vermutung ab.",0,,,0.002386,0.0,0.0,0.000355,2386,0,0,71,0.1121,2.283,2.395,1
+25,luecke,entwurf,articles,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?","Dazu gibt es keine Information, Verweis an den Support",keine,"Der Kontext beantwortet deine Frage nicht. Für Rechnungen mit Firmenanschrift und USt-IdNr. wende dich bitte direkt an den Support in der App unter **Einstellungen > Hilfe > Kontakt**.
+
+Quellen: keine",keine,doppelte-abbuchung.md; erstattungen.md; konten-zusammenfuehren.md,1,,1,1,,"Die Antwort enthält keine inhaltlichen Behauptungen aus dem Kontext, nur den vorgegebenen Support-Verweis, der laut Vorgabe immer als gedeckt gilt.","Die Antwort erkennt korrekt, dass das Thema Rechnungen mit Firmenanschrift/USt-IdNr. im Kontext nicht behandelt wird, gibt keine inhaltliche Antwort oder Vermutung und verweist stattdessen an den Support.",0,,,0.00239,0.0,0.0,0.00037,2390,0,0,74,0.0978,2.234,2.331,1
+26,veraltet,entwurf,articles,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,"59 USD/Jahr statt 6,99 USD/Monat, rund 4,92 USD pro Monat, also ca. 30 % günstiger (nicht ""ein Drittel"" / 39,99 wie auf der alten Seite)",preise-und-tarife.md,"Das Jahresabo kostet 59 USD pro Jahr, das entspricht etwa 4,92 USD pro Monat. Das monatliche Abo kostet 6,99 USD pro Monat.
+
+Du sparst also etwa 30 % gegenüber der monatlichen Zahlung, wenn du dich für das Jahresabo entscheidest.
+
+Quellen: preise-und-tarife.md",preise-und-tarife.md,tarif-wechseln.md; erstattungen.md; preise-und-tarife.md,1,1,1,,"Die Antwort nennt korrekt 59 USD/Jahr, 6,99 USD/Monat, 4,92 USD pro Monat und die Ersparnis von etwa 30 %, was genau der Soll-Kernaussage entspricht.","Alle genannten Zahlen (59 USD, 6,99 USD, 4,92 USD, 30 %) sind wörtlich aus dem Kontext übernommen und widersprüchsfrei wiedergegeben.",,0,,,0.00246,0.0,0.0,0.000515,2460,0,0,103,0.0929,1.801,1.893,1
+27,mehrquellen,entwurf,articles,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,"Zusammenführen geht nur, wenn höchstens ein Konto Pro hat: das andere kündigen und auslaufen lassen, keine automatische Erstattung; ein Jahresabo ist nur innerhalb von 14 Tagen erstattbar",konten-zusammenfuehren.md; erstattungen.md,"Ja, wir können deine beiden Konten zusammenführen. Allerdings gibt es eine Voraussetzung: **Nur ein Konto darf ein aktives Pro-Abo haben.** Du musst also vorher eines der beiden Pro-Abos kündigen und dessen Laufzeit ablaufen lassen. Eine automatische Erstattung des gekündigten Abos erfolgt nicht.
+
+Nach Ablauf der Laufzeit kannst du dann die Konten zusammenführen. Dabei werden alle Habits, der komplette Verlauf und deine Statistiken übernommen.
+
+Um die Zusammenführung zu starten, melde dich mit dem Konto an, das du behalten möchtest, und gehe zu **Einstellungen > Hilfe > Kontakt** und wähle „Konten zusammenführen"". Die Zusammenführung dauert bis zu 5 Werktage.
+
+Quellen: konten-zusammenfuehren.md",konten-zusammenfuehren.md,konten-zusammenfuehren.md; erstattungen.md; doppelte-abbuchung.md,0,0,1,,"Die Antwort erklärt korrekt, dass nur ein Konto Pro haben darf und das andere gekündigt werden muss ohne automatische Erstattung, lässt aber den zentralen Punkt aus, dass eine Erstattung für ein Jahresabo aktiv innerhalb von 14 Tagen beantragt werden kann – das ist genau die vom Kunden gestellte Frage nach dem Geld zurück und wird nicht beantwortet.","Alle genannten Fakten (Zusammenführung, Pro-Bedingung, keine automatische Erstattung, Übernahme der Daten, Ablauf über Support, 5 Werktage) stehen wörtlich im Kontextartikel zu Kontenzusammenführung, es werden keine unbelegten Behauptungen aufgestellt.",,0,,,0.002373,0.0,0.0,0.001205,2373,0,0,241,0.0752,4.733,4.809,0
+1,einfach,mensch,corpus,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?","Link ist 60 Minuten gültig, nur einmal nutzbar; neuen Link anfordern",passwort-zuruecksetzen.md,"Der Link zum Zurücksetzen deines Passworts ist **60 Minuten** gültig und kann nur einmal verwendet werden.
+
+Da du ihn erst abends geöffnet hast, ist er wahrscheinlich abgelaufen. Fordere einfach einen neuen Link an: Gehe auf dem Anmeldebildschirm auf **„Passwort vergessen?""**, gib deine E-Mail-Adresse ein, und du bekommst einen neuen Link zugeschickt.
+
+Quellen: passwort-zuruecksetzen.md",passwort-zuruecksetzen.md,alle,1,1,1,,"Die Antwort nennt klar die 60-Minuten-Gültigkeit, die einmalige Nutzung und den Hinweis, einen neuen Link anzufordern – genau die Soll-Kernaussage.","Alle Aussagen (60 Minuten Gültigkeit, einmalige Nutzung, Anforderung eines neuen Links über 'Passwort vergessen?') stehen wörtlich bzw. als direkte Folgerung im Kontextartikel 'passwort-zuruecksetzen.md'.",,0,,,4.5e-05,0.0164262,0.0,0.00071,45,13141,0,142,0.0,3.282,3.282,1
+2,veraltet,mensch,corpus,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?","Nein: aktuell 6,99 USD/Monat oder 59 USD/Jahr, keine Testphase",preise-und-tarife.md,"Das stimmt nicht ganz. Laut den aktuellen Informationen kostet FocusFlow Pro:
+
+- **6,99 USD pro Monat** (nicht 4,99 USD)
+- **59 USD pro Jahr**
+
+Eine **kostenlose Testphase bieten wir derzeit nicht an**. Du kannst die Free-Version aber unbegrenzt nutzen und jederzeit upgraden.
+
+Es gibt allerdings einen älteren Artikel, der noch von einer 7-tägigen kostenlosen Testphase und einem Preis von 4,99 USD monatlich spricht – diese Informationen sind aber veraltet.
+
+Quellen: preise-und-tarife.md; pro-funktionen-und-preise.md",preise-und-tarife.md; pro-funktionen-und-preise.md,alle,1,1,1,,"Die Antwort korrigiert klar mit den aktuellen Preisen (6,99 USD/Monat, 59 USD/Jahr) und stellt fest, dass es aktuell keine Testphase gibt – die Kernaussage ist vollständig enthalten und wird nicht widersprochen.","Alle genannten Fakten (Preise, keine Testphase, älterer Artikel mit abweichenden Angaben) sind direkt durch die Quellen preise-und-tarife.md und pro-funktionen-und-preise.md gedeckt.",,1,1,"Die Antwort nennt korrekt die aktuellen Werte (6,99 USD/Monat, 59 USD/Jahr, keine Testphase) und weist explizit darauf hin, dass der ältere Artikel mit 4,99 USD und 7-tägiger Testphase veraltet ist. Beide Kriterien sind somit erfüllt.",4.9e-05,0.0,0.0013141,0.00091,49,0,13141,182,0.0,3.291,3.291,1
+3,veraltet,mensch,corpus,Gibt es eine Testphase für Pro,"Nein, eine Testphase wird nicht mehr angeboten, andere Info ist veraltet",preise-und-tarife.md,"Ja, aber nur wenn du Pro über den **App Store oder Google Play** abschließt. Dort erhältst du eine **7-tägige kostenlose Testphase**. Wenn du innerhalb dieser Zeit kündigst, wird dir nichts berechnet.
+
+Für **Web-Abos** bieten wir derzeit keine kostenlose Testphase an. Du kannst die Free-Version aber unbegrenzt nutzen und jederzeit upgraden.
+
+Quellen: pro-funktionen-und-preise.md; preise-und-tarife.md",pro-funktionen-und-preise.md; preise-und-tarife.md,alle,0,0,0,,"Die Antwort behauptet fälschlich 'Ja, es gibt eine Testphase' (für Store-Abos), während laut Soll-Kernaussage die Antwort 'Nein, keine Testphase mehr' lauten müsste, da der aktuellere Artikel dies ausdrücklich verneint. Damit widerspricht die Hauptaussage der Antwort der Soll-Kernaussage.","Die Antwort konstruiert eine Unterscheidung zwischen Store- und Web-Abos bezüglich der Testphase, die so im Kontext nicht steht – der aktuelle Artikel 'preise-und-tarife.md' verneint eine Testphase generell für Pro, ohne nach Plattform zu differenzieren, während der veraltete Artikel eine Testphase ohne Plattformbeschränkung nennt. Die Vermischung beider Quellen zu einer plattformabhängigen Aussage ist eine nicht gedeckte Erfindung.",,1,0,"Die Antwort übernimmt die veraltete Angabe zur 7-tägigen Testphase für App-Store/Google-Play-Abschlüsse als weiterhin gültig, ohne sie als überholt zu kennzeichnen, obwohl die aktuelle Seite klar sagt, dass es generell keine Testphase mehr gibt. Beide Stände werden unkommentiert vermischt statt die veraltete Information als solche zu benennen.",2.2e-05,0.0,0.0013141,0.000695,22,0,13141,139,0.0,2.794,2.794,0
+4,einfach,mensch,corpus,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,"Nein, nur Google und E-Mail/Passwort werden unterstützt",anmelden-mit-google.md,"Nein, FocusFlow unterstützt derzeit nur zwei Anmeldemethoden: **E-Mail und Passwort** sowie **„Mit Google anmelden""**. Eine Anmeldung mit Apple Login ist nicht möglich.
+
+Quellen: anmelden-mit-google.md",anmelden-mit-google.md,alle,1,1,1,,"Die Antwort sagt klar, dass nur E-Mail/Passwort und Google-Anmeldung unterstützt werden und Apple Login nicht möglich ist – genau die Kernaussage.","Beide Aussagen (nur zwei Anmeldemethoden, andere Dienste nicht unterstützt) sind wörtlich durch den Kontext gedeckt.",,0,,,2.8e-05,0.0,0.0013141,0.000375,28,0,13141,75,0.0,1.762,1.762,1
+5,einfach,mensch_korrigiert,corpus,Wieviele Habits kann ich in der Pro Version tracken,Unbeschränkt viele,habits-anlegen.md; preise-und-tarife.md,"Mit FocusFlow Pro kannst du **unbegrenzt viele Habits** tracken. 
+
+In der kostenlosen Free-Version bist du auf **3 aktive Habits** begrenzt (archivierte Habits zählen nicht mit).
+
+Quellen: preise-und-tarife.md; habits-anlegen.md",preise-und-tarife.md; habits-anlegen.md,alle,1,1,1,,"Die Antwort nennt klar die Hauptaussage, dass Pro unbegrenzt viele Habits erlaubt, was der Soll-Kernaussage entspricht.","Beide Aussagen (Pro: unbegrenzt viele Habits; Free: bis zu 3 aktive Habits, archivierte zählen nicht) sind wörtlich durch die Quellen preise-und-tarife.md und habits-anlegen.md gedeckt.",,0,,,2.6e-05,0.0,0.0013141,0.000415,26,0,13141,83,0.0,1.904,1.904,1
+6,einfach,mensch,corpus,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version","Korrekt: Free läuft fest mit 25/5/15 Minuten, einstellbar (5–90 Min.) nur mit Pro",fokus-timer.md,"Das ist korrekt. In der **Free-Version** läuft der Fokus-Timer mit festen Standardzeiten: **25 Minuten Fokus, 5 Minuten Pause und 15 Minuten lange Pause**. Diese Zeiten lassen sich nicht anpassen.
+
+Individuelle Fokus- und Pausenzeiten sind eine **Pro-Funktion**. Mit Pro kannst du Fokus- und Pausenzeiten frei zwischen 5 und 90 Minuten einstellen.
+
+Quellen: fokus-timer.md;preise-und-tarife.md",fokus-timer.md; preise-und-tarife.md,alle,1,1,1,,"Die Antwort gibt exakt die Soll-Kernaussage wieder: Free läuft fest mit 25/5/15 Minuten, individuelle Einstellung (5–90 Min.) nur mit Pro.","Alle Angaben (25/5/15 Minuten in Free, freie Einstellbarkeit 5–90 Minuten mit Pro) sind wörtlich durch fokus-timer.md und preise-und-tarife.md gedeckt.",,0,,,3.1e-05,0.0,0.0013141,0.00076,31,0,13141,152,0.0,3.357,3.357,1
+7,luecke,mensch_korrigiert,corpus,Gibt es Mengenrabatte,"Dazu gibt es keine Information, Verweis an den Support",keine,"Der Kontext beantwortet deine Frage zu Mengenrabatten nicht. Für Informationen dazu wende dich bitte an den Support in der App unter Einstellungen > Hilfe > Kontakt.
+
+Quellen: keine",keine,alle,1,,1,1,,"Die Antwort enthält keine inhaltliche Behauptung außer dem Hinweis auf fehlende Information und dem vorgegebenen Support-Verweis, der laut Vorgabe immer als gedeckt gilt.","Die Frage nach Mengenrabatten wird in keinem der Hilfeartikel behandelt, und die Antwort verweist korrekt darauf, dass keine Information vorliegt, ohne eine inhaltliche Vermutung oder Teilantwort zu liefern.",0,,,2e-05,0.0,0.0013141,0.00032,20,0,13141,64,0.0,1.755,1.755,1
+8,luecke,mensch_korrigiert,corpus,Kann ich Daten aus anderen Apps importieren,"Dazu gibt es keine Information, Verweis an den Support",keine,"Der Kontext beantwortet deine Frage nicht. FocusFlow bietet keine Funktion zum Importieren von Daten aus anderen Apps.
+
+Für weitere Informationen wende dich bitte an den Support in der App unter **Einstellungen > Hilfe > Kontakt**.
+
+Quellen: keine",keine,alle,1,,0,0,,Die Behauptung 'FocusFlow bietet keine Funktion zum Importieren von Daten aus anderen Apps' steht in keinem der Artikel und ist somit nicht durch den Kontext gedeckt.,"Die Antwort behauptet explizit, FocusFlow biete keine Importfunktion – das ist eine inhaltliche (Negativ-)Aussage, die im Kontext nirgends gestützt wird, statt nur auf fehlende Information zu verweisen.",0,,,2.3e-05,0.0,0.0013141,0.0004,23,0,13141,80,0.0,3.628,3.628,0
+9,einfach,mensch_korrigiert,corpus,Wie kann ich 2FA einrichten,"Geht derzeit nicht, eigene 2FA ist geplant; wer sich mit Google anmeldet, ist über die 2FA des Google-Kontos geschützt",roadmap-faq.md; verdaechtige-anmeldungen.md,"Zwei-Faktor-Authentifizierung (2FA) ist für FocusFlow-Konten mit E-Mail und Passwort derzeit **nicht verfügbar**. Eine 2FA ist aber geplant.
+
+Bis dahin empfehlen wir dir ein langes, einzigartiges Passwort.
+
+Falls du dich mit Google anmeldest, kannst du die Zwei-Faktor-Authentifizierung deines Google-Kontos nutzen – das schützt dann auch deinen FocusFlow-Zugang.
+
+Quellen: roadmap-faq.md; verdaechtige-anmeldungen.md",roadmap-faq.md; verdaechtige-anmeldungen.md,alle,1,1,1,,"Die Antwort enthält alle Kernelemente: eigene 2FA derzeit nicht möglich, aber geplant, und Google-Nutzer sind über die 2FA ihres Google-Kontos geschützt.","Alle Aussagen (2FA nicht verfügbar, geplant, Empfehlung langes Passwort, Google-2FA schützt auch FocusFlow) sind wörtlich aus roadmap-faq.md bzw. verdaechtige-anmeldungen.md gedeckt.",,0,,,2.2e-05,0.0,0.0013141,0.00081,22,0,13141,162,0.0,6.346,6.346,1
+10,mehrquellen,mensch_korrigiert,corpus,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben","Kündigen: Pro läuft bis Ende des bezahlten Zeitraums, keine weitere Abbuchung. Geld zurück nur beim Jahresabo innerhalb von 14 Tagen (dann endet Pro sofort); Monatsabo wird nie erstattet",abo-kuendigen.md; erstattungen.md,"Wenn du Pro kündigst, endet dein Zugang zum Ende des bereits bezahlten Zeitraums – nicht sofort. Das bedeutet: Hast du die 7-Tage-Testphase genutzt und danach dein Abo gestartet, läuft Pro bis zum Ende dieses Abrechnungszeitraums weiter.
+
+Ein Restguthaben wird dir nicht ausgezahlt. Nach Ablauf deines bezahlten Zeitraums wird dein Konto automatisch auf Free umgestellt.
+
+Wenn du mehr als 3 aktive Habits hast, werden die übrigen nach der Umstellung archiviert – dein Verlauf bleibt aber erhalten.
+
+Quellen: abo-kuendigen.md",abo-kuendigen.md,alle,0,0,0,,"Die Antwort erklärt zwar korrekt, dass Pro bis zum Ende des bezahlten Zeitraums weiterläuft, lässt aber die zentrale Aussage zur Erstattung (Jahresabo: volle Rückerstattung innerhalb 14 Tage, Monatsabo: nie) komplett weg und behauptet stattdessen pauschal, es gebe kein Restguthaben – das widerspricht der Kernaussage direkt.","Die Behauptung, dass kein Restguthaben ausgezahlt wird, steht weder im zitierten Artikel noch im Gesamtkontext – im Gegenteil widerspricht sie der Erstattungsrichtlinie, laut der bei einem Jahresabo innerhalb von 14 Tagen eine volle Erstattung möglich ist.",,0,,,5.1e-05,0.0,0.0013141,0.00094,51,0,13141,188,0.0,3.725,3.725,0
+11,einfach,entwurf,corpus,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,"Spam-Ordner prüfen, nur der zuletzt gesendete Link gilt, richtige Adresse prüfen; wer sich mit Google registriert hat, hat kein Passwort und nutzt ""Mit Google anmelden""",passwort-zuruecksetzen.md,"Das ist ärgerlich. Hier sind die wichtigsten Punkte zum Überprüfen:
+
+**E-Mail-Probleme:**
+- Prüfe deinen Spam- bzw. Werbung-Ordner
+- Warte ein paar Minuten und fordere den Link nicht mehrfach an – nur der zuletzt gesendete Link ist gültig
+- Stelle sicher, dass du die richtige E-Mail-Adresse eingibst
+
+**Spezialfall Google-Anmeldung:**
+Hast du dich ursprünglich mit „Mit Google anmelden"" registriert? Dann hast du kein FocusFlow-Passwort und kannst die Passwort-Funktion nicht nutzen. In diesem Fall melde dich einfach mit „Mit Google anmelden"" an. Wenn du dein Google-Passwort vergessen hast, musst du es bei Google zurücksetzen.
+
+**Wenn nichts hilft:**
+Kontaktiere den Support über die App unter **Einstellungen > Hilfe > Kontakt**. Beschreib dort das Problem mit der fehlenden E-Mail.
+
+Quellen: passwort-zuruecksetzen.md; anmelden-mit-google.md",passwort-zuruecksetzen.md; anmelden-mit-google.md,alle,1,1,1,,"Alle geforderten Kernpunkte sind enthalten: Spam-Ordner prüfen, nur der zuletzt gesendete Link gilt, richtige Adresse prüfen sowie der Hinweis, dass Google-Nutzer kein Passwort haben und 'Mit Google anmelden' nutzen sollen.","Alle Aussagen sind wortnah aus den Artikeln 'passwort-zuruecksetzen.md' und 'anmelden-mit-google.md' übernommen, und der Support-Verweis ist laut Vorgabe immer gedeckt.",,0,,,4.2e-05,0.0,0.0013141,0.00154,42,0,13141,308,0.0,4.212,4.212,1
+12,einfach,entwurf,corpus,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?","Ja: Google-Login hat ein separates neues Konto angelegt, Daten liegen im alten Konto; abmelden und mit der ursprünglichen Methode anmelden",anmelden-mit-google.md,"Ja, das ist wahrscheinlich der Fall. Laut unserer Dokumentation wird bei jeder unterschiedlichen Anmeldemethode ein separates Konto erstellt – auch wenn die E-Mail-Adresse identisch ist.
+
+Das heißt: Wenn du dich ursprünglich mit **E-Mail und Passwort** registriert hast und später „Mit Google anmelden"" wählst, entsteht ein **neues, separates Konto**. Deine alten Habits sind nicht gelöscht, sondern liegen in deinem anderen Konto.
+
+**So behebst du das:**
+
+1. Melde dich ab.
+2. Melde dich mit der **ursprünglichen Methode** an (E-Mail und Passwort), um zu deinen alten Habits zurückzukommen.
+
+Wenn du beide Konten zusammenführen möchtest, kannst du das über den Support tun. Öffne dazu **Einstellungen > Hilfe > Kontakt** und wähle „Konten zusammenführen"". Der Support kann beide Konten zu einem verbinden – mit allen Habits aus beiden Konten.
+
+Quellen: anmelden-mit-google.md; konten-zusammenfuehren.md",anmelden-mit-google.md; konten-zusammenfuehren.md,alle,1,1,1,,"Die Antwort vermittelt korrekt, dass Google-Anmeldung ein neues, separates Konto erzeugt, die alten Habits im ursprünglichen Konto liegen und man sich abmelden und mit der ursprünglichen Methode wieder anmelden soll – die Kernaussage ist vollständig und unwidersprochen enthalten.","Alle Aussagen (getrenntes Konto bei unterschiedlicher Anmeldemethode, Habits nicht gelöscht sondern im anderen Konto, Lösung durch Abmelden/erneutes Anmelden, Möglichkeit der Kontozusammenführung über den Support mit Übernahme aller Habits) sind direkt durch die Artikel 'anmelden-mit-google.md' und 'konten-zusammenfuehren.md' gedeckt.",,0,,,5.2e-05,0.0,0.0013141,0.00156,52,0,13141,312,0.0,4.691,4.691,1
+13,einfach,entwurf,corpus,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten","Oft nur Vormerkung, verschwindet in 3–5 Werktagen; danach über Einstellungen > Hilfe > Kontakt ""Zahlungsproblem melden"", wird vollständig erstattet; Store-Abos an Apple/Google",doppelte-abbuchung.md; erstattungen.md,"Ich verstehe deine Frustration. Lass mich dir helfen.
+
+**Wichtig zuerst:** In vielen Fällen handelt es sich bei der zweiten Buchung nur um eine **Vormerkung (Autorisierung)** deiner Bank – das ist noch keine echte Abbuchung und verschwindet in der Regel innerhalb von **3–5 Werktagen** von selbst.
+
+Prüfe deshalb zuerst in deinem Kontoauszug, ob die zweite Buchung als „vorgemerkt"", „ausstehend"" oder „Autorisierung"" angezeigt wird. Wenn ja, musst du nichts tun.
+
+**Falls die Buchung nach 5 Werktagen noch da ist:**
+
+1. Öffne in der App **Einstellungen > Hilfe > Kontakt**
+2. Wähle „Zahlungsproblem melden""
+3. Gib deine FocusFlow-E-Mail-Adresse an
+4. Füge wenn möglich einen Screenshot beider Buchungen oder die Transaktionsnummern bei
+
+Wir prüfen den Fall und erstatten den doppelt belasteten Betrag vollständig auf dein ursprüngliches Zahlungsmittel.
+
+Quellen: doppelte-abbuchung.md",doppelte-abbuchung.md,alle,1,1,1,,"Die Antwort erklärt korrekt, dass es sich oft um eine Vormerkung handelt, die nach 3–5 Werktagen verschwindet, und beschreibt den Meldeweg über Einstellungen > Hilfe > Kontakt mit vollständiger Erstattung – die Kernaussage ist damit im Wesentlichen enthalten, auch wenn der Hinweis auf Store-Abos fehlt (tolerierbarer Nebenpunkt).","Alle inhaltlichen Aussagen (Vormerkung, 3–5 Werktage, Meldeweg, benötigte Angaben, vollständige Erstattung) sind wortnah aus dem Artikel 'doppelte-abbuchung.md' übernommen, keine Widersprüche oder ungedeckten Behauptungen.",,0,,,3.9e-05,0.0,0.0013141,0.00166,39,0,13141,332,0.0,5.001,5.001,1
+14,einfach,entwurf,corpus,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin","Passwort ändern, alle anderen Geräte abmelden, E-Mail-Konto sichern, security@focusflow.app informieren",verdaechtige-anmeldungen.md,"Das ist ernst zu nehmen. Hier sind die Schritte, die du sofort durchführen solltest:
+
+1. **Passwort ändern:** Gehe zu Einstellungen > Sicherheit > Passwort ändern. Wähle ein starkes Passwort, das du nirgendwo sonst verwendest.
+
+2. **Alle anderen Geräte abmelden:** Gehe zu Einstellungen > Sicherheit > Aktive Sitzungen und wähle „Alle anderen Geräte abmelden"". So kannst du auch sehen, welche Geräte aktuell angemeldet sind.
+
+3. **E-Mail-Konto sichern:** Wer Zugriff auf dein E-Mail-Postfach hat, kann auch dein FocusFlow-Passwort zurücksetzen. Ändere daher auch dort dein Passwort.
+
+4. **Support informieren:** Schreib an **security@focusflow.app** und leite die Benachrichtigungs-E-Mail von uns weiter.
+
+Deine Daten in FocusFlow selbst sind durch die Verschlüsselung geschützt, aber es ist wichtig, schnell zu handeln, um den Zugriff zu sperren.
+
+Quellen: verdaechtige-anmeldungen.md",verdaechtige-anmeldungen.md,alle,1,1,1,,"Alle vier geforderten Kernpunkte (Passwort ändern, andere Geräte abmelden, E-Mail-Konto sichern, security@focusflow.app informieren) sind vollständig und korrekt enthalten, nichts widerspricht der Kernaussage.","Die vier Handlungsschritte stammen wörtlich aus dem Artikel 'Verdächtige Anmeldungen'. Die zusätzliche Aussage zur Verschlüsselung der Daten ist durch den Artikel 'Datenschutz und Speicherort' (TLS, AES-256) gedeckt, auch wenn er nicht in der Quellenzeile genannt wird.",,0,,,5.5e-05,0.0,0.0013141,0.00168,55,0,13141,336,0.0,3.443,3.443,1
+15,einfach,entwurf,corpus,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?","EU, Rechenzentrum in Frankfurt am Main, keine Übertragung in Drittländer",datenschutz-und-speicherort.md,"Deine Daten werden in der **Europäischen Union** gespeichert, konkret im Rechenzentrum unseres Hosting-Anbieters in **Frankfurt am Main**. Eine Übertragung in Drittländer (wie die USA) findet für deine Habit-Daten nicht statt.
+
+Quellen: datenschutz-und-speicherort.md",datenschutz-und-speicherort.md,alle,1,1,0,,Die Antwort nennt korrekt EU/Frankfurt am Main als Speicherort und dass keine Übertragung in Drittländer erfolgt – die geforderte Kernaussage ist vollständig und unwidersprochen enthalten.,"Die Aussage, dass die USA ein Beispiel für ein Drittland seien, wird im Kontext nirgends erwähnt; der Artikel spricht nur allgemein von 'Drittländern', ohne die USA zu nennen. Diese zusätzliche, nicht belegte Konkretisierung verletzt die strikte Kontexttreue.",,0,,,4.2e-05,0.0,0.0013141,0.00049,42,0,13141,98,0.0,2.098,2.098,0
+16,einfach,entwurf,corpus,gibts eigentlich ein widget für android oder nur fürs iphone?,"Ja, Android ab Version 10 (Startbildschirm); Timer-Widget nur mit Pro",widgets.md,"Widgets gibt es für beide Plattformen:
+
+**iOS:** Widgets für Home-Bildschirm und Sperrbildschirm (ab iOS 17)
+
+**Android:** Widgets für den Startbildschirm (ab Android 10)
+
+Verfügbar sind die Tagesübersicht (in verschiedenen Größen), ein Widget für einen einzelnen Habit und das Fokus-Timer-Widget (nur mit Pro).
+
+Quellen: widgets.md",widgets.md,alle,1,1,1,,"Die Antwort bestätigt Android-Widgets ab Android 10 und nennt korrekt, dass das Timer-Widget nur mit Pro verfügbar ist – die Kernaussage ist vollständig enthalten.","Alle genannten Details (iOS ab 17, Android ab 10, Widget-Typen, Timer-Widget nur mit Pro) sind wörtlich im Kontext (widgets.md) belegt.",,0,,,2.8e-05,0.0,0.0013141,0.000565,28,0,13141,113,0.0,2.077,2.077,1
+17,mehrquellen,entwurf,corpus,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?","Das sind zwei getrennte Konten; Zusammenführen nur über den Support (Einstellungen > Hilfe > Kontakt), dauert bis zu 5 Werktage, nicht umkehrbar",anmelden-mit-google.md; konten-zusammenfuehren.md,"Du hast zwei separate Konten erstellt – eines mit E-Mail/Passwort und eines mit Google-Anmeldung. Das ist normal, da jede Anmeldemethode ein eigenes Konto erzeugt, auch bei gleicher E-Mail-Adresse.
+
+Um beide Konten zusammenzuführen, musst du den Support kontaktieren:
+
+1. Melde dich mit dem Konto an, das dein **Zielkonto** sein soll (also das, bei dem du bleiben möchtest).
+2. Öffne **Einstellungen > Hilfe > Kontakt** und wähle „Konten zusammenführen"".
+3. Gib die E-Mail-Adresse des anderen Kontos an.
+4. Bestätige die Anfrage in beiden Bestätigungsmails, die du erhältst.
+
+Der Support führt dann alle Habits aus beiden Konten zusammen – mit vollständigem Verlauf und neu berechneten Streaks. Die Zusammenführung dauert bis zu 5 Werktage.
+
+**Wichtig:** Nur ein Konto darf ein aktives Pro-Abo haben. Hast du Pro auf beiden Konten, musst du eines vorher kündigen.
+
+Quellen: anmelden-mit-google.md;konten-zusammenfuehren.md",anmelden-mit-google.md; konten-zusammenfuehren.md,alle,1,1,1,,"Die Antwort vermittelt korrekt, dass es sich um zwei getrennte Konten handelt, dass die Zusammenführung nur über den Support (Einstellungen > Hilfe > Kontakt) möglich ist und bis zu 5 Werktage dauert. Der Hinweis, dass die Zusammenführung nicht rückgängig gemacht werden kann, fehlt, ist aber ein tolerierbarer Nebenpunkt, da die Hauptaussage vollständig und korrekt wiedergegeben wird.","Alle Behauptungen der Antwort (getrennte Konten durch unterschiedliche Anmeldemethoden, Ablauf über Support mit Zielkonto und Bestätigungsmails, Übernahme von Habits/Verlauf/Streaks, Dauer bis 5 Werktage, Einschränkung bei zwei aktiven Pro-Abos) sind wörtlich oder direkt aus den Artikeln 'Mit Google anmelden' und 'Zwei Konten zusammenführen' gedeckt.",,0,,,6.5e-05,0.0,0.0013141,0.001685,65,0,13141,337,0.0,4.25,4.25,1
+18,einfach,entwurf,corpus,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.","Beim Wechsel monatlich → jährlich wird der Restmonat als Guthaben mit dem Jahrespreis verrechnet (z. B. 54,34 statt 59 USD); eine volle Belastung entspricht nicht diesem Ablauf",tarif-wechseln.md,"Ich verstehe dein Problem. Laut unserer Dokumentation sollte beim Wechsel von monatlich auf jährlich ein anteiliges Guthaben für die restlichen Tage deines aktuellen Monats berechnet und direkt mit dem Jahrespreis verrechnet werden – du solltest also weniger zahlen, nicht mehr.
+
+Es ist möglich, dass es sich um eine **Vormerkung (Autorisierung)** handelt, die nach **3–5 Werktagen** von selbst verschwindet. Prüfe in deinem Konto, ob die Buchung als „vorgemerkt"" oder „ausstehend"" angezeigt wird.
+
+Falls die Buchung nach 5 Werktagen noch da ist oder du tatsächlich zu viel bezahlt hast, melde dich bitte über **Einstellungen > Hilfe > Kontakt** und wähle „Zahlungsproblem melden"". Gib deine Konto-E-Mail-Adresse an und füge wenn möglich einen Screenshot der Buchung bei. Wir prüfen den Fall und erstatten zu viel bezahlte Beträge vollständig.
+
+Quellen: tarif-wechseln.md; doppelte-abbuchung.md",tarif-wechseln.md; doppelte-abbuchung.md,alle,1,1,1,,"Die Antwort erklärt korrekt, dass beim Wechsel monatlich→jährlich ein anteiliges Guthaben verrechnet wird und der Kunde daher weniger, nicht mehr zahlen sollte – die Kernaussage ist damit sinngemäß enthalten, auch wenn das konkrete Zahlenbeispiel fehlt.","Alle Aussagen (Proration-Mechanik, Hinweis auf Vormerkung/3-5 Werktage, Kontaktweg 'Zahlungsproblem melden') stammen direkt aus tarif-wechseln.md bzw. doppelte-abbuchung.md; die Formulierung 'zu viel bezahlte Beträge' ist eine naheliegende Übertragung der dort beschriebenen Erstattungsregel auf den geschilderten Fall und widerspricht dem Kontext nicht.",,0,,,6e-05,0.0,0.0013141,0.00159,60,0,13141,318,0.0,4.325,4.325,1
+19,mehrquellen,entwurf,corpus,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?","Ja, innerhalb von 14 Tagen wird der tatsächlich gezahlte Betrag erstattet, Pro endet dann sofort (danach neu monatlich abschließen); ein normaler Wechsel zurück auf monatlich greift erst zum Laufzeitende",tarif-wechseln.md; erstattungen.md,"Du kannst jederzeit zurück auf monatliche Zahlung wechseln. Das wird aber **erst zum Ende deines aktuellen Jahreszeitraums** wirksam – bis dahin behältst du Pro wie gewohnt.
+
+Eine Rückerstattung für den bereits bezahlten Jahreszeitraum ist leider nicht möglich. Nach unserer Erstattungsrichtlinie erstatten wir Jahresabos nur innerhalb von **14 Tagen** nach dem Kauf. Da du vor einer Woche gewechselt hast, bist du noch innerhalb dieser Frist.
+
+Wenn du möchtest, kannst du eine Erstattung beantragen:
+
+1. Öffne **Einstellungen > Hilfe > Kontakt** und wähle „Erstattung anfragen"".
+2. Gib deine Konto-E-Mail und das Kaufdatum an.
+
+Die Erstattung wird innerhalb von 5–10 Werktagen auf dein ursprüngliches Zahlungsmittel gebucht.
+
+Quellen: tarif-wechseln.md;erstattungen.md",tarif-wechseln.md; erstattungen.md,alle,1,0,0,,"Die Antwort behauptet zunächst fälschlich, eine Rückerstattung sei 'leider nicht möglich', widerspricht sich dann aber selbst und bietet doch eine Erstattung an – dieser Widerspruch verletzt die Kernaussage, auch wenn am Ende die richtige Information (Erstattung innerhalb 14 Tage möglich) genannt wird.","Die Aussage 'Eine Rückerstattung für den bereits bezahlten Jahreszeitraum ist leider nicht möglich' widerspricht direkt dem Kontext, der für Jahresabos innerhalb von 14 Tagen eine volle Erstattung vorsieht.",,0,,,5.4e-05,0.0,0.0013141,0.001425,54,0,13141,285,0.0,17.044,17.044,0
+20,aehnlich,entwurf,corpus,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?","Normal: Pro läuft bis zum Ende des bezahlten Zeitraums weiter, danach Free; keine weitere Abbuchung",abo-kuendigen.md,"Deine Pro-Version läuft bis zum Ende des bereits bezahlten Zeitraums weiter – also bis 2027. Das ist korrekt. Nachdem du gekündigt hast, erfolgt keine weitere Abbuchung mehr. Erst wenn dieser Zeitraum abgelaufen ist, wird dein Konto automatisch auf Free umgestellt.
+
+Das ist das normale Verhalten bei Kündigungen: Der Zugang bleibt bestehen bis zum Ende der bezahlten Laufzeit.
+
+Quellen: abo-kuendigen.md",abo-kuendigen.md,alle,1,1,1,,"Die Antwort enthält die Hauptaussage vollständig: Pro läuft bis Ende des bezahlten Zeitraums weiter, danach Umstellung auf Free, keine weitere Abbuchung.","Alle Aussagen (Weiterlaufen bis Zeitraumende, keine weitere Abbuchung, danach Umstellung auf Free) sind wörtlich aus abo-kuendigen.md gedeckt; die konkrete Angabe 'bis 2027' übernimmt nur die Nutzerangabe, ohne neue Behauptung.",,0,,,5.2e-05,0.0,0.0013141,0.000685,52,0,13141,137,0.0,2.464,2.464,1
+21,aehnlich,entwurf,corpus,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,"Nein, die Löschung ist endgültig, auch der Support kann sie nicht rückgängig machen",konto-loeschen.md,"Leider nein. Eine gelöschte Kontolöschung kann nicht rückgängig gemacht werden – auch nicht durch den Support. Deine Daten werden sofort deaktiviert und spätestens nach 30 Tagen aus den Backups entfernt.
+
+Du kannst dich aber jederzeit mit derselben E-Mail-Adresse neu registrieren und ein neues Konto anlegen. Deine alten Daten sind dann allerdings verloren.
+
+Falls du vor der Löschung deine Daten exportiert hast (CSV oder JSON), kannst du diese noch einsehen – importieren lassen sie sich aber nicht automatisch.
+
+Quellen: konto-loeschen.md",konto-loeschen.md,alle,1,1,0,,"Die Antwort sagt klar, dass die Löschung endgültig ist und auch der Support sie nicht rückgängig machen kann – das entspricht genau der Soll-Kernaussage.","Die Aussagen zur Endgültigkeit, Deaktivierung und 30-Tage-Backup-Frist sind durch den Artikel 'Konto löschen' gedeckt, aber die Behauptungen, man könne sich mit derselben E-Mail-Adresse neu registrieren bzw. exportierte Daten ließen sich nicht automatisch importieren, stehen nicht im Kontext und sind erfunden.",,0,,,4.2e-05,0.0,0.0013141,0.000885,42,0,13141,177,0.0,3.056,3.056,0
+22,aehnlich,entwurf,corpus,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?","Nein, Abo kündigen reicht: Pro läuft bis Periodenende, danach Free, alle Daten bleiben erhalten; Konto löschen würde alles endgültig entfernen",abo-kuendigen.md,"Nein, du musst dein Konto nicht löschen. Du kannst einfach dein Pro-Abo kündigen – deine Habits bleiben dann erhalten.
+
+**Das passiert bei einer Kündigung:**
+- Dein Pro-Zugang läuft bis zum Ende des bereits bezahlten Zeitraums weiter, dann wird dein Konto auf Free umgestellt.
+- Alle deine Daten bleiben: Habits, Verlauf, Streaks und Timer-Statistiken.
+- Es erfolgt keine weitere Abbuchung.
+
+**Wichtig:** In der Free-Version kannst du maximal 3 aktive Habits haben. Wenn du mehr hast, wirst du nach Ablauf von Pro gebeten, 3 davon auszuwählen. Die übrigen werden archiviert (ihr Verlauf bleibt sichtbar, du kannst sie aber nicht mehr abhaken).
+
+**So kündigst du:**
+- **Web:** Einstellungen > Abo > Abo kündigen
+- **iOS:** Einstellungen des iPhones > [dein Name] > Abonnements > FocusFlow > Abo kündigen
+- **Android:** Google Play > Profil > Zahlungen und Abos > Abos > FocusFlow > Kündigen
+
+Quellen: abo-kuendigen.md",abo-kuendigen.md,alle,1,1,1,,"Die Antwort enthält genau die Soll-Kernaussage: Kündigen reicht, Pro läuft bis Periodenende, dann Free, Daten bleiben erhalten, Konto-Löschung ist nicht nötig.","Alle Aussagen (Ablauf der Kündigung, Datenerhalt, Habit-Limit auf Free, Kündigungswege) sind wörtlich aus abo-kuendigen.md gedeckt, keine widersprüchlichen oder unbelegten Behauptungen.",,0,,,3.8e-05,0.0,0.0013141,0.001685,38,0,13141,337,0.0,4.155,4.155,1
+23,aehnlich,entwurf,corpus,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?","Nein, Store-Abos werden nicht automatisch beendet; vorher im App Store kündigen, sonst wird weiter abgebucht",konto-loeschen.md,"Nein, nicht automatisch. Wenn du dein FocusFlow-Konto löschst, endet dein **Web-Abo sofort**, aber **Abos über den App Store werden nicht automatisch beendet**.
+
+Das bedeutet: Apple wird weiterhin abbuchen, auch wenn dein Konto gelöscht ist.
+
+**Du musst das Abo vorher im App Store kündigen:**
+
+Gehe in die **Einstellungen des iPhones > [dein Name] > Abonnements > FocusFlow > Abo kündigen**.
+
+Erst dann stoppt die Abbuchung. Danach kannst du dein FocusFlow-Konto löschen, wenn du möchtest.
+
+Quellen: konto-loeschen.md; abo-kuendigen.md",konto-loeschen.md; abo-kuendigen.md,alle,1,1,1,,"Die Antwort vermittelt klar, dass Store-Abos beim Löschen nicht automatisch enden und man vorher im App Store kündigen muss, sonst wird weiter abgebucht – das entspricht genau der Soll-Kernaussage.","Alle Aussagen (Web-Abo endet sofort bei Löschung, App-Store-Abos werden nicht automatisch beendet, Kündigungsweg über die iPhone-Einstellungen) sind wörtlich durch die Artikel 'Konto löschen' und 'Abo kündigen' gedeckt.",,0,,,4.2e-05,0.0,0.0013141,0.001005,42,0,13141,201,0.0,2.944,2.944,1
+24,luecke,entwurf,corpus,gibt es die app auch auf spanisch?,"Dazu gibt es keine Information, Verweis an den Support",keine,"Der Kontext beantwortet deine Frage zur Sprachunterstützung von FocusFlow nicht. Bitte wende dich an den Support in der App unter **Einstellungen > Hilfe > Kontakt**.
+
+Quellen: keine",keine,alle,1,,1,1,,"Die Antwort enthält keine inhaltlichen Behauptungen außer dem vorgegebenen Support-Verweis, der immer als gedeckt gilt.","Die Antwort gibt an, dass keine Information vorliegt, verweist korrekt an den Support und liefert keine inhaltliche Teilantwort oder Vermutung.",0,,,2.1e-05,0.0,0.0013141,0.000325,21,0,13141,65,0.0,2.168,2.168,1
+25,luecke,entwurf,corpus,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?","Dazu gibt es keine Information, Verweis an den Support",keine,"Deine Frage zu Rechnungen mit Firmenanschrift und Umsatzsteuer-ID kann ich anhand der verfügbaren Hilfeartikel nicht beantworten.
+
+Bitte wende dich direkt an unseren Support: Öffne die App und gehe zu **Einstellungen > Hilfe > Kontakt**. Dort kannst du deine Anfrage einreichen und erhältst Unterstützung bei Rechnungsangelegenheiten.
+
+Quellen: keine",keine,alle,1,,1,1,,"Die Antwort enthält keine inhaltlichen Behauptungen aus dem Kontext außer dem vorgegebenen Support-Verweis, der immer als gedeckt gilt.","Die Antwort erklärt, dass die Frage anhand der Hilfeartikel nicht beantwortet werden kann, gibt keine inhaltliche Antwort oder Vermutung und verweist stattdessen korrekt an den Support.",0,,,6e-05,0.0,0.0013141,0.00065,60,0,13141,130,0.0,2.34,2.34,1
+26,veraltet,entwurf,corpus,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,"59 USD/Jahr statt 6,99 USD/Monat, rund 4,92 USD pro Monat, also ca. 30 % günstiger (nicht ""ein Drittel"" / 39,99 wie auf der alten Seite)",preise-und-tarife.md,"Ja, das Jahresabo ist günstiger. Mit dem Jahresabo sparst du etwa **30 % gegenüber der monatlichen Zahlung**:
+
+- **Monatlich:** 6,99 USD pro Monat
+- **Jährlich:** 59 USD pro Jahr (entspricht rund 4,92 USD pro Monat)
+
+Wenn du Pro regelmäßig nutzen wirst, lohnt sich das Jahresabo also deutlich.
+
+Quellen: preise-und-tarife.md",preise-und-tarife.md,alle,1,1,1,,"Die Antwort nennt korrekt 6,99 USD/Monat, 59 USD/Jahr, ca. 4,92 USD/Monat und die 30% Ersparnis gemäß der aktuellen Quelle preise-und-tarife.md, was genau der Soll-Kernaussage entspricht.","Alle genannten Zahlen (6,99 USD, 59 USD, 4,92 USD, 30%) stammen wörtlich aus preise-und-tarife.md; die veraltete Quelle mit 4,99/39,99 USD wird nicht vermischt, die Bewertung 'lohnt sich' ist eine zulässige Schlussfolgerung aus dem genannten Preisvorteil.",,0,,,3.6e-05,0.0,0.0013141,0.000665,36,0,13141,133,0.0,2.233,2.233,1
+27,mehrquellen,entwurf,corpus,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,"Zusammenführen geht nur, wenn höchstens ein Konto Pro hat: das andere kündigen und auslaufen lassen, keine automatische Erstattung; ein Jahresabo ist nur innerhalb von 14 Tagen erstattbar",konten-zusammenfuehren.md; erstattungen.md,"Ja, wir können deine beiden Konten zusammenführen. Das funktioniert aber nur, wenn **maximal ein Konto ein aktives Pro-Abo hat**.
+
+Da beide Konten Pro haben, musst du vorher eines der Abos kündigen und dessen Laufzeit ablaufen lassen. Eine automatische Erstattung für das gekündigte Abo erfolgt nicht.
+
+Danach kannst du die Konten zusammenführen:
+
+1. Melde dich mit dem Konto an, das du behalten möchtest.
+2. Öffne **Einstellungen > Hilfe > Kontakt** und wähle „Konten zusammenführen"".
+3. Gib die E-Mail-Adresse des zweiten Kontos an.
+4. Bestätige in beiden E-Mails, die du erhältst.
+
+Die Zusammenführung dauert bis zu 5 Werktage. Alle Habits, Verlauf und Streaks aus beiden Konten werden übernommen.
+
+Quellen: konten-zusammenfuehren.md; abo-kuendigen.md",konten-zusammenfuehren.md; abo-kuendigen.md,alle,0,0,1,,"Die Antwort erklärt korrekt, dass eine Zusammenführung nur mit maximal einem aktiven Pro-Abo möglich ist und dass die Kündigung des einen Abos keine automatische Erstattung auslöst. Sie beantwortet die zweite Teilfrage 'krieg ich das Geld zurück' aber nicht vollständig, da der zentrale Punkt – dass ein Jahresabo innerhalb von 14 Tagen dennoch regulär erstattet werden kann – komplett fehlt; dadurch bleibt die Hauptaussage zur Erstattungsmöglichkeit unvollständig beantwortet.","Alle genannten Fakten (Bedingung für Zusammenführung, keine automatische Erstattung, Ablauf des Zusammenführungsprozesses, Dauer, Übernahme der Daten) sind wörtlich aus den Quellen 'konten-zusammenfuehren.md' und 'abo-kuendigen.md' gedeckt, ohne Widersprüche oder Erfindungen.",,0,,,4.3e-05,0.0,0.0013141,0.0014,43,0,13141,280,0.0,4.027,4.027,0

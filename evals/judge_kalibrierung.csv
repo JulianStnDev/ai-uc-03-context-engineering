@@ -1,0 +1,11 @@
+nr,id,variante,kriterium,judge_urteil,julian_stimmt_zu,kommentar
+1,19,sections,kernaussage_ok,nein,ja,
+2,20,articles,kernaussage_ok,ja,ja,
+3,16,sections,kernaussage_ok,ja,ja,
+4,13,contextual,treu,ja,ja,
+5,13,articles,treu,ja,ja,
+6,23,sections,treu,ja,ja,
+7,10,contextual,treu,ja,ja,
+8,10,articles,kernaussage_ok,nein,ja,"Grenzfall: Kernaussage enthielt zwei Aussagen ohne Kennzeichnung der Pflichtaussage"
+9,7,corpus,luecke_ok,ja,ja,
+10,8,corpus,treu,ja,ja,

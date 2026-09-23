@@ -1,0 +1,40 @@
+{
+  "lauf": "v1",
+  "zeitpunkt": "2026-09-23T15:51:44",
+  "antwortmodell": "claude-haiku-4-5",
+  "judge": "claude-sonnet-5",
+  "embedding": "BAAI/bge-m3",
+  "varianten": [
+    "sections",
+    "contextual",
+    "articles",
+    "corpus"
+  ],
+  "top_k": {
+    "sections": 4,
+    "contextual": 4,
+    "articles": 3,
+    "corpus": "alle"
+  },
+  "preise_usd_pro_mtok": {
+    "haiku": {
+      "in": 1.0,
+      "cache_write": 1.25,
+      "cache_read": 0.1,
+      "out": 5.0
+    },
+    "sonnet": {
+      "in": 2.0,
+      "cache_write": 2.5,
+      "cache_read": 0.2,
+      "out": 10.0
+    }
+  },
+  "antworten": 108,
+  "kosten_antworten_usd": 0.2995,
+  "kosten_judge_usd": 1.5508,
+  "judge_aufrufe": 119,
+  "judge_output_tokens_summe": 76312,
+  "judge_latenz_median_s": 5.25,
+  "stichprobe_seed": 42
+}

@@ -1,0 +1,73 @@
+{
+  "configs": {
+    "e5-base/sections": {
+      "chunks": 104,
+      "abgeschnittene_chunks": 0,
+      "max_tokens_chunk": 219,
+      "max_seq_length": 512,
+      "index_zeit_s": null,
+      "query_ms_p50": 21.0,
+      "query_ms_p95": 27.1
+    },
+    "e5-base/articles": {
+      "chunks": 20,
+      "abgeschnittene_chunks": 0,
+      "max_tokens_chunk": 456,
+      "max_seq_length": 512,
+      "index_zeit_s": null,
+      "query_ms_p50": 13.8,
+      "query_ms_p95": 21.7
+    },
+    "e5-base/contextual": {
+      "chunks": 104,
+      "abgeschnittene_chunks": 0,
+      "max_tokens_chunk": 287,
+      "max_seq_length": 512,
+      "index_zeit_s": null,
+      "query_ms_p50": 16.8,
+      "query_ms_p95": 24.7
+    },
+    "bge-m3/sections": {
+      "chunks": 104,
+      "abgeschnittene_chunks": 0,
+      "max_tokens_chunk": 217,
+      "max_seq_length": 8192,
+      "index_zeit_s": null,
+      "query_ms_p50": 34.9,
+      "query_ms_p95": 51.0
+    },
+    "bge-m3/articles": {
+      "chunks": 20,
+      "abgeschnittene_chunks": 0,
+      "max_tokens_chunk": 454,
+      "max_seq_length": 8192,
+      "index_zeit_s": null,
+      "query_ms_p50": 18.6,
+      "query_ms_p95": 22.1
+    },
+    "bge-m3/contextual": {
+      "chunks": 104,
+      "abgeschnittene_chunks": 0,
+      "max_tokens_chunk": 285,
+      "max_seq_length": 8192,
+      "index_zeit_s": null,
+      "query_ms_p50": 20.0,
+      "query_ms_p95": 22.0
+    }
+  },
+  "zeitpunkt": "2026-09-23T12:55:52",
+  "modelle": {
+    "e5-base": "intfloat/multilingual-e5-base",
+    "bge-m3": "BAAI/bge-m3"
+  },
+  "kontext_modell": "claude-haiku-4-5",
+  "kontext_kosten_usd": 0.1386,
+  "versionen": {
+    "sentence-transformers": "5.1.2",
+    "torch": "2.8.0",
+    "anthropic": "0.125.0",
+    "numpy": "2.0.2"
+  },
+  "python": "3.9.6",
+  "goldset_fragen": 27
+}

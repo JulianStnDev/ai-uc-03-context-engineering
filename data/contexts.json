@@ -1,0 +1,834 @@
+{
+  "8e60986c645c9e87": {
+    "chunk_id": "abo-kuendigen.md#0",
+    "context": "Dieser Abschnitt befindet sich am Anfang des Dokuments \"Abo kündigen\" und stellt die Hauptaussage dar: Nutzer können ihr FocusFlow Pro Abonnement jederzeit ohne Kündigungsfrist beenden.",
+    "input_tokens": 727,
+    "output_tokens": 67,
+    "latency_s": 1.309,
+    "stop_reason": "end_turn"
+  },
+  "26779d241de09a13": {
+    "chunk_id": "abo-kuendigen.md#1",
+    "context": "Dieser Abschnitt erklärt die Konsequenzen einer Abo-Kündigung bei FocusFlow Pro. Er folgt unmittelbar nach der Einleitung, die besagt, dass das Abo jederzeit ohne Kündigungsfrist gekündigt werden kann, und beschreibt detailliert, wie der Pro-Zugang ausläuft, welche Daten erhalten bleiben und wie sich die Funktionen nach der Kündigung verhalten. Der Abschnitt bildet die Grundlage für die nachfolgende Anleitung zur praktischen Durchführung der Kündigung auf verschiedenen Plattformen.",
+    "input_tokens": 959,
+    "output_tokens": 161,
+    "latency_s": 2.075,
+    "stop_reason": "end_turn"
+  },
+  "b9a2572c81fc1f84": {
+    "chunk_id": "abo-kuendigen.md#2",
+    "context": "Dieser Abschnitt folgt unmittelbar nach der Erklärung der Konsequenzen einer Kündigung und beschreibt die praktischen Schritte zum Kündigen des FocusFlow Pro-Abos auf verschiedenen Plattformen (Web, iOS, Android) sowie wie man herausfinden kann, wo das Abo abgeschlossen wurde, und was nach der Kündigung zu erwarten ist.",
+    "input_tokens": 913,
+    "output_tokens": 107,
+    "latency_s": 1.652,
+    "stop_reason": "end_turn"
+  },
+  "5a126e9ac7a7a2ac": {
+    "chunk_id": "anmelden-mit-google.md#0",
+    "context": "Dieser Abschnitt befindet sich am Anfang des Dokuments „Mit Google anmelden\" und gibt einen Überblick über die verfügbaren Anmeldemethoden in FocusFlow. Er leitet die Dokumentation ein und informiert Nutzer darüber, dass nur zwei Anmeldeverfahren unterstützt werden: die klassische E-Mail-Passwort-Kombination und die Google-Anmeldung.",
+    "input_tokens": 756,
+    "output_tokens": 113,
+    "latency_s": 1.782,
+    "stop_reason": "end_turn"
+  },
+  "91430cd04182a8ed": {
+    "chunk_id": "anmelden-mit-google.md#1",
+    "context": "Dieser Abschnitt erklärt die praktische Anwendung der Google-Anmeldemethode in FocusFlow. Er beschreibt die Schritte zur Anmeldung mit Google auf verschiedenen Plattformen und klärt auf, welche Daten von Google an FocusFlow übermittelt werden und welche nicht.",
+    "input_tokens": 845,
+    "output_tokens": 87,
+    "latency_s": 1.52,
+    "stop_reason": "end_turn"
+  },
+  "ff2dbcf75cd7c6fe": {
+    "chunk_id": "anmelden-mit-google.md#2",
+    "context": "Dieser Abschnitt folgt auf die Erklärung, wie die Google-Anmeldung funktioniert, und warnt vor einem häufigen Problem: Wenn Nutzer mit unterschiedlichen Anmeldemethoden (E-Mail/Passwort vs. Google) auf dieselbe E-Mail-Adresse zugreifen, werden separate Konten erstellt. Der Abschnitt erklärt, warum Habits nach der Anmeldung verschwunden sein können, und verweist auf Lösungsmöglichkeiten.",
+    "input_tokens": 904,
+    "output_tokens": 137,
+    "latency_s": 1.777,
+    "stop_reason": "end_turn"
+  },
+  "1e6b25ecb13e9351": {
+    "chunk_id": "anmelden-mit-google.md#3",
+    "context": "Dieser Abschnitt behandelt die Einschränkungen beim Wechsel der Anmeldemethode in FocusFlow. Er folgt auf die Warnung, dass jedes Konto an eine bestimmte Anmeldemethode gebunden ist, und erklärt, dass ein nachträglicher Wechsel zwischen Google-Anmeldung und E-Mail/Passwort-Anmeldung technisch nicht unterstützt wird.",
+    "input_tokens": 745,
+    "output_tokens": 114,
+    "latency_s": 1.572,
+    "stop_reason": "end_turn"
+  },
+  "a236813680b65afd": {
+    "chunk_id": "anmelden-mit-google.md#4",
+    "context": "Dieser Abschnitt behandelt die Verwaltung der Google-Authentifizierung in FocusFlow und erklärt, wie Nutzer die Verbindung zwischen ihrem Google-Konto und FocusFlow trennen können, ohne ihr FocusFlow-Konto zu löschen. Er folgt auf die Erklärung, dass eine nachträgliche Änderung der Anmeldemethode nicht möglich ist, und bietet praktische Anweisungen zur Kontrolle der App-Berechtigungen im Google-Konto.",
+    "input_tokens": 794,
+    "output_tokens": 138,
+    "latency_s": 2.058,
+    "stop_reason": "end_turn"
+  },
+  "956c365520e224d5": {
+    "chunk_id": "bekannte-probleme.md#0",
+    "context": "Einleitung zur Liste bekannter Probleme in FocusFlow, die bereits dokumentiert und in Bearbeitung sind.",
+    "input_tokens": 794,
+    "output_tokens": 33,
+    "latency_s": 1.056,
+    "stop_reason": "end_turn"
+  },
+  "7df847bb0f51a2eb": {
+    "chunk_id": "bekannte-probleme.md#1",
+    "context": "Dies ist das erste bekannte Problem in der Dokumentation \"Bekannte Probleme\" (aktualisiert 15.09.2026). Es behandelt ein Abrechnungsproblem bei Web-Abos und wird als erstes von fünf aufgelisteten Problemen präsentiert.",
+    "input_tokens": 899,
+    "output_tokens": 74,
+    "latency_s": 1.322,
+    "stop_reason": "end_turn"
+  },
+  "e8099093e9a82d22": {
+    "chunk_id": "bekannte-probleme.md#2",
+    "context": "Dies ist das zweite bekannte Problem in der Dokumentation \"Bekannte Probleme\" von FocusFlow (aktualisiert 15.09.2026). Es behandelt Verzögerungen bei der Widget-Aktualisierung auf Android-Geräten bestimmter Hersteller und bietet einen Workaround zur Behebung des Problems.",
+    "input_tokens": 837,
+    "output_tokens": 89,
+    "latency_s": 1.502,
+    "stop_reason": "end_turn"
+  },
+  "46a6d5cf6660f91b": {
+    "chunk_id": "bekannte-probleme.md#3",
+    "context": "Dies ist der dritte bekannte Bug in der Liste der bekannten Probleme von FocusFlow. Er betrifft die Web-Version und beschreibt ein Problem mit dem Fokus-Timer in Safari auf macOS, das durch Hintergrund-Tab-Drosselung verursacht wird.",
+    "input_tokens": 846,
+    "output_tokens": 73,
+    "latency_s": 2.728,
+    "stop_reason": "end_turn"
+  },
+  "30ccbc8b3587d191": {
+    "chunk_id": "bekannte-probleme.md#4",
+    "context": "Dieser Abschnitt ist das vierte bekannte Problem in der Dokumentation \"Bekannte Probleme\" der FocusFlow-App. Er behandelt ein Android-spezifisches Darstellungsproblem, das auftritt, wenn Nutzer die Dunkelmodus-Erzwingung in ihren Geräteeinstellungen aktivieren. Das Problem hat den Status \"kein Fix geplant\" und wird mit einer Workaround-Lösung beantwortet.",
+    "input_tokens": 881,
+    "output_tokens": 121,
+    "latency_s": 2.085,
+    "stop_reason": "end_turn"
+  },
+  "f45987e12c188f86": {
+    "chunk_id": "bekannte-probleme.md#5",
+    "context": "Dieser Abschnitt ist das letzte Problem in der Liste \"Bekannte Probleme\" und beschreibt einen behobenen Bug bei iOS, bei dem abgehakte Habits nach Offline-Nutzung doppelt im Verlauf angezeigt wurden. Im Gegensatz zu den anderen aufgelisteten Problemen ist dieses bereits gelöst und erfordert nur ein App-Update auf Version 4.13 oder höher.",
+    "input_tokens": 829,
+    "output_tokens": 108,
+    "latency_s": 1.66,
+    "stop_reason": "end_turn"
+  },
+  "b58b45773eccd0f9": {
+    "chunk_id": "benachrichtigungen.md#0",
+    "context": "Dieser Abschnitt bildet die Einleitung des Dokuments \"Benachrichtigungen und Erinnerungen\" und erklärt die grundlegende Funktion von FocusFlow-Benachrichtigungen sowie den zentralen Zugriffspunkt zur Verwaltung aller Benachrichtigungseinstellungen.",
+    "input_tokens": 800,
+    "output_tokens": 86,
+    "latency_s": 1.408,
+    "stop_reason": "end_turn"
+  },
+  "ee15b7a8425ccd1f": {
+    "chunk_id": "benachrichtigungen.md#1",
+    "context": "Dieser Abschnitt beschreibt die vier Haupttypen von Benachrichtigungen in FocusFlow: Habit-Erinnerungen zu benutzerdefinierten Zeiten, die morgendliche Tageszusammenfassung um 7:30 Uhr, Streak-Warnungen um 20:00 Uhr bei offenen Habits und Fokus-Timer-Benachrichtigungen. Er folgt unmittelbar nach der Einleitung zur Benachrichtigungsverwaltung und bildet die Grundlage für die nachfolgenden Informationen zu Plattformen und Fehlerbehebung.",
+    "input_tokens": 879,
+    "output_tokens": 163,
+    "latency_s": 2.05,
+    "stop_reason": "end_turn"
+  },
+  "61e94db6bb33cbd3": {
+    "chunk_id": "benachrichtigungen.md#2",
+    "context": "Dieser Abschnitt beschreibt die verschiedenen Plattformen, auf denen FocusFlow Benachrichtigungen versendet, und erklärt die Unterschiede zwischen Push-Benachrichtigungen auf mobilen Geräten und Browser-Benachrichtigungen auf der Web-Version. Er folgt auf die Auflistung der Benachrichtigungstypen und leitet über zu den Troubleshooting-Tipps für fehlende Benachrichtigungen.",
+    "input_tokens": 891,
+    "output_tokens": 122,
+    "latency_s": 1.599,
+    "stop_reason": "end_turn"
+  },
+  "2265aa131660fa16": {
+    "chunk_id": "benachrichtigungen.md#3",
+    "context": "Dieser Abschnitt ist der letzte Teil des Dokuments \"Benachrichtigungen und Erinnerungen\" und bietet Lösungsansätze für Benutzer, die keine Benachrichtigungen von FocusFlow erhalten. Er folgt auf die Erklärung der verschiedenen Benachrichtigungstypen und Plattformen und behandelt Troubleshooting-Schritte für iOS, Android, Web und allgemeine Einstellungen.",
+    "input_tokens": 1002,
+    "output_tokens": 119,
+    "latency_s": 1.572,
+    "stop_reason": "end_turn"
+  },
+  "c178b2a7bdefa1b9": {
+    "chunk_id": "datenschutz-und-speicherort.md#0",
+    "context": "Einleitung zum Datenschutzdokument, die das Thema der transparenten Datenspeicherung und des Datenschutzes bei FocusFlow einführt.",
+    "input_tokens": 803,
+    "output_tokens": 46,
+    "latency_s": 1.132,
+    "stop_reason": "end_turn"
+  },
+  "838015d3b10edcdd": {
+    "chunk_id": "datenschutz-und-speicherort.md#1",
+    "context": "Dieser Abschnitt befindet sich am Anfang des Datenschutzdokuments von FocusFlow und beantwortet die erste Hauptfrage zur Datenspeicherung. Er erklärt, dass alle Kontodaten in der EU, speziell in Frankfurt am Main, gespeichert werden und keine Übertragung in Drittländer stattfindet. Der Abschnitt leitet die detaillierten Informationen zu Datenschutz und Speicherort ein und wird gefolgt von Erklärungen zum Datenschutz, zur Datenverarbeitung und zu Nutzerrechten.",
+    "input_tokens": 858,
+    "output_tokens": 157,
+    "latency_s": 1.971,
+    "stop_reason": "end_turn"
+  },
+  "7b3831dc5823445b": {
+    "chunk_id": "datenschutz-und-speicherort.md#2",
+    "context": "Dieser Abschnitt behandelt die Sicherheitsmaßnahmen und Verschlüsselungsprotokolle, die FocusFlow zum Schutz von Benutzerdaten einsetzt. Er folgt auf die Erklärung des Speicherorts (Frankfurt am Main) und beschreibt die technischen und organisatorischen Maßnahmen wie TLS-Verschlüsselung für Datenübertragungen, AES-256-Verschlüsselung für gespeicherte Daten sowie Zugriffskontrolle und Protokollierung durch Mitarbeitende.",
+    "input_tokens": 863,
+    "output_tokens": 153,
+    "latency_s": 1.92,
+    "stop_reason": "end_turn"
+  },
+  "ffee5d68341d2956": {
+    "chunk_id": "datenschutz-und-speicherort.md#3",
+    "context": "Dieser Abschnitt folgt nach den Erklärungen zur Datensicherung (TLS-Verschlüsselung, AES-256) und beschreibt, welche personenbezogenen und Nutzungsdaten FocusFlow erhebt und verarbeitet – einschließlich Kontoinformationen, Habit-Daten und optionalen Nutzungsstatistiken.",
+    "input_tokens": 888,
+    "output_tokens": 101,
+    "latency_s": 1.537,
+    "stop_reason": "end_turn"
+  },
+  "66f8cd8ca58b7059": {
+    "chunk_id": "datenschutz-und-speicherort.md#4",
+    "context": "Dieser Abschnitt behandelt die Sicherheit von Zahlungsinformationen bei FocusFlow. Er folgt auf die Erklärung der Datenschutzmaßnahmen und zeigt auf, dass Zahlungen über externe Anbieter abgewickelt werden, während FocusFlow selbst keine sensiblen Zahlungsdaten speichert. Der Abschnitt ist Teil des Datenschutzdokuments und gehört zu den Informationen über die Datenverarbeitung in der App.",
+    "input_tokens": 825,
+    "output_tokens": 130,
+    "latency_s": 1.96,
+    "stop_reason": "end_turn"
+  },
+  "7aa5c16453ae3b7b": {
+    "chunk_id": "datenschutz-und-speicherort.md#5",
+    "context": "Dieser Abschnitt befindet sich im Datenschutzdokument von FocusFlow nach den Erklärungen zu Zahlungsdaten und vor den Informationen zu Nutzerrechten. Er verdeutlicht die Datenschutzprinzipien der App, indem er explizit aufzählt, welche datenschutzfeindlichen Praktiken FocusFlow nicht durchführt: keine Werbeanzeigen und kein Datenverkauf an Dritte.",
+    "input_tokens": 800,
+    "output_tokens": 125,
+    "latency_s": 1.864,
+    "stop_reason": "end_turn"
+  },
+  "b55d6bbe2d1aefd2": {
+    "chunk_id": "datenschutz-und-speicherort.md#6",
+    "context": "Dieser Abschnitt behandelt die Datenschutzrechte der Nutzer gemäß DSGVO und beschreibt, wie Benutzer ihre Daten exportieren, löschen oder Auskunft anfordern können. Er folgt auf die Erklärung der Datenschutzmaßnahmen und bildet den abschließenden Teil des Datenschutzdokuments von FocusFlow.",
+    "input_tokens": 933,
+    "output_tokens": 104,
+    "latency_s": 1.51,
+    "stop_reason": "end_turn"
+  },
+  "7d0eeecb27748c0e": {
+    "chunk_id": "doppelte-abbuchung.md#0",
+    "context": "Einleitung zum Problem der doppelten Abbuchung beim Tarifwechsel, insbesondere beim Wechsel von monatlicher zu jährlicher Zahlung, mit Hinweis auf verfügbare Hilfe.",
+    "input_tokens": 799,
+    "output_tokens": 59,
+    "latency_s": 1.037,
+    "stop_reason": "end_turn"
+  },
+  "32561ad29dfca8da": {
+    "chunk_id": "doppelte-abbuchung.md#1",
+    "context": "Dieser Abschnitt ist der erste Hauptteil des Hilfedokuments \"Doppelte Abbuchung\" und erklärt, wie man unterscheidet, ob es sich tatsächlich um eine doppelte Abbuchung handelt oder nur um eine vorübergehende Bankvormerkung. Er leitet den Nutzer an, zunächst selbst zu prüfen, bevor er den Support kontaktiert.",
+    "input_tokens": 864,
+    "output_tokens": 107,
+    "latency_s": 1.633,
+    "stop_reason": "end_turn"
+  },
+  "f47785eef24a097e": {
+    "chunk_id": "doppelte-abbuchung.md#2",
+    "context": "Dieser Abschnitt beschreibt die Schritte zur Meldung einer persistenten doppelten Abbuchung bei FocusFlow, nachdem die automatische Auflösung innerhalb von 5 Werktagen nicht erfolgt ist. Er folgt auf die Erklärung von Vormerkungen und leitet zum Kontaktprozess über, um eine Rückerstattung einzuleiten.",
+    "input_tokens": 911,
+    "output_tokens": 105,
+    "latency_s": 1.911,
+    "stop_reason": "end_turn"
+  },
+  "3d73551623477571": {
+    "chunk_id": "doppelte-abbuchung.md#3",
+    "context": "Dieser Abschnitt behandelt die Besonderheiten bei doppelten Abbuchungen für Abos, die über App Store oder Google Play abgeschlossen wurden, und erklärt, warum FocusFlow in diesen Fällen nicht helfen kann, da das Unternehmen keinen Zugriff auf diese Zahlungen hat.",
+    "input_tokens": 809,
+    "output_tokens": 89,
+    "latency_s": 1.534,
+    "stop_reason": "end_turn"
+  },
+  "df17a83164434ef9": {
+    "chunk_id": "doppelte-abbuchung.md#4",
+    "context": "Dieser Abschnitt befindet sich am Ende des Dokuments \"Doppelte Abbuchung\" und bietet praktische Präventionsmaßnahmen, um das Problem der doppelten Abbuchung beim Tarifwechsel zu vermeiden. Er folgt auf die Erklärung der Meldeverfahren und der Besonderheiten bei App-Store-Abos.",
+    "input_tokens": 784,
+    "output_tokens": 100,
+    "latency_s": 1.842,
+    "stop_reason": "end_turn"
+  },
+  "70b671a506bc6a01": {
+    "chunk_id": "erstattungen.md#0",
+    "context": "Einleitung zur Erstattungsrichtlinie von FocusFlow Pro, die einen Überblick über die Rückgabebedingungen und das Antragsverfahren gibt.",
+    "input_tokens": 794,
+    "output_tokens": 50,
+    "latency_s": 1.212,
+    "stop_reason": "end_turn"
+  },
+  "844d9f490428435f": {
+    "chunk_id": "erstattungen.md#1",
+    "context": "Dieser Abschnitt befindet sich am Anfang der Erstattungsrichtlinie für FocusFlow Pro und erläutert die Rückgabebedingungen für Jahresabos. Er folgt unmittelbar nach der Einleitung und bildet den ersten von mehreren Abotypen, für die unterschiedliche Erstattungsregeln gelten.",
+    "input_tokens": 922,
+    "output_tokens": 94,
+    "latency_s": 1.692,
+    "stop_reason": "end_turn"
+  },
+  "8fe51f0ba81a8fbc": {
+    "chunk_id": "erstattungen.md#2",
+    "context": "Erstattungsrichtlinie für FocusFlow Pro: Regelungen für verschiedene Abotypen. Im Gegensatz zum Jahresabo mit 14-Tage-Rückgaberecht gilt für Monatsabos eine strengere Regelung.",
+    "input_tokens": 789,
+    "output_tokens": 67,
+    "latency_s": 1.315,
+    "stop_reason": "end_turn"
+  },
+  "c61e109b5f696b9c": {
+    "chunk_id": "erstattungen.md#3",
+    "context": "Dieser Abschnitt folgt nach den separaten Regelungen für Jahres- und Monatsabos und beschreibt die wichtigste Ausnahmeregelung: Bei doppelten Belastungen wird immer vollständig erstattet, unabhängig von Fristen oder Abotyp. Er leitet über zu den praktischen Informationen über die Konsequenzen einer Erstattung und das Antragsverfahren.",
+    "input_tokens": 837,
+    "output_tokens": 112,
+    "latency_s": 1.911,
+    "stop_reason": "end_turn"
+  },
+  "4a09e47d8e2b5dec": {
+    "chunk_id": "erstattungen.md#4",
+    "context": "Dieser Abschnitt folgt nach den Erstattungsbedingungen für Jahres- und Monatsabos sowie der Regelung zu doppelten Belastungen. Er erklärt die unmittelbaren Konsequenzen einer genehmigten Erstattung für den Benutzeraccount und den Zugang zu FocusFlow Pro.",
+    "input_tokens": 856,
+    "output_tokens": 92,
+    "latency_s": 1.603,
+    "stop_reason": "end_turn"
+  },
+  "95046b6aa8c3ef6c": {
+    "chunk_id": "erstattungen.md#5",
+    "context": "Dieser Abschnitt beschreibt die praktischen Schritte zur Beantragung einer Erstattung für FocusFlow Pro. Er folgt auf die Erläuterung der Erstattungsbedingungen für verschiedene Abotypen und Ausnahmefälle und erklärt, wie Nutzer je nach Kaufkanal (Web-Plattform oder App-Stores) vorgehen müssen, um eine Rückerstattung einzuleiten.",
+    "input_tokens": 936,
+    "output_tokens": 120,
+    "latency_s": 1.83,
+    "stop_reason": "end_turn"
+  },
+  "31ede6329569d85a": {
+    "chunk_id": "fokus-timer.md#0",
+    "context": "Einleitung und Überblick der Fokus-Timer-Funktionalität basierend auf der Pomodoro-Methode.",
+    "input_tokens": 765,
+    "output_tokens": 37,
+    "latency_s": 0.953,
+    "stop_reason": "end_turn"
+  },
+  "2054a9c7bb3ca75c": {
+    "chunk_id": "fokus-timer.md#1",
+    "context": "Dieser Abschnitt erklärt die grundlegende Funktionsweise des Fokus-Timers in FocusFlow nach der Pomodoro-Methode, einschließlich der Standard-Zeitintervalle (25 Minuten Fokus, 5 Minuten Pause, 15 Minuten lange Pause nach vier Runden) und wie man den Timer startet, pausiert oder abbricht.",
+    "input_tokens": 828,
+    "output_tokens": 105,
+    "latency_s": 1.429,
+    "stop_reason": "end_turn"
+  },
+  "785a247d4fc7d831": {
+    "chunk_id": "fokus-timer.md#2",
+    "context": "Dieser Abschnitt beschreibt die Unterschiede zwischen der kostenlosen und der Pro-Version des Fokus-Timers. Er folgt auf die Erklärung der grundlegenden Timer-Funktionsweise und zeigt auf, welche zusätzlichen Anpassungsmöglichkeiten und Funktionen die Pro-Version bietet, insbesondere die flexible Einstellung von Fokus- und Pausenzeiten sowie Hintergrundklänge.",
+    "input_tokens": 834,
+    "output_tokens": 117,
+    "latency_s": 1.557,
+    "stop_reason": "end_turn"
+  },
+  "f9f9b18cc9da28cd": {
+    "chunk_id": "fokus-timer.md#3",
+    "context": "Dieser Abschnitt erklärt die Integration des Fokus-Timers mit persönlichen Habits und wie automatische Abhaken von Tageszielen funktioniert. Er folgt auf die Erklärung der Timer-Funktionsweise und der Free/Pro-Unterschiede und leitet über zu technischen Details wie Hintergrundverarbeitung und Statistiken.",
+    "input_tokens": 834,
+    "output_tokens": 95,
+    "latency_s": 1.409,
+    "stop_reason": "end_turn"
+  },
+  "826a553c4c65db48": {
+    "chunk_id": "fokus-timer.md#4",
+    "context": "Dieser Abschnitt behandelt das Verhalten des Fokus-Timers auf verschiedenen Plattformen (iOS, Android und Web), wenn die App verlassen wird oder das Gerät gesperrt ist. Er beantwortet die häufig gestellte Frage, ob der Timer im Hintergrund weiterlaufen kann und wie Benachrichtigungen funktionieren.",
+    "input_tokens": 839,
+    "output_tokens": 95,
+    "latency_s": 1.558,
+    "stop_reason": "end_turn"
+  },
+  "464cd06ef81478cf": {
+    "chunk_id": "fokus-timer.md#5",
+    "context": "Der Abschnitt \"Statistiken\" beschreibt die Auswertungsfunktionen des Fokus-Timers in FocusFlow. Er erklärt, wie Nutzer ihre fokussierten Arbeitsminuten pro Tag und Woche einsehen können und welche erweiterten Auswertungsmöglichkeiten die Pro-Version bietet.",
+    "input_tokens": 791,
+    "output_tokens": 93,
+    "latency_s": 1.377,
+    "stop_reason": "end_turn"
+  },
+  "e7e2b679f5df1e25": {
+    "chunk_id": "fokus-timer.md#6",
+    "context": "Dieser Abschnitt beschreibt die Benachrichtigungseinstellungen während Fokus-Sitzungen und ist der letzte Abschnitt des Dokuments zum Fokus-Timer. Er folgt auf die Erklärung der Statistikfunktion und behandelt, wie FocusFlow Ablenkungen während der Arbeit minimiert.",
+    "input_tokens": 816,
+    "output_tokens": 91,
+    "latency_s": 1.587,
+    "stop_reason": "end_turn"
+  },
+  "b0a5e464506c3f76": {
+    "chunk_id": "habits-anlegen.md#0",
+    "context": "Einführung in FocusFlow Habits - Grundkonzept und Übersicht der Gewohnheitsverwaltung",
+    "input_tokens": 759,
+    "output_tokens": 34,
+    "latency_s": 0.985,
+    "stop_reason": "end_turn"
+  },
+  "9dd6c88f91dd828e": {
+    "chunk_id": "habits-anlegen.md#1",
+    "context": "Dieser Abschnitt befindet sich am Anfang des Dokuments \"Habits anlegen und verwalten\" und beschreibt die grundlegenden Schritte zum Erstellen eines neuen Habits in FocusFlow. Er folgt unmittelbar nach der Einleitung und ist der erste praktische Anwendungsabschnitt des Dokuments.",
+    "input_tokens": 885,
+    "output_tokens": 91,
+    "latency_s": 1.425,
+    "stop_reason": "end_turn"
+  },
+  "3f3fd87337e674d3": {
+    "chunk_id": "habits-anlegen.md#2",
+    "context": "Dieser Abschnitt behandelt die Limitierungen beim Anlegen von Habits in FocusFlow und erklärt die Unterschiede zwischen der kostenlosen Free-Version und der Pro-Version bezüglich der maximalen Anzahl aktiver Habits.",
+    "input_tokens": 791,
+    "output_tokens": 65,
+    "latency_s": 1.176,
+    "stop_reason": "end_turn"
+  },
+  "c83b090b69eec22f": {
+    "chunk_id": "habits-anlegen.md#3",
+    "context": "Dieser Abschnitt erklärt, wie man einen erstellten Habit täglich abhakt und wie man vergessene Abhakungen nachträglich eintragen kann. Er folgt auf die Anleitung zum Anlegen neuer Habits und zur Begrenzung der aktiven Habits und leitet über zu den Verwaltungsoptionen wie Bearbeiten, Archivieren und Löschen.",
+    "input_tokens": 795,
+    "output_tokens": 101,
+    "latency_s": 1.717,
+    "stop_reason": "end_turn"
+  },
+  "bd4963cdd4a02043": {
+    "chunk_id": "habits-anlegen.md#4",
+    "context": "Dieser Abschnitt behandelt die Verwaltungsoptionen für Habits in FocusFlow nach deren Erstellung. Er folgt auf die Anleitung zum Abhaken von Habits und erklärt, wie Nutzer ihre Habits bearbeiten, archivieren oder löschen können – also die Lebenszyklusverwaltung bestehender Habits.",
+    "input_tokens": 895,
+    "output_tokens": 91,
+    "latency_s": 1.65,
+    "stop_reason": "end_turn"
+  },
+  "2d825abda52faeb8": {
+    "chunk_id": "habits-anlegen.md#5",
+    "context": "Dieser Abschnitt beschreibt die Verwaltungsfunktionen von Habits in FocusFlow und folgt nach den Optionen zum Bearbeiten, Archivieren und Löschen von Habits. Er erklärt, wie Nutzer die Anzeigereihenfolge ihrer Habits auf der Startseite anpassen und diese Änderung geräteübergreifend synchronisieren können.",
+    "input_tokens": 777,
+    "output_tokens": 106,
+    "latency_s": 1.447,
+    "stop_reason": "end_turn"
+  },
+  "a569985ee2e214a9": {
+    "chunk_id": "konten-zusammenfuehren.md#0",
+    "context": "Einleitung zur Kontenzusammenführung: Erklärung des Problems doppelter FocusFlow-Konten und Hinweis auf Support-Lösung.",
+    "input_tokens": 777,
+    "output_tokens": 48,
+    "latency_s": 1.073,
+    "stop_reason": "end_turn"
+  },
+  "76a30347f4a62af6": {
+    "chunk_id": "konten-zusammenfuehren.md#1",
+    "context": "Dieser Abschnitt erklärt, welche Daten und Inhalte bei der Zusammenführung von zwei FocusFlow-Konten erhalten bleiben und wie die Auswahl des Zielkontos funktioniert. Er folgt auf die Einleitung zum Thema Kontenzusammenführung und leitet zu den Voraussetzungen und Anweisungen über.",
+    "input_tokens": 829,
+    "output_tokens": 101,
+    "latency_s": 2.131,
+    "stop_reason": "end_turn"
+  },
+  "02475db5e0fe6eac": {
+    "chunk_id": "konten-zusammenfuehren.md#2",
+    "context": "Dieser Abschnitt listet die wichtigsten Bedingungen auf, die erfüllt sein müssen, bevor man zwei FocusFlow-Konten zusammenführen kann. Er folgt auf die Erklärung, was bei einer Zusammenführung übernommen wird, und leitet zu den Schritten über, wie man den Antrag zur Kontenzusammenführung stellt.",
+    "input_tokens": 870,
+    "output_tokens": 101,
+    "latency_s": 1.392,
+    "stop_reason": "end_turn"
+  },
+  "ddbd683da040f89d": {
+    "chunk_id": "konten-zusammenfuehren.md#3",
+    "context": "Dieser Abschnitt beschreibt die Schritt-für-Schritt-Anleitung zum Einreichen eines Antrags zur Zusammenführung zweier FocusFlow-Konten über die App-Einstellungen, einschließlich der Bestätigungsprozedur und der Bearbeitungsdauer.",
+    "input_tokens": 889,
+    "output_tokens": 87,
+    "latency_s": 1.543,
+    "stop_reason": "end_turn"
+  },
+  "d9fefcec852ddb86": {
+    "chunk_id": "konto-loeschen.md#0",
+    "context": "Dieser Abschnitt ist die Einleitung des Dokuments \"Konto löschen\" und führt in das Thema ein. Er erklärt kurz, worum es geht: wie man sein FocusFlow-Konto vollständig löscht und welche Konsequenzen dies hat. Der Abschnitt leitet zu den detaillierten Informationen über, die in den folgenden Abschnitten behandelt werden.",
+    "input_tokens": 796,
+    "output_tokens": 113,
+    "latency_s": 1.738,
+    "stop_reason": "end_turn"
+  },
+  "70f661c4b1e2e01e": {
+    "chunk_id": "konto-loeschen.md#1",
+    "context": "Dieser Abschnitt folgt unmittelbar nach der Einleitung des Dokuments \"Konto löschen\" und erklärt die Konsequenzen einer Kontolöschung. Er ist der erste Hauptabschnitt und beantwortet die zentrale Frage, was mit dem Konto und den Daten passiert, wenn man FocusFlow nicht mehr nutzen möchte. Danach folgen praktische Anweisungen zur Durchführung der Löschung sowie Informationen zu Datenschutzrechten und Datenexport.",
+    "input_tokens": 1025,
+    "output_tokens": 143,
+    "latency_s": 1.939,
+    "stop_reason": "end_turn"
+  },
+  "3a06c1c8f81b90ef": {
+    "chunk_id": "konto-loeschen.md#2",
+    "context": "Dieser Abschnitt beschreibt die konkrete Schritt-für-Schritt-Anleitung zur Kontolöschung in FocusFlow. Er folgt auf die Erklärung der Konsequenzen einer Löschung und zeigt dem Nutzer genau, wo er in den Einstellungen die Löschungsfunktion findet und wie er den Prozess durchführt.",
+    "input_tokens": 842,
+    "output_tokens": 103,
+    "latency_s": 1.566,
+    "stop_reason": "end_turn"
+  },
+  "8c5708f92527f2b7": {
+    "chunk_id": "konto-loeschen.md#3",
+    "context": "Dieser Abschnitt behandelt die gesetzlichen Rechte zur Kontolöschung gemäß DSGVO und bietet eine alternative Löschmöglichkeit für Nutzer, die sich nicht mehr anmelden können. Er folgt auf die praktische Anleitung zur manuellen Kontolöschung und ergänzt diese um rechtliche Informationen und Kontaktmöglichkeiten zum Datenschutz-Team.",
+    "input_tokens": 863,
+    "output_tokens": 109,
+    "latency_s": 2.079,
+    "stop_reason": "end_turn"
+  },
+  "97bbfee3e3de529c": {
+    "chunk_id": "konto-loeschen.md#4",
+    "context": "Dieser Abschnitt befindet sich am Ende des Dokuments \"Konto löschen\" und bietet eine praktische Empfehlung für Nutzer, die ihr FocusFlow-Konto löschen möchten. Er folgt auf die Informationen zum Recht auf Löschung nach DSGVO und zeigt auf, wie Nutzer ihre Daten vor der endgültigen Löschung sichern können, indem sie diese als CSV oder JSON exportieren.",
+    "input_tokens": 799,
+    "output_tokens": 122,
+    "latency_s": 1.874,
+    "stop_reason": "end_turn"
+  },
+  "1ad185d3546acda6": {
+    "chunk_id": "passwort-zuruecksetzen.md#0",
+    "context": "Dies ist die Einleitung zum Hauptthema des Dokuments \"Passwort zurücksetzen\". Sie leitet direkt zu den detaillierten Schritt-für-Schritt-Anweisungen über, wie man sein vergessenes FocusFlow-Passwort zurücksetzen kann.",
+    "input_tokens": 653,
+    "output_tokens": 78,
+    "latency_s": 1.378,
+    "stop_reason": "end_turn"
+  },
+  "3a33edbf8502a5eb": {
+    "chunk_id": "passwort-zuruecksetzen.md#1",
+    "context": "Dieser Abschnitt ist der Hauptteil des Hilfedokuments \"Passwort zurücksetzen\" und enthält die grundlegende Anleitung zum Zurücksetzen eines vergessenen Passworts in FocusFlow. Er folgt unmittelbar nach der Einleitung und wird von Abschnitten zur Fehlerbehebung bei ausbleibenden E-Mails sowie zur Passwortänderung für angemeldete Nutzer gefolgt.",
+    "input_tokens": 826,
+    "output_tokens": 124,
+    "latency_s": 1.707,
+    "stop_reason": "end_turn"
+  },
+  "1a2f3564205021b9": {
+    "chunk_id": "passwort-zuruecksetzen.md#2",
+    "context": "Dieser Abschnitt ist Teil der Anleitung zum Passwort zurücksetzen in FocusFlow und behandelt Probleme beim Empfang der Passwort-Zurücksetzen-E-Mail. Er folgt auf die Schritt-für-Schritt-Anleitung und bietet Lösungen für häufige Probleme wie fehlende E-Mails, ungültige E-Mail-Adressen und die Verwendung von Google-Anmeldung.",
+    "input_tokens": 819,
+    "output_tokens": 126,
+    "latency_s": 1.776,
+    "stop_reason": "end_turn"
+  },
+  "a696f87fc1427b9d": {
+    "chunk_id": "passwort-zuruecksetzen.md#3",
+    "context": "Dieser Abschnitt beschreibt die Alternative zum Passwort-Zurücksetzen: Wie du dein Passwort direkt in den Einstellungen ändern kannst, wenn du bereits angemeldet bist – im Gegensatz zum Zurücksetzen über E-Mail-Link bei vergessenem Passwort.",
+    "input_tokens": 703,
+    "output_tokens": 86,
+    "latency_s": 1.481,
+    "stop_reason": "end_turn"
+  },
+  "c0d36439ec92ea4e": {
+    "chunk_id": "preise-und-tarife.md#0",
+    "context": "Dieser Abschnitt befindet sich am Anfang des Dokuments \"Preise und Tarife\" und führt die beiden verfügbaren Tarifoptionen von FocusFlow ein, bevor deren Funktionen und Kosten im Detail erläutert werden.",
+    "input_tokens": 780,
+    "output_tokens": 70,
+    "latency_s": 1.264,
+    "stop_reason": "end_turn"
+  },
+  "0903a37d3acb5b2a": {
+    "chunk_id": "preise-und-tarife.md#1",
+    "context": "Dieser Abschnitt beschreibt die kostenlose Basisversion von FocusFlow und ihre Funktionen. Er folgt der Einleitung zu den beiden verfügbaren Tarifen (Free und Pro) und wird gefolgt von der Beschreibung des kostenpflichtigen Pro-Tarifs mit seinen erweiterten Funktionen und Preisen.",
+    "input_tokens": 859,
+    "output_tokens": 90,
+    "latency_s": 1.442,
+    "stop_reason": "end_turn"
+  },
+  "9401c0a5d5dc57ad": {
+    "chunk_id": "preise-und-tarife.md#2",
+    "context": "Dieser Abschnitt beschreibt die kostenpflichtige Pro-Version von FocusFlow, ihre Preismodelle (monatlich oder jährlich) und die zusätzlichen Funktionen gegenüber der kostenlosen Free-Version, wie unbegrenzte Habits, anpassbare Timer-Einstellungen, Streak-Schutz und erweiterte Statistiken.",
+    "input_tokens": 947,
+    "output_tokens": 97,
+    "latency_s": 1.298,
+    "stop_reason": "end_turn"
+  },
+  "7a713cdab02480e5": {
+    "chunk_id": "preise-und-tarife.md#3",
+    "context": "Dieser Abschnitt folgt auf die Beschreibung der Pro-Version mit ihren Funktionen und Preisen (6,99 USD/Monat oder 59 USD/Jahr) und erklärt, über welche Zahlungsanbieter das Pro-Abonnement je nach Plattform (Web, iOS, Android) abgerechnet wird sowie die automatische Verlängerung und Kündigungsmöglichkeiten.",
+    "input_tokens": 936,
+    "output_tokens": 110,
+    "latency_s": 1.662,
+    "stop_reason": "end_turn"
+  },
+  "20aafd2c65ec2335": {
+    "chunk_id": "pro-funktionen-und-preise.md#0",
+    "context": "Einleitung zu FocusFlow Pro – Übersicht der Premium-Features und Preisgestaltung für Nutzer der kostenlosen Version.",
+    "input_tokens": 714,
+    "output_tokens": 39,
+    "latency_s": 1.147,
+    "stop_reason": "end_turn"
+  },
+  "cfaa6b9f6f9b3903": {
+    "chunk_id": "pro-funktionen-und-preise.md#1",
+    "context": "Dieser Abschnitt folgt unmittelbar nach der Einleitung des Dokuments und bildet den ersten Hauptteil der FocusFlow Pro-Übersicht. Er beantwortet die zentrale Frage, welche Funktionen und Vorteile Nutzer durch ein Pro-Abonnement erhalten, bevor die Preisgestaltung, Testmöglichkeiten und Abschlussschritte erläutert werden.",
+    "input_tokens": 829,
+    "output_tokens": 115,
+    "latency_s": 1.824,
+    "stop_reason": "end_turn"
+  },
+  "e66570a52ef1764c": {
+    "chunk_id": "pro-funktionen-und-preise.md#2",
+    "context": "Dieser Abschnitt beantwortet die Frage nach den Kosten für FocusFlow Pro und präsentiert die verfügbaren Abonnementoptionen (monatlich oder jährlich) sowie deren Preise in USD. Er folgt auf die Beschreibung der Pro-Features und leitet über zu Informationen über die kostenlose Testphase und den Abschluss des Abos.",
+    "input_tokens": 753,
+    "output_tokens": 103,
+    "latency_s": 1.749,
+    "stop_reason": "end_turn"
+  },
+  "c79108794d05c63b": {
+    "chunk_id": "pro-funktionen-und-preise.md#3",
+    "context": "Dieser Abschnitt beantwortet häufig gestellte Fragen zu FocusFlow Pro und behandelt die Möglichkeit, das Premium-Abo vor dem Kauf kostenlos zu testen. Er folgt auf die Preisübersicht und erklärt die 7-tägige Testphase sowie die Kündigungsbedingungen.",
+    "input_tokens": 746,
+    "output_tokens": 94,
+    "latency_s": 1.566,
+    "stop_reason": "end_turn"
+  },
+  "bd1439aa7c35d878": {
+    "chunk_id": "pro-funktionen-und-preise.md#4",
+    "context": "Dieser Abschnitt beschreibt die praktischen Schritte zum Abschluss von FocusFlow Pro, nachdem die Kosten und die kostenlose Testphase erläutert wurden. Er erklärt, wo man Pro in der App aktiviert, wie die Zahlung je nach Plattform erfolgt und dass das Abo plattformübergreifend gültig ist.",
+    "input_tokens": 769,
+    "output_tokens": 100,
+    "latency_s": 1.652,
+    "stop_reason": "end_turn"
+  },
+  "449acc43c5ee0446": {
+    "chunk_id": "roadmap-faq.md#0",
+    "context": "Dieser Abschnitt bildet die Einleitung des Dokuments \"Roadmap: Häufige Fragen zu neuen Funktionen\" und leitet direkt zu den FAQ-Antworten über geplante Features wie Dark Mode, Zwei-Faktor-Authentifizierung, Health-Integrationen und Desktop-Apps ein.",
+    "input_tokens": 796,
+    "output_tokens": 87,
+    "latency_s": 1.693,
+    "stop_reason": "end_turn"
+  },
+  "6941bc17e3f04b37": {
+    "chunk_id": "roadmap-faq.md#1",
+    "context": "Dieser Abschnitt ist die erste Frage-Antwort im Dokument \"Roadmap: Häufige Fragen zu neuen Funktionen\" und erklärt die grundsätzliche Kommunikationsstrategie von FocusFlow bezüglich neuer Funktionen und deren Veröffentlichung.",
+    "input_tokens": 847,
+    "output_tokens": 83,
+    "latency_s": 1.373,
+    "stop_reason": "end_turn"
+  },
+  "c4d11b475d9e2c8a": {
+    "chunk_id": "roadmap-faq.md#2",
+    "context": "Dieser Abschnitt beantwortet eine der häufigsten Fragen zu geplanten Funktionen in FocusFlow. Er behandelt die Verfügbarkeit von Dark Mode und erklärt, dass diese Funktion zwar gewünscht ist, aber derzeit nicht unterstützt wird und kein Zeitpunkt für die Implementierung genannt werden kann.",
+    "input_tokens": 822,
+    "output_tokens": 91,
+    "latency_s": 1.636,
+    "stop_reason": "end_turn"
+  },
+  "f555a5ee7feb8bdd": {
+    "chunk_id": "roadmap-faq.md#3",
+    "context": "Dieser Abschnitt beantwortet eine häufig gestellte Frage zur geplanten Sicherheitsfunktion Zwei-Faktor-Authentifizierung in FocusFlow. Er folgt auf Fragen zu Dark Mode und wird gefolgt von Fragen zu Health-App-Integrationen und Desktop-Apps. Der Abschnitt ist Teil eines FAQ-Dokuments zu neuen Funktionen und Roadmap-Plänen der Anwendung.",
+    "input_tokens": 868,
+    "output_tokens": 121,
+    "latency_s": 1.841,
+    "stop_reason": "end_turn"
+  },
+  "95341f81680f9ac9": {
+    "chunk_id": "roadmap-faq.md#4",
+    "context": "Dieser Abschnitt beantwortet eine häufig gestellte Frage zur geplanten Integration von Fitness- und Gesundheitsdaten in FocusFlow. Er gehört zu einem FAQ-Dokument über zukünftige Funktionen und Entwicklungspläne der App und behandelt die Möglichkeit, Daten von Apple Health oder Google Fit automatisch mit der Habit-Tracking-Funktion zu synchronisieren.",
+    "input_tokens": 807,
+    "output_tokens": 113,
+    "latency_s": 2.731,
+    "stop_reason": "end_turn"
+  },
+  "0670c28b8fa23531": {
+    "chunk_id": "roadmap-faq.md#5",
+    "context": "Dieser Abschnitt beantwortet eine häufig gestellte Frage zur Verfügbarkeit einer Desktop-Anwendung für FocusFlow. Er ist Teil eines FAQ-Dokuments, das Nutzer-Anfragen zu geplanten und ungeplanten Funktionen des Produkts behandelt. Der Abschnitt erklärt, dass keine native Desktop-App entwickelt wird, verweist aber auf die Web-Version als Alternative mit gleichwertigen Funktionen.",
+    "input_tokens": 836,
+    "output_tokens": 119,
+    "latency_s": 1.946,
+    "stop_reason": "end_turn"
+  },
+  "7a1f767e2e2eda70": {
+    "chunk_id": "roadmap-faq.md#6",
+    "context": "Dieser Abschnitt befindet sich in der FAQ-Dokumentation \"Roadmap: Häufige Fragen zu neuen Funktionen\" und beantwortet die Frage, wie Nutzer neue Funktionen für die FocusFlow-App vorschlagen können. Er erklärt den Prozess zur Einreichung von Feedback und Abstimmung über die Einstellungen.",
+    "input_tokens": 834,
+    "output_tokens": 99,
+    "latency_s": 1.638,
+    "stop_reason": "end_turn"
+  },
+  "ac907373e470e047": {
+    "chunk_id": "roadmap-faq.md#7",
+    "context": "Dieser Abschnitt befindet sich am Ende des FAQ-Dokuments zu neuen Funktionen von FocusFlow und beantwortet die letzte häufig gestellte Frage. Er informiert Nutzer darüber, wie sie frühzeitig auf neue Funktionen zugreifen können, indem sie sich für das Beta-Testprogramm anmelden – für iOS über TestFlight und für Android über das Google-Play-Testprogramm.",
+    "input_tokens": 817,
+    "output_tokens": 117,
+    "latency_s": 1.767,
+    "stop_reason": "end_turn"
+  },
+  "950f819869b76885": {
+    "chunk_id": "streaks.md#0",
+    "context": "Dieser Abschnitt befindet sich am Anfang des Dokuments \"So funktionieren Streaks\" und bietet eine grundlegende Definition und visuelle Beschreibung eines Streaks als Kernkonzept der Habit-Tracking-Funktionalität.",
+    "input_tokens": 758,
+    "output_tokens": 68,
+    "latency_s": 1.314,
+    "stop_reason": "end_turn"
+  },
+  "ee683f21aff55d1c": {
+    "chunk_id": "streaks.md#1",
+    "context": "Dieser Abschnitt erklärt die grundlegenden Zählregeln für Streaks in der FocusFlow-App. Er folgt unmittelbar nach der Einleitung, die Streaks als Flammen-Symbol definiert, und beschreibt detailliert, wie Streaks für verschiedene Habit-Typen (täglich, wöchentlich, X-mal pro Woche) berechnet werden sowie die Rolle der Gerätezeitzone.",
+    "input_tokens": 912,
+    "output_tokens": 117,
+    "latency_s": 1.697,
+    "stop_reason": "end_turn"
+  },
+  "c62a5c08856d20f3": {
+    "chunk_id": "streaks.md#2",
+    "context": "Dieser Abschnitt erklärt, was passiert, wenn man einen Habit nicht erfüllt und wie man seinen Streak wiederherstellen kann. Er folgt auf die Erklärung der Streak-Zählweise und behandelt die Konsequenzen bei verpassten Tagen sowie die Möglichkeit der nachträglichen Abhakung innerhalb von 2 Tagen.",
+    "input_tokens": 824,
+    "output_tokens": 99,
+    "latency_s": 1.55,
+    "stop_reason": "end_turn"
+  },
+  "81106fd03768d6fd": {
+    "chunk_id": "streaks.md#3",
+    "context": "Dieser Abschnitt erklärt die Pro-Funktion des Streak-Schutzes, die es Nutzern ermöglicht, bis zu 2 Mal pro Monat einen verpassten Habit-Tag zu verzeihen, ohne den Streak zu verlieren. Er folgt auf die Erklärung, wie Streaks verloren gehen, und ergänzt diese um die Premium-Lösung zur Streak-Rettung.",
+    "input_tokens": 828,
+    "output_tokens": 112,
+    "latency_s": 1.746,
+    "stop_reason": "end_turn"
+  },
+  "c93d1a585633a9a0": {
+    "chunk_id": "streaks.md#4",
+    "context": "Dieser Abschnitt beschreibt die automatische Benachrichtigungsfunktion von FocusFlow, die Nutzer an nicht erledigte Habits erinnert. Er folgt auf die Erklärung des Streak-Schutzes für Pro-Nutzer und bildet den Abschluss des Dokuments \"So funktionieren Streaks\". Die Streak-Warnung ist eine Erinnerungsfunktion, die unabhängig vom Streak-Schutz funktioniert und in den Einstellungen konfigurierbar ist.",
+    "input_tokens": 780,
+    "output_tokens": 140,
+    "latency_s": 2.115,
+    "stop_reason": "end_turn"
+  },
+  "60fa339c88cad2e2": {
+    "chunk_id": "synchronisierung.md#0",
+    "context": "Dieser Abschnitt befindet sich am Anfang des Dokuments \"Synchronisierung zwischen Geräten\" und stellt die grundlegende Verfügbarkeit von FocusFlow auf verschiedenen Plattformen sowie die automatische Datensynchronisierung zwischen Geräten vor.",
+    "input_tokens": 769,
+    "output_tokens": 74,
+    "latency_s": 1.19,
+    "stop_reason": "end_turn"
+  },
+  "23c607f7b10a1651": {
+    "chunk_id": "synchronisierung.md#1",
+    "context": "Dieser Abschnitt behandelt die Synchronisierungsgeschwindigkeit von FocusFlow zwischen iOS, Android und Web. Er erklärt, wie schnell Änderungen auf anderen Geräten erscheinen und wann die App automatisch synchronisiert – beim Öffnen, bei Änderungen und im Hintergrund alle 5 Minuten.",
+    "input_tokens": 782,
+    "output_tokens": 90,
+    "latency_s": 1.535,
+    "stop_reason": "end_turn"
+  },
+  "1649a55709e8f61b": {
+    "chunk_id": "synchronisierung.md#2",
+    "context": "Dieser Abschnitt behandelt die Offline-Funktionalität von FocusFlow und erklärt, wie Änderungen auf iOS und Android-Geräten ohne Internetverbindung gespeichert und später synchronisiert werden. Er folgt auf die Erklärung der Synchronisierungsgeschwindigkeit und leitet zu den Troubleshooting-Tipps über, falls Daten nicht zwischen Geräten abgeglichen werden.",
+    "input_tokens": 814,
+    "output_tokens": 112,
+    "latency_s": 1.558,
+    "stop_reason": "end_turn"
+  },
+  "cb0e1e47ce32eebb": {
+    "chunk_id": "synchronisierung.md#3",
+    "context": "Dieser Abschnitt ist der letzte und wichtigste Teil des Dokuments \"Synchronisierung zwischen Geräten\". Er folgt auf die Erklärungen zur Synchronisierungsgeschwindigkeit und zur Offline-Nutzung und bietet Lösungsansätze für häufige Synchronisierungsprobleme, insbesondere wenn Daten nicht zwischen Geräten abgeglichen werden.",
+    "input_tokens": 1025,
+    "output_tokens": 104,
+    "latency_s": 1.302,
+    "stop_reason": "end_turn"
+  },
+  "9e4ce5e8945f4c2e": {
+    "chunk_id": "tarif-wechseln.md#0",
+    "context": "Einleitung zum Wechsel zwischen Zahlungsintervallen für Pro-Abos, die erklärt, dass Umstellungen möglich sind und die Auswirkungen auf bereits bezahlte Zeiträume von der Wechselrichtung abhängen.",
+    "input_tokens": 841,
+    "output_tokens": 69,
+    "latency_s": 1.316,
+    "stop_reason": "end_turn"
+  },
+  "544f23a316e4f9bd": {
+    "chunk_id": "tarif-wechseln.md#1",
+    "context": "Dieser Abschnitt erklärt die Bedingungen und Berechnung beim Wechsel von einem monatlichen zu einem jährlichen Zahlungsplan für das Pro-Abo. Er ist der erste von zwei Hauptszenarien im Dokument und zeigt, wie restliche Tage des aktuellen Monats anteilig als Guthaben verrechnet werden.",
+    "input_tokens": 976,
+    "output_tokens": 96,
+    "latency_s": 1.497,
+    "stop_reason": "end_turn"
+  },
+  "856fcd570b95b9f2": {
+    "chunk_id": "tarif-wechseln.md#2",
+    "context": "Dieser Abschnitt beschreibt die zweite Variante des Wechsels zwischen Zahlungszyklen beim Pro-Abo: den Wechsel von der jährlichen zur monatlichen Zahlungsweise. Er folgt auf die Erklärung des umgekehrten Wechsels (monatlich zu jährlich) und erklärt, wann der Wechsel wirksam wird, wie die Abrechnung funktioniert und welche Erstattungsregeln gelten.",
+    "input_tokens": 925,
+    "output_tokens": 127,
+    "latency_s": 2.074,
+    "stop_reason": "end_turn"
+  },
+  "53e715a7033b011f": {
+    "chunk_id": "tarif-wechseln.md#3",
+    "context": "Dieser Abschnitt beschreibt die praktischen Schritte zum Wechsel zwischen monatlicher und jährlicher Zahlung für das Pro-Abo auf verschiedenen Plattformen (Web, iOS, Android) und erläutert wichtige Besonderheiten bei der Abrechnung je nach Zahlungskanal sowie mögliche Doppelbelastungen.",
+    "input_tokens": 986,
+    "output_tokens": 95,
+    "latency_s": 1.345,
+    "stop_reason": "end_turn"
+  },
+  "28cc0f9e4a66eaa3": {
+    "chunk_id": "verdaechtige-anmeldungen.md#0",
+    "context": "Dieser Abschnitt befindet sich in der Einleitung des Dokuments „Verdächtige Anmeldungen\" und erklärt das grundlegende Benachrichtigungssystem von FocusFlow für neue Anmeldungen auf unbekannten Geräten oder Browsern. Er leitet die nachfolgenden Sicherheitsmaßnahmen ein.",
+    "input_tokens": 885,
+    "output_tokens": 96,
+    "latency_s": 2.414,
+    "stop_reason": "end_turn"
+  },
+  "63ac507a448e8ecb": {
+    "chunk_id": "verdaechtige-anmeldungen.md#1",
+    "context": "Dieser Abschnitt ist die Hauptanleitung zur Reaktion auf verdächtige Anmeldungen bei FocusFlow. Er folgt unmittelbar nach der Erklärung des Benachrichtigungssystems und bietet eine vierstufige Handlungsanweisung für den Fall, dass ein Nutzer eine unbefugte Anmeldung auf seinem Konto entdeckt hat. Der Abschnitt behandelt Passwortänderung, Geräteabmeldung, E-Mail-Sicherheit und die Kontaktaufnahme mit dem Support.",
+    "input_tokens": 1072,
+    "output_tokens": 149,
+    "latency_s": 2.093,
+    "stop_reason": "end_turn"
+  },
+  "514dc2f0295076ff": {
+    "chunk_id": "verdaechtige-anmeldungen.md#2",
+    "context": "Dieser Abschnitt behandelt spezielle Sicherheitsmaßnahmen für Nutzer, die sich mit Google-Authentifizierung bei FocusFlow anmelden, anstatt ein eigenes Passwort zu verwenden. Er folgt auf die allgemeinen Handlungsschritte bei verdächtigen Anmeldungen und erklärt, wie Google-Nutzer ihr Konto schützen können.",
+    "input_tokens": 875,
+    "output_tokens": 108,
+    "latency_s": 1.714,
+    "stop_reason": "end_turn"
+  },
+  "07da73a977a61d00": {
+    "chunk_id": "verdaechtige-anmeldungen.md#3",
+    "context": "Dieser Abschnitt behandelt die Sicherheitsfeatures von FocusFlow im Kontext verdächtiger Anmeldungen. Er informiert Nutzer darüber, dass FocusFlow selbst keine Zwei-Faktor-Authentifizierung anbietet, aber Google-Nutzer von der 2FA ihres Google-Kontos profitieren. Der Abschnitt folgt auf praktische Maßnahmen zur Kontosicherung und ergänzt die Sicherheitsoptionen für verschiedene Anmeldeverfahren.",
+    "input_tokens": 877,
+    "output_tokens": 140,
+    "latency_s": 2.299,
+    "stop_reason": "end_turn"
+  },
+  "b673b98952ef6f2f": {
+    "chunk_id": "verdaechtige-anmeldungen.md#4",
+    "context": "Dieser Abschnitt behandelt die Interpretation von Anmeldungsbenachrichtigungen bei FocusFlow und erklärt, wann eine verdächtig wirkende Anmeldung tatsächlich die eigene sein kann. Er folgt auf die Sicherheitsmaßnahmen für kompromittierte Konten und die Informationen zur Zwei-Faktor-Authentifizierung und hilft Nutzern zu unterscheiden, ob eine gemeldete Anmeldung ein echtes Sicherheitsrisiko darstellt oder ein falscher Alarm aufgrund unggenauer Standortdaten ist.",
+    "input_tokens": 865,
+    "output_tokens": 152,
+    "latency_s": 2.029,
+    "stop_reason": "end_turn"
+  },
+  "f8a11fcd1201c097": {
+    "chunk_id": "widgets.md#0",
+    "context": "Dieser Abschnitt ist die Einleitung des Dokuments \"Widgets einrichten\" und beschreibt die grundlegende Funktion und den Nutzen von Widgets in der FocusFlow-App. Er leitet direkt zu den verfügbaren Widget-Typen und Installationsanweisungen für verschiedene Plattformen über.",
+    "input_tokens": 698,
+    "output_tokens": 88,
+    "latency_s": 1.424,
+    "stop_reason": "end_turn"
+  },
+  "ff22d6a5a7c28797": {
+    "chunk_id": "widgets.md#1",
+    "context": "Dieser Abschnitt befindet sich am Anfang des Dokuments \"Widgets einrichten\" und listet die drei Haupttypen von Widgets auf, die in der FocusFlow-App verfügbar sind: die Tagesübersicht für alle fälligen Habits, den einzelnen Habit mit Streak-Anzeige und den Fokus-Timer für Pro-Nutzer. Er dient als Übersicht vor den plattformspezifischen Installationsanleitungen für iOS, Android und Web.",
+    "input_tokens": 753,
+    "output_tokens": 129,
+    "latency_s": 1.839,
+    "stop_reason": "end_turn"
+  },
+  "cad15e53ed07619c": {
+    "chunk_id": "widgets.md#2",
+    "context": "Anleitung zum Hinzufügen von Widgets auf dem iOS Home-Bildschirm und Sperrbildschirm für die FocusFlow Habit-Tracking-App.",
+    "input_tokens": 763,
+    "output_tokens": 49,
+    "latency_s": 1.332,
+    "stop_reason": "end_turn"
+  },
+  "fd309be394637b8d": {
+    "chunk_id": "widgets.md#3",
+    "context": "Anleitung zum Hinzufügen von Widgets auf Android-Geräten in der FocusFlow-App, um Habits direkt vom Startbildschirm aus zu verwalten.",
+    "input_tokens": 743,
+    "output_tokens": 51,
+    "latency_s": 1.327,
+    "stop_reason": "end_turn"
+  },
+  "77b184b82839f66d": {
+    "chunk_id": "widgets.md#4",
+    "context": "Dieser Abschnitt befindet sich im Dokument \"Widgets einrichten\" nach den Installationsanweisungen für iOS und Android. Er informiert darüber, dass die Web-Version der FocusFlow-App keine Widget-Funktionalität unterstützt, im Gegensatz zu den mobilen Plattformen.",
+    "input_tokens": 676,
+    "output_tokens": 84,
+    "latency_s": 1.431,
+    "stop_reason": "end_turn"
+  },
+  "7da3a2b3fb049389": {
+    "chunk_id": "widgets.md#5",
+    "context": "Dieser Abschnitt behandelt die visuelle Gestaltung von Widgets in der FocusFlow-App. Er folgt auf die Installationsanleitungen für iOS, Android und Web und erklärt, dass Widgets unabhängig von den Geräteeinstellungen immer im hellen Design dargestellt werden, da FocusFlow keinen Dark Mode unterstützt.",
+    "input_tokens": 711,
+    "output_tokens": 94,
+    "latency_s": 1.537,
+    "stop_reason": "end_turn"
+  },
+  "2d75091552546f5b": {
+    "chunk_id": "widgets.md#6",
+    "context": "Dieser Abschnitt behandelt Lösungsansätze für Probleme bei der Widget-Aktualisierung in der FocusFlow-App. Er folgt auf die Anleitung zur Widget-Einrichtung für iOS, Android und Web sowie auf Informationen zur Darstellung von Widgets und bildet den abschließenden Troubleshooting-Teil des Dokuments.",
+    "input_tokens": 780,
+    "output_tokens": 95,
+    "latency_s": 1.585,
+    "stop_reason": "end_turn"
+  }
+}
