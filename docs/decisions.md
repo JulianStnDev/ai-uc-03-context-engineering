@@ -99,3 +99,58 @@ ab, prüfe ich zuerst die Erwartung und erst danach das System.
 Begründung: Zehn Fragen reichen für einen Vergleich von drei Ansätzen über fünf
 Fallentypen nicht aus. Die Aufschlüsselung macht sichtbar, ob ein Ergebnis an
 ungeprüften Erwartungen hängt. Im README später unter „Grenzen“ erwähnen.
+
+## 2026-09-23: Modellwahl für Embeddings, Antworten und Judge
+
+Kontext: Die Kandidaten sind im Plan verglichen worden. Die Hardware ist ein
+MacBook mit M5 und 16 GB.
+
+Entscheidung:
+- **Embedding:** `intfloat/multilingual-e5-base` als Hauptmodell,
+  `BAAI/bge-m3` als kostenlose Gegenprobe. bge-m3 wird nur für den
+  Retrieval-Recall genutzt, nicht in der Antwortstufe.
+- **Antwortmodell:** `claude-haiku-4-5`, damit die Kosten mit UC1 und UC2
+  vergleichbar sind.
+- **Kontextsätze für Contextual Retrieval** (beim Indexieren): ebenfalls
+  `claude-haiku-4-5`.
+- **Judge:** `claude-sonnet-5`. Ein anderes Modell als das bewertete, damit
+  Haiku nicht seine eigenen Antworten benotet.
+
+Verworfen: `paraphrase-multilingual-MiniLM-L12-v2`. Es ist auf
+Satz-Ähnlichkeit statt auf Retrieval trainiert, und die maximale Länge von
+128 Tokens hätte die Chunks abgeschnitten.
+
+## 2026-09-23: Drei Chunking-Varianten, keine festen Fenster
+
+Kontext: Wir brauchen eine Baseline und Vergleichsvarianten für das Retrieval.
+
+Entscheidung:
+- (a) `sections`: ein Chunk pro `##`-Abschnitt, ohne Artikeltitel und Datum.
+  Das ist die Baseline.
+- (b) `articles`: der ganze Artikel als ein Chunk.
+- (c) `contextual`: Abschnitte wie in (a), davor ein von Haiku erzeugter
+  Kontextsatz zum Gesamtartikel. Der Prompt ist eine wörtliche Übersetzung
+  aus Anthropics Beitrag zu Contextual Retrieval. Er fordert bewusst nicht
+  auf, Titel oder Datum zu nennen, damit das Verfahren unverändert bleibt.
+
+Feste Fenster mit Überlappung sind **bewusst weggelassen**. Die Hilfe-Doku ist
+mit Überschriften strukturiert, und die Artikel sind kurz (etwa 200–260 Wörter,
+maximal 456 Tokens). Feste Fenster würden Abschnitte willkürlich zerschneiden,
+obwohl die natürlichen Grenzen schon vorhanden sind. Sie wären ein Strohmann,
+keine sinnvolle Baseline.
+
+## 2026-09-23: Pipeline geteilt – erst Retrieval, dann Antworten
+
+Kontext: Retrieval-Fehler und Antwortfehler vermischen sich, wenn man nur die
+Endqualität misst.
+
+Entscheidung: Der Branch `feat/retrieval-pipeline` umfasst nur Laden,
+Chunking, Embedding und Retrieval-Scoring. Einzige API-Kosten sind die
+Kontextsätze. Antwortstufe und Judge kommen erst in einem eigenen Branch,
+nachdem die Retrieval-Zahlen ausgewertet sind.
+
+Metrik: Recall@k über die Top-k **Chunks**. Eine Quelle gilt als gefunden,
+wenn mindestens ein Chunk des Artikels unter den Top-k ist. Das entspricht dem,
+was die Antwortstufe später als Kontext bekommt. Fragen vom Typ `luecke` gehen
+nicht in den Recall ein, für sie wird die Top-1-Ähnlichkeit berichtet. Für
+`mehrquellen` ist Recall@1 strukturell 0.

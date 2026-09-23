@@ -1,0 +1,487 @@
+id,typ,herkunft,frage,modell,variante,rang,chunk_id,datei,score,erwartet
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",e5-base,sections,1,passwort-zuruecksetzen.md#2,passwort-zuruecksetzen.md,0.8677,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",e5-base,sections,2,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.8577,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",e5-base,sections,3,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.8534,1
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",e5-base,sections,1,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.886,0
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",e5-base,sections,2,preise-und-tarife.md#2,preise-und-tarife.md,0.8617,1
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",e5-base,sections,3,streaks.md#3,streaks.md,0.8485,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,e5-base,sections,1,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.8971,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,e5-base,sections,2,preise-und-tarife.md#2,preise-und-tarife.md,0.8583,1
+3,veraltet,mensch,Gibt es eine Testphase für Pro,e5-base,sections,3,pro-funktionen-und-preise.md#1,pro-funktionen-und-preise.md,0.8498,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,e5-base,sections,1,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.8565,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,e5-base,sections,2,verdaechtige-anmeldungen.md#1,verdaechtige-anmeldungen.md,0.8492,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,e5-base,sections,3,passwort-zuruecksetzen.md#3,passwort-zuruecksetzen.md,0.8461,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,e5-base,sections,1,habits-anlegen.md#2,habits-anlegen.md,0.8835,1
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,e5-base,sections,2,pro-funktionen-und-preise.md#1,pro-funktionen-und-preise.md,0.8668,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,e5-base,sections,3,fokus-timer.md#5,fokus-timer.md,0.8503,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",e5-base,sections,1,preise-und-tarife.md#1,preise-und-tarife.md,0.8868,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",e5-base,sections,2,fokus-timer.md#2,fokus-timer.md,0.8656,1
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",e5-base,sections,3,preise-und-tarife.md#2,preise-und-tarife.md,0.8623,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,e5-base,sections,1,erstattungen.md#2,erstattungen.md,0.8091,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,e5-base,sections,2,doppelte-abbuchung.md#0,doppelte-abbuchung.md,0.7992,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,e5-base,sections,3,tarif-wechseln.md#1,tarif-wechseln.md,0.7984,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,e5-base,sections,1,konto-loeschen.md#4,konto-loeschen.md,0.8435,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,e5-base,sections,2,synchronisierung.md#3,synchronisierung.md,0.8374,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,e5-base,sections,3,datenschutz-und-speicherort.md#2,datenschutz-und-speicherort.md,0.8326,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,e5-base,sections,1,konten-zusammenfuehren.md#3,konten-zusammenfuehren.md,0.8452,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,e5-base,sections,2,verdaechtige-anmeldungen.md#3,verdaechtige-anmeldungen.md,0.8287,1
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,e5-base,sections,3,verdaechtige-anmeldungen.md#1,verdaechtige-anmeldungen.md,0.8282,1
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",e5-base,sections,1,tarif-wechseln.md#1,tarif-wechseln.md,0.8532,0
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",e5-base,sections,2,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.8512,0
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",e5-base,sections,3,abo-kuendigen.md#1,abo-kuendigen.md,0.8502,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,e5-base,sections,1,passwort-zuruecksetzen.md#2,passwort-zuruecksetzen.md,0.8702,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,e5-base,sections,2,verdaechtige-anmeldungen.md#1,verdaechtige-anmeldungen.md,0.8669,0
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,e5-base,sections,3,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.8656,1
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",e5-base,sections,1,anmelden-mit-google.md#2,anmelden-mit-google.md,0.8855,1
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",e5-base,sections,2,verdaechtige-anmeldungen.md#1,verdaechtige-anmeldungen.md,0.8694,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",e5-base,sections,3,konten-zusammenfuehren.md#0,konten-zusammenfuehren.md,0.869,0
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",e5-base,sections,1,erstattungen.md#3,erstattungen.md,0.8558,1
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",e5-base,sections,2,doppelte-abbuchung.md#1,doppelte-abbuchung.md,0.8542,1
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",e5-base,sections,3,doppelte-abbuchung.md#2,doppelte-abbuchung.md,0.8537,1
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",e5-base,sections,1,konto-loeschen.md#4,konto-loeschen.md,0.8542,0
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",e5-base,sections,2,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.8502,0
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",e5-base,sections,3,verdaechtige-anmeldungen.md#1,verdaechtige-anmeldungen.md,0.8461,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",e5-base,sections,1,datenschutz-und-speicherort.md#1,datenschutz-und-speicherort.md,0.8823,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",e5-base,sections,2,datenschutz-und-speicherort.md#0,datenschutz-und-speicherort.md,0.8743,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",e5-base,sections,3,datenschutz-und-speicherort.md#3,datenschutz-und-speicherort.md,0.8526,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,e5-base,sections,1,widgets.md#3,widgets.md,0.866,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,e5-base,sections,2,roadmap-faq.md#7,roadmap-faq.md,0.8551,0
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,e5-base,sections,3,widgets.md#2,widgets.md,0.855,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",e5-base,sections,1,anmelden-mit-google.md#2,anmelden-mit-google.md,0.8706,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",e5-base,sections,2,habits-anlegen.md#1,habits-anlegen.md,0.8685,0
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",e5-base,sections,3,konten-zusammenfuehren.md#3,konten-zusammenfuehren.md,0.8653,1
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",e5-base,sections,1,doppelte-abbuchung.md#0,doppelte-abbuchung.md,0.8741,0
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",e5-base,sections,2,tarif-wechseln.md#1,tarif-wechseln.md,0.8736,1
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",e5-base,sections,3,tarif-wechseln.md#2,tarif-wechseln.md,0.8704,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",e5-base,sections,1,tarif-wechseln.md#2,tarif-wechseln.md,0.8698,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",e5-base,sections,2,tarif-wechseln.md#0,tarif-wechseln.md,0.8684,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",e5-base,sections,3,tarif-wechseln.md#1,tarif-wechseln.md,0.8583,1
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",e5-base,sections,1,preise-und-tarife.md#3,preise-und-tarife.md,0.8794,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",e5-base,sections,2,abo-kuendigen.md#2,abo-kuendigen.md,0.8783,1
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",e5-base,sections,3,konten-zusammenfuehren.md#2,konten-zusammenfuehren.md,0.8762,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,e5-base,sections,1,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.8658,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,e5-base,sections,2,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.8608,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,e5-base,sections,3,datenschutz-und-speicherort.md#6,datenschutz-und-speicherort.md,0.8543,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",e5-base,sections,1,konto-loeschen.md#1,konto-loeschen.md,0.8688,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",e5-base,sections,2,konten-zusammenfuehren.md#2,konten-zusammenfuehren.md,0.8586,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",e5-base,sections,3,konto-loeschen.md#2,konto-loeschen.md,0.8585,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",e5-base,sections,1,preise-und-tarife.md#3,preise-und-tarife.md,0.8743,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",e5-base,sections,2,konto-loeschen.md#1,konto-loeschen.md,0.874,1
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",e5-base,sections,3,pro-funktionen-und-preise.md#4,pro-funktionen-und-preise.md,0.8672,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,e5-base,sections,1,widgets.md#4,widgets.md,0.8308,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,e5-base,sections,2,roadmap-faq.md#7,roadmap-faq.md,0.8213,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,e5-base,sections,3,synchronisierung.md#0,synchronisierung.md,0.8189,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",e5-base,sections,1,konten-zusammenfuehren.md#3,konten-zusammenfuehren.md,0.8397,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",e5-base,sections,2,konto-loeschen.md#4,konto-loeschen.md,0.8361,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",e5-base,sections,3,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.8329,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,e5-base,sections,1,erstattungen.md#2,erstattungen.md,0.8616,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,e5-base,sections,2,tarif-wechseln.md#1,tarif-wechseln.md,0.858,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,e5-base,sections,3,tarif-wechseln.md#0,tarif-wechseln.md,0.854,0
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,e5-base,sections,1,konten-zusammenfuehren.md#2,konten-zusammenfuehren.md,0.8501,1
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,e5-base,sections,2,konten-zusammenfuehren.md#3,konten-zusammenfuehren.md,0.8465,1
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,e5-base,sections,3,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.8395,0
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",e5-base,articles,1,passwort-zuruecksetzen.md,passwort-zuruecksetzen.md,0.8582,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",e5-base,articles,2,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.8395,0
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",e5-base,articles,3,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.8326,0
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",e5-base,articles,1,pro-funktionen-und-preise.md,pro-funktionen-und-preise.md,0.8607,0
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",e5-base,articles,2,preise-und-tarife.md,preise-und-tarife.md,0.8532,1
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",e5-base,articles,3,streaks.md,streaks.md,0.8385,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,e5-base,articles,1,pro-funktionen-und-preise.md,pro-funktionen-und-preise.md,0.8487,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,e5-base,articles,2,preise-und-tarife.md,preise-und-tarife.md,0.8371,1
+3,veraltet,mensch,Gibt es eine Testphase für Pro,e5-base,articles,3,abo-kuendigen.md,abo-kuendigen.md,0.8078,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,e5-base,articles,1,passwort-zuruecksetzen.md,passwort-zuruecksetzen.md,0.8391,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,e5-base,articles,2,anmelden-mit-google.md,anmelden-mit-google.md,0.8368,1
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,e5-base,articles,3,roadmap-faq.md,roadmap-faq.md,0.8333,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,e5-base,articles,1,habits-anlegen.md,habits-anlegen.md,0.85,1
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,e5-base,articles,2,preise-und-tarife.md,preise-und-tarife.md,0.8403,1
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,e5-base,articles,3,pro-funktionen-und-preise.md,pro-funktionen-und-preise.md,0.8348,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",e5-base,articles,1,preise-und-tarife.md,preise-und-tarife.md,0.8708,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",e5-base,articles,2,fokus-timer.md,fokus-timer.md,0.8655,1
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",e5-base,articles,3,habits-anlegen.md,habits-anlegen.md,0.8551,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,e5-base,articles,1,tarif-wechseln.md,tarif-wechseln.md,0.7925,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,e5-base,articles,2,bekannte-probleme.md,bekannte-probleme.md,0.791,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,e5-base,articles,3,preise-und-tarife.md,preise-und-tarife.md,0.7895,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,e5-base,articles,1,roadmap-faq.md,roadmap-faq.md,0.8218,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,e5-base,articles,2,datenschutz-und-speicherort.md,datenschutz-und-speicherort.md,0.821,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,e5-base,articles,3,synchronisierung.md,synchronisierung.md,0.8183,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,e5-base,articles,1,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.8374,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,e5-base,articles,2,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.8341,1
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,e5-base,articles,3,roadmap-faq.md,roadmap-faq.md,0.833,1
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",e5-base,articles,1,tarif-wechseln.md,tarif-wechseln.md,0.8522,0
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",e5-base,articles,2,preise-und-tarife.md,preise-und-tarife.md,0.8499,0
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",e5-base,articles,3,pro-funktionen-und-preise.md,pro-funktionen-und-preise.md,0.8454,0
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,e5-base,articles,1,passwort-zuruecksetzen.md,passwort-zuruecksetzen.md,0.8591,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,e5-base,articles,2,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.851,0
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,e5-base,articles,3,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.8453,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",e5-base,articles,1,anmelden-mit-google.md,anmelden-mit-google.md,0.8753,1
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",e5-base,articles,2,passwort-zuruecksetzen.md,passwort-zuruecksetzen.md,0.8746,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",e5-base,articles,3,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.8676,0
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",e5-base,articles,1,tarif-wechseln.md,tarif-wechseln.md,0.853,0
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",e5-base,articles,2,doppelte-abbuchung.md,doppelte-abbuchung.md,0.8526,1
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",e5-base,articles,3,bekannte-probleme.md,bekannte-probleme.md,0.834,0
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",e5-base,articles,1,datenschutz-und-speicherort.md,datenschutz-und-speicherort.md,0.8267,0
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",e5-base,articles,2,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.8259,1
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",e5-base,articles,3,konto-loeschen.md,konto-loeschen.md,0.8222,0
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",e5-base,articles,1,datenschutz-und-speicherort.md,datenschutz-und-speicherort.md,0.8542,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",e5-base,articles,2,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.8188,0
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",e5-base,articles,3,konto-loeschen.md,konto-loeschen.md,0.8185,0
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,e5-base,articles,1,widgets.md,widgets.md,0.8594,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,e5-base,articles,2,preise-und-tarife.md,preise-und-tarife.md,0.8219,0
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,e5-base,articles,3,roadmap-faq.md,roadmap-faq.md,0.82,0
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",e5-base,articles,1,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.8669,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",e5-base,articles,2,habits-anlegen.md,habits-anlegen.md,0.8586,0
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",e5-base,articles,3,anmelden-mit-google.md,anmelden-mit-google.md,0.8583,1
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",e5-base,articles,1,tarif-wechseln.md,tarif-wechseln.md,0.8684,1
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",e5-base,articles,2,doppelte-abbuchung.md,doppelte-abbuchung.md,0.8575,0
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",e5-base,articles,3,preise-und-tarife.md,preise-und-tarife.md,0.8437,0
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",e5-base,articles,1,tarif-wechseln.md,tarif-wechseln.md,0.8569,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",e5-base,articles,2,erstattungen.md,erstattungen.md,0.8373,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",e5-base,articles,3,passwort-zuruecksetzen.md,passwort-zuruecksetzen.md,0.83,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",e5-base,articles,1,abo-kuendigen.md,abo-kuendigen.md,0.8755,1
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",e5-base,articles,2,tarif-wechseln.md,tarif-wechseln.md,0.8693,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",e5-base,articles,3,preise-und-tarife.md,preise-und-tarife.md,0.857,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,e5-base,articles,1,passwort-zuruecksetzen.md,passwort-zuruecksetzen.md,0.8536,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,e5-base,articles,2,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.8432,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,e5-base,articles,3,anmelden-mit-google.md,anmelden-mit-google.md,0.8399,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",e5-base,articles,1,konto-loeschen.md,konto-loeschen.md,0.859,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",e5-base,articles,2,datenschutz-und-speicherort.md,datenschutz-und-speicherort.md,0.8472,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",e5-base,articles,3,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.8465,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",e5-base,articles,1,doppelte-abbuchung.md,doppelte-abbuchung.md,0.8616,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",e5-base,articles,2,abo-kuendigen.md,abo-kuendigen.md,0.8556,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",e5-base,articles,3,tarif-wechseln.md,tarif-wechseln.md,0.8546,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,e5-base,articles,1,roadmap-faq.md,roadmap-faq.md,0.8163,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,e5-base,articles,2,preise-und-tarife.md,preise-und-tarife.md,0.8113,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,e5-base,articles,3,synchronisierung.md,synchronisierung.md,0.809,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",e5-base,articles,1,datenschutz-und-speicherort.md,datenschutz-und-speicherort.md,0.8195,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",e5-base,articles,2,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.8186,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",e5-base,articles,3,tarif-wechseln.md,tarif-wechseln.md,0.8142,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,e5-base,articles,1,tarif-wechseln.md,tarif-wechseln.md,0.8534,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,e5-base,articles,2,preise-und-tarife.md,preise-und-tarife.md,0.8298,1
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,e5-base,articles,3,pro-funktionen-und-preise.md,pro-funktionen-und-preise.md,0.8282,0
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,e5-base,articles,1,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.8355,1
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,e5-base,articles,2,tarif-wechseln.md,tarif-wechseln.md,0.8201,0
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,e5-base,articles,3,doppelte-abbuchung.md,doppelte-abbuchung.md,0.816,0
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",e5-base,contextual,1,passwort-zuruecksetzen.md#2,passwort-zuruecksetzen.md,0.8551,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",e5-base,contextual,2,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.8542,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",e5-base,contextual,3,verdaechtige-anmeldungen.md#1,verdaechtige-anmeldungen.md,0.8447,0
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",e5-base,contextual,1,preise-und-tarife.md#2,preise-und-tarife.md,0.8605,1
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",e5-base,contextual,2,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.8569,0
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",e5-base,contextual,3,preise-und-tarife.md#3,preise-und-tarife.md,0.8475,1
+3,veraltet,mensch,Gibt es eine Testphase für Pro,e5-base,contextual,1,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.8866,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,e5-base,contextual,2,pro-funktionen-und-preise.md#1,pro-funktionen-und-preise.md,0.847,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,e5-base,contextual,3,preise-und-tarife.md#2,preise-und-tarife.md,0.843,1
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,e5-base,contextual,1,verdaechtige-anmeldungen.md#1,verdaechtige-anmeldungen.md,0.8358,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,e5-base,contextual,2,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.8356,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,e5-base,contextual,3,passwort-zuruecksetzen.md#3,passwort-zuruecksetzen.md,0.8331,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,e5-base,contextual,1,habits-anlegen.md#2,habits-anlegen.md,0.8672,1
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,e5-base,contextual,2,widgets.md#1,widgets.md,0.8555,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,e5-base,contextual,3,pro-funktionen-und-preise.md#1,pro-funktionen-und-preise.md,0.8517,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",e5-base,contextual,1,preise-und-tarife.md#1,preise-und-tarife.md,0.88,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",e5-base,contextual,2,fokus-timer.md#2,fokus-timer.md,0.8723,1
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",e5-base,contextual,3,preise-und-tarife.md#2,preise-und-tarife.md,0.8713,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,e5-base,contextual,1,erstattungen.md#2,erstattungen.md,0.8021,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,e5-base,contextual,2,bekannte-probleme.md#1,bekannte-probleme.md,0.7989,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,e5-base,contextual,3,tarif-wechseln.md#1,tarif-wechseln.md,0.7975,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,e5-base,contextual,1,synchronisierung.md#3,synchronisierung.md,0.8301,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,e5-base,contextual,2,roadmap-faq.md#4,roadmap-faq.md,0.826,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,e5-base,contextual,3,datenschutz-und-speicherort.md#4,datenschutz-und-speicherort.md,0.8169,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,e5-base,contextual,1,verdaechtige-anmeldungen.md#3,verdaechtige-anmeldungen.md,0.8547,1
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,e5-base,contextual,2,konten-zusammenfuehren.md#3,konten-zusammenfuehren.md,0.8386,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,e5-base,contextual,3,roadmap-faq.md#3,roadmap-faq.md,0.8335,1
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",e5-base,contextual,1,tarif-wechseln.md#1,tarif-wechseln.md,0.8668,0
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",e5-base,contextual,2,preise-und-tarife.md#2,preise-und-tarife.md,0.8485,0
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",e5-base,contextual,3,pro-funktionen-und-preise.md#1,pro-funktionen-und-preise.md,0.8471,0
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,e5-base,contextual,1,passwort-zuruecksetzen.md#2,passwort-zuruecksetzen.md,0.8641,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,e5-base,contextual,2,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.8628,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,e5-base,contextual,3,verdaechtige-anmeldungen.md#1,verdaechtige-anmeldungen.md,0.8572,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",e5-base,contextual,1,anmelden-mit-google.md#2,anmelden-mit-google.md,0.8984,1
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",e5-base,contextual,2,passwort-zuruecksetzen.md#2,passwort-zuruecksetzen.md,0.8592,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",e5-base,contextual,3,synchronisierung.md#3,synchronisierung.md,0.8592,0
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",e5-base,contextual,1,bekannte-probleme.md#1,bekannte-probleme.md,0.8614,0
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",e5-base,contextual,2,doppelte-abbuchung.md#1,doppelte-abbuchung.md,0.8559,1
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",e5-base,contextual,3,erstattungen.md#3,erstattungen.md,0.851,1
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",e5-base,contextual,1,verdaechtige-anmeldungen.md#1,verdaechtige-anmeldungen.md,0.8396,1
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",e5-base,contextual,2,synchronisierung.md#3,synchronisierung.md,0.8324,0
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",e5-base,contextual,3,anmelden-mit-google.md#2,anmelden-mit-google.md,0.8295,0
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",e5-base,contextual,1,datenschutz-und-speicherort.md#1,datenschutz-und-speicherort.md,0.8921,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",e5-base,contextual,2,datenschutz-und-speicherort.md#0,datenschutz-und-speicherort.md,0.8507,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",e5-base,contextual,3,datenschutz-und-speicherort.md#2,datenschutz-und-speicherort.md,0.8482,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,e5-base,contextual,1,widgets.md#4,widgets.md,0.8556,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,e5-base,contextual,2,widgets.md#3,widgets.md,0.8499,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,e5-base,contextual,3,widgets.md#5,widgets.md,0.8444,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",e5-base,contextual,1,anmelden-mit-google.md#2,anmelden-mit-google.md,0.8912,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",e5-base,contextual,2,anmelden-mit-google.md#0,anmelden-mit-google.md,0.8598,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",e5-base,contextual,3,konten-zusammenfuehren.md#0,konten-zusammenfuehren.md,0.8553,1
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",e5-base,contextual,1,bekannte-probleme.md#1,bekannte-probleme.md,0.8683,0
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",e5-base,contextual,2,doppelte-abbuchung.md#0,doppelte-abbuchung.md,0.8658,0
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",e5-base,contextual,3,tarif-wechseln.md#2,tarif-wechseln.md,0.8642,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",e5-base,contextual,1,tarif-wechseln.md#2,tarif-wechseln.md,0.8678,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",e5-base,contextual,2,tarif-wechseln.md#1,tarif-wechseln.md,0.8507,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",e5-base,contextual,3,tarif-wechseln.md#3,tarif-wechseln.md,0.8489,1
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",e5-base,contextual,1,preise-und-tarife.md#3,preise-und-tarife.md,0.8742,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",e5-base,contextual,2,abo-kuendigen.md#2,abo-kuendigen.md,0.8694,1
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",e5-base,contextual,3,konto-loeschen.md#1,konto-loeschen.md,0.8664,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,e5-base,contextual,1,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.8625,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,e5-base,contextual,2,konto-loeschen.md#1,konto-loeschen.md,0.8485,1
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,e5-base,contextual,3,anmelden-mit-google.md#2,anmelden-mit-google.md,0.846,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",e5-base,contextual,1,konto-loeschen.md#1,konto-loeschen.md,0.8626,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",e5-base,contextual,2,anmelden-mit-google.md#2,anmelden-mit-google.md,0.852,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",e5-base,contextual,3,abo-kuendigen.md#1,abo-kuendigen.md,0.8475,1
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",e5-base,contextual,1,konto-loeschen.md#1,konto-loeschen.md,0.8704,1
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",e5-base,contextual,2,preise-und-tarife.md#3,preise-und-tarife.md,0.8639,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",e5-base,contextual,3,pro-funktionen-und-preise.md#4,pro-funktionen-und-preise.md,0.8599,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,e5-base,contextual,1,synchronisierung.md#0,synchronisierung.md,0.8129,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,e5-base,contextual,2,widgets.md#4,widgets.md,0.8119,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,e5-base,contextual,3,bekannte-probleme.md#2,bekannte-probleme.md,0.8109,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",e5-base,contextual,1,datenschutz-und-speicherort.md#6,datenschutz-und-speicherort.md,0.8213,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",e5-base,contextual,2,konten-zusammenfuehren.md#3,konten-zusammenfuehren.md,0.8203,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",e5-base,contextual,3,erstattungen.md#5,erstattungen.md,0.8172,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,e5-base,contextual,1,tarif-wechseln.md#1,tarif-wechseln.md,0.861,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,e5-base,contextual,2,preise-und-tarife.md#3,preise-und-tarife.md,0.8457,1
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,e5-base,contextual,3,tarif-wechseln.md#3,tarif-wechseln.md,0.8449,0
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,e5-base,contextual,1,konten-zusammenfuehren.md#2,konten-zusammenfuehren.md,0.8337,1
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,e5-base,contextual,2,tarif-wechseln.md#2,tarif-wechseln.md,0.8282,0
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,e5-base,contextual,3,konten-zusammenfuehren.md#0,konten-zusammenfuehren.md,0.8256,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",bge-m3,sections,1,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.6652,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",bge-m3,sections,2,passwort-zuruecksetzen.md#2,passwort-zuruecksetzen.md,0.6437,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",bge-m3,sections,3,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.5902,1
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",bge-m3,sections,1,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.6811,0
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",bge-m3,sections,2,preise-und-tarife.md#2,preise-und-tarife.md,0.6063,1
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",bge-m3,sections,3,pro-funktionen-und-preise.md#2,pro-funktionen-und-preise.md,0.5593,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,bge-m3,sections,1,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.6902,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,bge-m3,sections,2,pro-funktionen-und-preise.md#1,pro-funktionen-und-preise.md,0.535,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,bge-m3,sections,3,preise-und-tarife.md#2,preise-und-tarife.md,0.5265,1
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,bge-m3,sections,1,anmelden-mit-google.md#1,anmelden-mit-google.md,0.5757,1
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,bge-m3,sections,2,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.5692,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,bge-m3,sections,3,konten-zusammenfuehren.md#0,konten-zusammenfuehren.md,0.5557,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,bge-m3,sections,1,habits-anlegen.md#2,habits-anlegen.md,0.6978,1
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,bge-m3,sections,2,pro-funktionen-und-preise.md#1,pro-funktionen-und-preise.md,0.6922,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,bge-m3,sections,3,abo-kuendigen.md#1,abo-kuendigen.md,0.5852,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",bge-m3,sections,1,preise-und-tarife.md#1,preise-und-tarife.md,0.6276,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",bge-m3,sections,2,fokus-timer.md#2,fokus-timer.md,0.5591,1
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",bge-m3,sections,3,widgets.md#6,widgets.md,0.5538,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,bge-m3,sections,1,bekannte-probleme.md#0,bekannte-probleme.md,0.2299,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,bge-m3,sections,2,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.2247,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,bge-m3,sections,3,roadmap-faq.md#4,roadmap-faq.md,0.222,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,bge-m3,sections,1,konto-loeschen.md#4,konto-loeschen.md,0.5587,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,bge-m3,sections,2,roadmap-faq.md#7,roadmap-faq.md,0.5351,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,bge-m3,sections,3,synchronisierung.md#0,synchronisierung.md,0.5332,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,bge-m3,sections,1,verdaechtige-anmeldungen.md#3,verdaechtige-anmeldungen.md,0.496,1
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,bge-m3,sections,2,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.4935,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,bge-m3,sections,3,roadmap-faq.md#3,roadmap-faq.md,0.4893,1
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",bge-m3,sections,1,erstattungen.md#4,erstattungen.md,0.6759,1
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",bge-m3,sections,2,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.6664,0
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",bge-m3,sections,3,abo-kuendigen.md#1,abo-kuendigen.md,0.6656,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,bge-m3,sections,1,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.6382,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,bge-m3,sections,2,passwort-zuruecksetzen.md#2,passwort-zuruecksetzen.md,0.5872,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,bge-m3,sections,3,anmelden-mit-google.md#3,anmelden-mit-google.md,0.5797,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",bge-m3,sections,1,anmelden-mit-google.md#2,anmelden-mit-google.md,0.6643,1
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",bge-m3,sections,2,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.6003,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",bge-m3,sections,3,konten-zusammenfuehren.md#0,konten-zusammenfuehren.md,0.5859,0
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",bge-m3,sections,1,bekannte-probleme.md#1,bekannte-probleme.md,0.7322,0
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",bge-m3,sections,2,erstattungen.md#3,erstattungen.md,0.6546,1
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",bge-m3,sections,3,doppelte-abbuchung.md#2,doppelte-abbuchung.md,0.6411,1
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",bge-m3,sections,1,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.5347,0
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",bge-m3,sections,2,konten-zusammenfuehren.md#3,konten-zusammenfuehren.md,0.5322,0
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",bge-m3,sections,3,datenschutz-und-speicherort.md#1,datenschutz-und-speicherort.md,0.5205,0
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",bge-m3,sections,1,datenschutz-und-speicherort.md#1,datenschutz-und-speicherort.md,0.6521,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",bge-m3,sections,2,datenschutz-und-speicherort.md#0,datenschutz-und-speicherort.md,0.5664,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",bge-m3,sections,3,datenschutz-und-speicherort.md#3,datenschutz-und-speicherort.md,0.5461,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,bge-m3,sections,1,widgets.md#2,widgets.md,0.6185,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,bge-m3,sections,2,widgets.md#6,widgets.md,0.5878,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,bge-m3,sections,3,widgets.md#3,widgets.md,0.5859,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",bge-m3,sections,1,anmelden-mit-google.md#2,anmelden-mit-google.md,0.6702,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",bge-m3,sections,2,konten-zusammenfuehren.md#0,konten-zusammenfuehren.md,0.6551,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",bge-m3,sections,3,roadmap-faq.md#3,roadmap-faq.md,0.6308,0
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",bge-m3,sections,1,doppelte-abbuchung.md#0,doppelte-abbuchung.md,0.6934,0
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",bge-m3,sections,2,tarif-wechseln.md#0,tarif-wechseln.md,0.6586,1
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",bge-m3,sections,3,tarif-wechseln.md#2,tarif-wechseln.md,0.6496,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",bge-m3,sections,1,tarif-wechseln.md#2,tarif-wechseln.md,0.6419,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",bge-m3,sections,2,tarif-wechseln.md#0,tarif-wechseln.md,0.6409,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",bge-m3,sections,3,doppelte-abbuchung.md#0,doppelte-abbuchung.md,0.6155,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",bge-m3,sections,1,konto-loeschen.md#1,konto-loeschen.md,0.6602,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",bge-m3,sections,2,preise-und-tarife.md#3,preise-und-tarife.md,0.6432,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",bge-m3,sections,3,erstattungen.md#4,erstattungen.md,0.6252,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,bge-m3,sections,1,passwort-zuruecksetzen.md#0,passwort-zuruecksetzen.md,0.6507,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,bge-m3,sections,2,konto-loeschen.md#1,konto-loeschen.md,0.6234,1
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,bge-m3,sections,3,datenschutz-und-speicherort.md#6,datenschutz-und-speicherort.md,0.5996,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",bge-m3,sections,1,konto-loeschen.md#1,konto-loeschen.md,0.6266,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",bge-m3,sections,2,konto-loeschen.md#0,konto-loeschen.md,0.6256,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",bge-m3,sections,3,konten-zusammenfuehren.md#2,konten-zusammenfuehren.md,0.6194,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",bge-m3,sections,1,konto-loeschen.md#1,konto-loeschen.md,0.7339,1
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",bge-m3,sections,2,abo-kuendigen.md#1,abo-kuendigen.md,0.6684,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",bge-m3,sections,3,erstattungen.md#4,erstattungen.md,0.6622,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,bge-m3,sections,1,roadmap-faq.md#7,roadmap-faq.md,0.5028,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,bge-m3,sections,2,roadmap-faq.md#5,roadmap-faq.md,0.5004,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,bge-m3,sections,3,synchronisierung.md#0,synchronisierung.md,0.4664,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",bge-m3,sections,1,doppelte-abbuchung.md#0,doppelte-abbuchung.md,0.5455,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",bge-m3,sections,2,bekannte-probleme.md#0,bekannte-probleme.md,0.5223,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",bge-m3,sections,3,konten-zusammenfuehren.md#3,konten-zusammenfuehren.md,0.5084,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,bge-m3,sections,1,pro-funktionen-und-preise.md#2,pro-funktionen-und-preise.md,0.6381,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,bge-m3,sections,2,erstattungen.md#1,erstattungen.md,0.5929,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,bge-m3,sections,3,tarif-wechseln.md#0,tarif-wechseln.md,0.5732,0
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,bge-m3,sections,1,doppelte-abbuchung.md#2,doppelte-abbuchung.md,0.6053,0
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,bge-m3,sections,2,konten-zusammenfuehren.md#0,konten-zusammenfuehren.md,0.588,1
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,bge-m3,sections,3,erstattungen.md#0,erstattungen.md,0.5698,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",bge-m3,articles,1,passwort-zuruecksetzen.md,passwort-zuruecksetzen.md,0.6386,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",bge-m3,articles,2,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.5047,0
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",bge-m3,articles,3,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.4802,0
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",bge-m3,articles,1,pro-funktionen-und-preise.md,pro-funktionen-und-preise.md,0.579,0
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",bge-m3,articles,2,preise-und-tarife.md,preise-und-tarife.md,0.5635,1
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",bge-m3,articles,3,doppelte-abbuchung.md,doppelte-abbuchung.md,0.4995,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,bge-m3,articles,1,pro-funktionen-und-preise.md,pro-funktionen-und-preise.md,0.5206,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,bge-m3,articles,2,preise-und-tarife.md,preise-und-tarife.md,0.4804,1
+3,veraltet,mensch,Gibt es eine Testphase für Pro,bge-m3,articles,3,roadmap-faq.md,roadmap-faq.md,0.4489,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,bge-m3,articles,1,anmelden-mit-google.md,anmelden-mit-google.md,0.5387,1
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,bge-m3,articles,2,roadmap-faq.md,roadmap-faq.md,0.5367,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,bge-m3,articles,3,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.5094,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,bge-m3,articles,1,habits-anlegen.md,habits-anlegen.md,0.5764,1
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,bge-m3,articles,2,streaks.md,streaks.md,0.5732,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,bge-m3,articles,3,pro-funktionen-und-preise.md,pro-funktionen-und-preise.md,0.5627,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",bge-m3,articles,1,preise-und-tarife.md,preise-und-tarife.md,0.577,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",bge-m3,articles,2,fokus-timer.md,fokus-timer.md,0.5684,1
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",bge-m3,articles,3,pro-funktionen-und-preise.md,pro-funktionen-und-preise.md,0.5302,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,bge-m3,articles,1,bekannte-probleme.md,bekannte-probleme.md,0.2107,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,bge-m3,articles,2,roadmap-faq.md,roadmap-faq.md,0.2066,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,bge-m3,articles,3,doppelte-abbuchung.md,doppelte-abbuchung.md,0.1964,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,bge-m3,articles,1,datenschutz-und-speicherort.md,datenschutz-und-speicherort.md,0.541,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,bge-m3,articles,2,synchronisierung.md,synchronisierung.md,0.5272,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,bge-m3,articles,3,roadmap-faq.md,roadmap-faq.md,0.4964,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,bge-m3,articles,1,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.5064,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,bge-m3,articles,2,roadmap-faq.md,roadmap-faq.md,0.5002,1
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,bge-m3,articles,3,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.4762,1
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",bge-m3,articles,1,abo-kuendigen.md,abo-kuendigen.md,0.5909,1
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",bge-m3,articles,2,tarif-wechseln.md,tarif-wechseln.md,0.5889,0
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",bge-m3,articles,3,erstattungen.md,erstattungen.md,0.5809,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,bge-m3,articles,1,passwort-zuruecksetzen.md,passwort-zuruecksetzen.md,0.5958,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,bge-m3,articles,2,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.5328,0
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,bge-m3,articles,3,roadmap-faq.md,roadmap-faq.md,0.4916,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",bge-m3,articles,1,anmelden-mit-google.md,anmelden-mit-google.md,0.5942,1
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",bge-m3,articles,2,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.5678,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",bge-m3,articles,3,konto-loeschen.md,konto-loeschen.md,0.5675,0
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",bge-m3,articles,1,doppelte-abbuchung.md,doppelte-abbuchung.md,0.6912,1
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",bge-m3,articles,2,bekannte-probleme.md,bekannte-probleme.md,0.6394,0
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",bge-m3,articles,3,erstattungen.md,erstattungen.md,0.5679,1
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",bge-m3,articles,1,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.5379,1
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",bge-m3,articles,2,datenschutz-und-speicherort.md,datenschutz-und-speicherort.md,0.5093,0
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",bge-m3,articles,3,konto-loeschen.md,konto-loeschen.md,0.4872,0
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",bge-m3,articles,1,datenschutz-und-speicherort.md,datenschutz-und-speicherort.md,0.6512,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",bge-m3,articles,2,roadmap-faq.md,roadmap-faq.md,0.4695,0
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",bge-m3,articles,3,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.4654,0
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,bge-m3,articles,1,widgets.md,widgets.md,0.635,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,bge-m3,articles,2,synchronisierung.md,synchronisierung.md,0.5162,0
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,bge-m3,articles,3,roadmap-faq.md,roadmap-faq.md,0.4777,0
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",bge-m3,articles,1,anmelden-mit-google.md,anmelden-mit-google.md,0.6295,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",bge-m3,articles,2,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.617,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",bge-m3,articles,3,verdaechtige-anmeldungen.md,verdaechtige-anmeldungen.md,0.5648,0
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",bge-m3,articles,1,tarif-wechseln.md,tarif-wechseln.md,0.676,1
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",bge-m3,articles,2,doppelte-abbuchung.md,doppelte-abbuchung.md,0.6315,0
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",bge-m3,articles,3,erstattungen.md,erstattungen.md,0.6075,0
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",bge-m3,articles,1,tarif-wechseln.md,tarif-wechseln.md,0.6424,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",bge-m3,articles,2,erstattungen.md,erstattungen.md,0.5991,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",bge-m3,articles,3,doppelte-abbuchung.md,doppelte-abbuchung.md,0.5562,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",bge-m3,articles,1,abo-kuendigen.md,abo-kuendigen.md,0.6399,1
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",bge-m3,articles,2,tarif-wechseln.md,tarif-wechseln.md,0.5839,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",bge-m3,articles,3,erstattungen.md,erstattungen.md,0.5606,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,bge-m3,articles,1,konto-loeschen.md,konto-loeschen.md,0.6155,1
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,bge-m3,articles,2,passwort-zuruecksetzen.md,passwort-zuruecksetzen.md,0.5868,0
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,bge-m3,articles,3,doppelte-abbuchung.md,doppelte-abbuchung.md,0.5809,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",bge-m3,articles,1,konto-loeschen.md,konto-loeschen.md,0.6444,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",bge-m3,articles,2,abo-kuendigen.md,abo-kuendigen.md,0.5965,1
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",bge-m3,articles,3,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.5652,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",bge-m3,articles,1,konto-loeschen.md,konto-loeschen.md,0.6182,1
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",bge-m3,articles,2,abo-kuendigen.md,abo-kuendigen.md,0.6151,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",bge-m3,articles,3,doppelte-abbuchung.md,doppelte-abbuchung.md,0.5794,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,bge-m3,articles,1,roadmap-faq.md,roadmap-faq.md,0.4774,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,bge-m3,articles,2,synchronisierung.md,synchronisierung.md,0.4466,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,bge-m3,articles,3,bekannte-probleme.md,bekannte-probleme.md,0.4387,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",bge-m3,articles,1,doppelte-abbuchung.md,doppelte-abbuchung.md,0.4585,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",bge-m3,articles,2,erstattungen.md,erstattungen.md,0.4547,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",bge-m3,articles,3,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.4478,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,bge-m3,articles,1,tarif-wechseln.md,tarif-wechseln.md,0.5795,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,bge-m3,articles,2,erstattungen.md,erstattungen.md,0.5529,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,bge-m3,articles,3,preise-und-tarife.md,preise-und-tarife.md,0.5387,1
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,bge-m3,articles,1,konten-zusammenfuehren.md,konten-zusammenfuehren.md,0.6115,1
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,bge-m3,articles,2,erstattungen.md,erstattungen.md,0.5591,1
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,bge-m3,articles,3,doppelte-abbuchung.md,doppelte-abbuchung.md,0.5543,0
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",bge-m3,contextual,1,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.62,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",bge-m3,contextual,2,passwort-zuruecksetzen.md#2,passwort-zuruecksetzen.md,0.6157,1
+1,einfach,mensch,"hab die passwort mail bekommen aber erst abends reingeschaut, link geht nicht mehr. wie lange ist der eigentlich gültig?",bge-m3,contextual,3,passwort-zuruecksetzen.md#3,passwort-zuruecksetzen.md,0.5132,1
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",bge-m3,contextual,1,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.618,0
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",bge-m3,contextual,2,preise-und-tarife.md#2,preise-und-tarife.md,0.5876,1
+2,veraltet,mensch,"auf eurer seite steht pro kostet 4,99 im monat und man kann 7 tage kostenlos testen. stimmt das so?",bge-m3,contextual,3,preise-und-tarife.md#3,preise-und-tarife.md,0.5624,1
+3,veraltet,mensch,Gibt es eine Testphase für Pro,bge-m3,contextual,1,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.6596,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,bge-m3,contextual,2,pro-funktionen-und-preise.md#1,pro-funktionen-und-preise.md,0.5686,0
+3,veraltet,mensch,Gibt es eine Testphase für Pro,bge-m3,contextual,3,pro-funktionen-und-preise.md#4,pro-funktionen-und-preise.md,0.5277,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,bge-m3,contextual,1,anmelden-mit-google.md#1,anmelden-mit-google.md,0.5393,1
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,bge-m3,contextual,2,verdaechtige-anmeldungen.md#2,verdaechtige-anmeldungen.md,0.5353,0
+4,einfach,mensch,Kann ich mich mit Apple Login einloggen bzw einen Account erstellen,bge-m3,contextual,3,konten-zusammenfuehren.md#0,konten-zusammenfuehren.md,0.5248,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,bge-m3,contextual,1,habits-anlegen.md#2,habits-anlegen.md,0.6655,1
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,bge-m3,contextual,2,pro-funktionen-und-preise.md#1,pro-funktionen-und-preise.md,0.6267,0
+5,einfach,mensch_korrigiert,Wieviele Habits kann ich in der Pro Version tracken,bge-m3,contextual,3,streaks.md#3,streaks.md,0.6022,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",bge-m3,contextual,1,preise-und-tarife.md#1,preise-und-tarife.md,0.6258,0
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",bge-m3,contextual,2,fokus-timer.md#2,fokus-timer.md,0.5986,1
+6,einfach,mensch,"Der Fokustimer lässt sich nicht verstellen, ich nutze die Free version",bge-m3,contextual,3,bekannte-probleme.md#3,bekannte-probleme.md,0.5527,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,bge-m3,contextual,1,roadmap-faq.md#0,roadmap-faq.md,0.208,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,bge-m3,contextual,2,tarif-wechseln.md#1,tarif-wechseln.md,0.2034,0
+7,luecke,mensch_korrigiert,Gibt es Mengenrabatte,bge-m3,contextual,3,fokus-timer.md#2,fokus-timer.md,0.194,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,bge-m3,contextual,1,datenschutz-und-speicherort.md#6,datenschutz-und-speicherort.md,0.5133,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,bge-m3,contextual,2,synchronisierung.md#0,synchronisierung.md,0.5123,0
+8,luecke,mensch_korrigiert,Kann ich Daten aus anderen Apps importieren,bge-m3,contextual,3,roadmap-faq.md#4,roadmap-faq.md,0.5113,0
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,bge-m3,contextual,1,verdaechtige-anmeldungen.md#3,verdaechtige-anmeldungen.md,0.5704,1
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,bge-m3,contextual,2,roadmap-faq.md#3,roadmap-faq.md,0.5265,1
+9,einfach,mensch_korrigiert,Wie kann ich 2FA einrichten,bge-m3,contextual,3,tarif-wechseln.md#3,tarif-wechseln.md,0.4917,0
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",bge-m3,contextual,1,erstattungen.md#4,erstattungen.md,0.6478,1
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",bge-m3,contextual,2,pro-funktionen-und-preise.md#3,pro-funktionen-und-preise.md,0.6203,0
+10,mehrquellen,mensch_korrigiert,"Ich will den Tarif wieder von Pro zu Free wechseln und hab Pro 7 Tage ausprobiert, was passiert mit Restguthaben",bge-m3,contextual,3,abo-kuendigen.md#1,abo-kuendigen.md,0.6153,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,bge-m3,contextual,1,passwort-zuruecksetzen.md#2,passwort-zuruecksetzen.md,0.6024,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,bge-m3,contextual,2,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.5828,1
+11,einfach,entwurf,Ich kann seit 3 Tagen den Tracker nicht nutzen weil der passwort reset mir keine email schickt.,bge-m3,contextual,3,anmelden-mit-google.md#3,anmelden-mit-google.md,0.5281,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",bge-m3,contextual,1,anmelden-mit-google.md#2,anmelden-mit-google.md,0.6992,1
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",bge-m3,contextual,2,verdaechtige-anmeldungen.md#2,verdaechtige-anmeldungen.md,0.5748,0
+12,einfach,entwurf,"Nach dem Google Sign-In lande ich in einem leeren Konto, meine alten Habits sind nicht da. Bin ich versehentlich in einem neuen Account?",bge-m3,contextual,3,anmelden-mit-google.md#4,anmelden-mit-google.md,0.5728,1
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",bge-m3,contextual,1,bekannte-probleme.md#1,bekannte-probleme.md,0.7047,0
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",bge-m3,contextual,2,doppelte-abbuchung.md#2,doppelte-abbuchung.md,0.6496,1
+13,einfach,entwurf,"doppelt abgebucht diesen monat!! 6,99 zweimal. bitte sofort erstatten",bge-m3,contextual,3,doppelte-abbuchung.md#1,doppelte-abbuchung.md,0.6364,1
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",bge-m3,contextual,1,verdaechtige-anmeldungen.md#1,verdaechtige-anmeldungen.md,0.5376,1
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",bge-m3,contextual,2,passwort-zuruecksetzen.md#2,passwort-zuruecksetzen.md,0.5097,0
+14,einfach,entwurf,"Fremder Login aus Vietnam in meinem Konto, ich hab eine mail von euch bekommen. Was soll ich jetzt tun?? da sind meine ganzen daten drin",bge-m3,contextual,3,datenschutz-und-speicherort.md#1,datenschutz-und-speicherort.md,0.5056,0
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",bge-m3,contextual,1,datenschutz-und-speicherort.md#1,datenschutz-und-speicherort.md,0.6879,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",bge-m3,contextual,2,datenschutz-und-speicherort.md#0,datenschutz-und-speicherort.md,0.5568,1
+15,einfach,entwurf,"Frage zur Datenschutzerklärung: wo genau werden die Daten gespeichert, EU oder US?",bge-m3,contextual,3,datenschutz-und-speicherort.md#3,datenschutz-und-speicherort.md,0.5494,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,bge-m3,contextual,1,widgets.md#2,widgets.md,0.5911,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,bge-m3,contextual,2,widgets.md#6,widgets.md,0.5785,1
+16,einfach,entwurf,gibts eigentlich ein widget für android oder nur fürs iphone?,bge-m3,contextual,3,widgets.md#4,widgets.md,0.5781,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",bge-m3,contextual,1,anmelden-mit-google.md#2,anmelden-mit-google.md,0.7214,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",bge-m3,contextual,2,konten-zusammenfuehren.md#0,konten-zusammenfuehren.md,0.6318,1
+17,mehrquellen,entwurf,"Ich melde mich mit Google an, hatte früher aber ein Konto mit derselben Mail per Passwort. Jetzt sehe ich zwei unterschiedliche Habit-Listen. Wie führe ich die zusammen?",bge-m3,contextual,3,anmelden-mit-google.md#0,anmelden-mit-google.md,0.595,1
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",bge-m3,contextual,1,doppelte-abbuchung.md#0,doppelte-abbuchung.md,0.6616,0
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",bge-m3,contextual,2,tarif-wechseln.md#2,tarif-wechseln.md,0.6469,1
+18,einfach,entwurf,"Hab von monatlich auf jährlich gewechselt und wurde sofort voll belastet, obwohl der laufende Monat schon bezahlt war. Bitte prüfen.",bge-m3,contextual,3,erstattungen.md#3,erstattungen.md,0.6378,0
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",bge-m3,contextual,1,tarif-wechseln.md#2,tarif-wechseln.md,0.6479,1
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",bge-m3,contextual,2,doppelte-abbuchung.md#0,doppelte-abbuchung.md,0.604,0
+19,mehrquellen,entwurf,"bin vor ner woche von monatlich auf jährlich umgestiegen, war doch ne blöde idee. kann ich zurück und krieg mein geld wieder?",bge-m3,contextual,3,tarif-wechseln.md#0,tarif-wechseln.md,0.6006,1
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",bge-m3,contextual,1,preise-und-tarife.md#3,preise-und-tarife.md,0.6438,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",bge-m3,contextual,2,tarif-wechseln.md#2,tarif-wechseln.md,0.6284,0
+20,aehnlich,entwurf,"Ich habe mein Abo im App Store gekündigt, aber in der App steht immer noch Pro aktiv bis 2027. Was gilt denn jetzt?",bge-m3,contextual,3,abo-kuendigen.md#1,abo-kuendigen.md,0.6187,1
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,bge-m3,contextual,1,konto-loeschen.md#1,konto-loeschen.md,0.5997,1
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,bge-m3,contextual,2,konto-loeschen.md#3,konto-loeschen.md,0.584,1
+21,aehnlich,entwurf,hab ausversehen mein konto gelöscht. kann man das rückgängig machen? war 2 jahre drin,bge-m3,contextual,3,passwort-zuruecksetzen.md#1,passwort-zuruecksetzen.md,0.5796,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",bge-m3,contextual,1,konto-loeschen.md#1,konto-loeschen.md,0.6142,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",bge-m3,contextual,2,habits-anlegen.md#4,habits-anlegen.md,0.5922,0
+22,aehnlich,entwurf,"will nicht mehr zahlen aber meine habits behalten, muss ich dafür mein konto löschen?",bge-m3,contextual,3,konto-loeschen.md#3,konto-loeschen.md,0.5817,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",bge-m3,contextual,1,konto-loeschen.md#1,konto-loeschen.md,0.6447,1
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",bge-m3,contextual,2,erstattungen.md#4,erstattungen.md,0.6153,0
+23,aehnlich,entwurf,"hab pro übers iphone gekauft. wenn ich jetzt mein konto lösche, hören die abbuchungen dann auf?",bge-m3,contextual,3,abo-kuendigen.md#1,abo-kuendigen.md,0.6146,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,bge-m3,contextual,1,roadmap-faq.md#5,roadmap-faq.md,0.4906,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,bge-m3,contextual,2,roadmap-faq.md#7,roadmap-faq.md,0.4705,0
+24,luecke,entwurf,gibt es die app auch auf spanisch?,bge-m3,contextual,3,synchronisierung.md#0,synchronisierung.md,0.4646,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",bge-m3,contextual,1,doppelte-abbuchung.md#0,doppelte-abbuchung.md,0.5042,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",bge-m3,contextual,2,tarif-wechseln.md#1,tarif-wechseln.md,0.4656,0
+25,luecke,entwurf,"Hallo, ich benötige für die letzten 6 Monate Rechnungen mit meiner Firmenanschrift und USt-IdNr. Können Sie mir diese zusenden?",bge-m3,contextual,3,konten-zusammenfuehren.md#3,konten-zusammenfuehren.md,0.4626,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,bge-m3,contextual,1,tarif-wechseln.md#1,tarif-wechseln.md,0.5921,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,bge-m3,contextual,2,pro-funktionen-und-preise.md#2,pro-funktionen-und-preise.md,0.5911,0
+26,veraltet,entwurf,lohnt sich das jahresabo? wieviel spart man da gegenüber monatlich?,bge-m3,contextual,3,erstattungen.md#1,erstattungen.md,0.5808,0
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,bge-m3,contextual,1,konten-zusammenfuehren.md#0,konten-zusammenfuehren.md,0.5839,1
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,bge-m3,contextual,2,konten-zusammenfuehren.md#2,konten-zusammenfuehren.md,0.5804,1
+27,mehrquellen,entwurf,hab aus versehen zwei konten und beide haben pro. kann man die zusammenlegen und krieg ich für eins das geld zurück?,bge-m3,contextual,3,erstattungen.md#4,erstattungen.md,0.5589,1
