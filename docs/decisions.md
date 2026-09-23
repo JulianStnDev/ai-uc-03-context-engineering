@@ -205,3 +205,33 @@ Entscheidung:
 - **Kalibrierung:** 10 zufällige Urteile (Seed 42, gestreut über Varianten,
   Typen und Kriterien) in `evals/judge_stichprobe.md`. Julian prüft sie von
   Hand.
+
+## 2026-09-23: quellen_ok bei `veraltet` nach Lauf 1 gelockert
+
+Kontext: Die ursprüngliche Regel lautete: Bei Fragen vom Typ `veraltet` ist
+jedes Zitat von `pro-funktionen-und-preise.md` ein Fehler. In Lauf 1 hat das
+genau das gewünschte Verhalten bestraft. Bei #3 (sections, articles, corpus)
+nannte Haiku die aktuellen Werte, kennzeichnete die alte Seite ausdrücklich als
+überholt und zitierte transparent beide Seiten. Dafür gab es `quellen_ok = 0`.
+
+Entscheidung: **Die Regel wurde nach dem Lauf geändert.** Ein Zitat der alten
+Seite ist erlaubt, wenn die Antwort sie ausdrücklich als veraltet oder überholt
+kennzeichnet und die aktuellen Werte nennt. Das prüft der Judge in einer neuen
+Spalte `veraltet_gekennzeichnet`, und zwar nur bei Antworten, die die alte
+Seite zitieren. Er sieht dafür beide Preisseiten. Lauf 1 wurde ohne neue
+Antworten neu gescored. Die zusätzlichen 11 Judge-Aufrufe kosten 0,09 USD.
+
+Begründung: Die strenge Regel hat Transparenz bestraft. Ein Support-Assistent,
+der den Widerspruch offenlegt, ist besser als einer, der die alte Quelle
+verschweigt. Weil die Regeländerung nach Ansicht der Ergebnisse kam, stehen hier
+beide Stände:
+
+| Variante | quellen_ok vorher → nachher | alles_ok vorher → nachher |
+|---|---|---|
+| sections | 21/27 → 22/27 | 18/27 → 19/27 |
+| contextual | 21/27 → 21/27 | 17/27 → 17/27 |
+| articles | 25/27 → 26/27 | 18/27 → 19/27 |
+| corpus | 26/27 → 27/27 | 20/27 → 20/27 (#3 scheitert weiter an kernaussage_ok: „Ja, es gibt eine Testphase! … derzeit keine Testphase“) |
+
+Bei contextual #3 und #26 steht die alte Seite als gültig da, dort bleibt es
+beim Fehler.
