@@ -300,3 +300,73 @@ Arbeitsteilung:
 Lektion fürs nächste Goldset: **pro Frage genau eine Pflichtaussage**. Weitere
 Punkte nur als ausdrücklich gekennzeichnete optionale Ergänzungen. Mehrteilige
 Kernaussagen machen `kernaussage_ok` zur Ermessensfrage (siehe Nr. 8).
+
+## 2026-09-23: Python 3.13 über uv, anthropic-SDK 1.x
+
+Kontext: Das Projekt lief auf Apples System-Python 3.9. Diese Version bekommt
+keine Sicherheitsupdates mehr, hält das anthropic-SDK auf 0.x fest und bringt
+LibreSSL-Warnungen.
+
+Entscheidung:
+- Python 3.13 wird über `uv` installiert und ist der Standard auf Mac-Ebene
+  (`~/.local/bin`, Eintrag in `~/.zshenv`). Apples 3.9 bleibt unangetastet.
+- Pro Repo gibt es weiterhin ein eigenes `.venv`. Die Version ist über
+  `.python-version` festgelegt.
+- Das venv ist mit `uv venv` + `uv pip install -r requirements.txt` neu
+  gebaut. Neue Versionen: anthropic 1.8, sentence-transformers 6.1,
+  transformers 5.17, torch 2.14.
+- SDK-Breaking-Change: `temperature` ist nicht mehr in der Signatur von
+  `messages.create()`. Haiku 4.5 honoriert den Parameter weiterhin, und
+  temperature 0 gehört zum Versuchsaufbau. Deshalb wurde er nach
+  `extra_body={"temperature": 0}` verschoben, statt ihn zu löschen
+  (`chunk.py`, `run_answers.py`).
+
+Geprüft: Die Auswertung (v1, v2) ist identisch. Die Chunk-Embeddings von
+bge-m3 sind identisch (Cosinus 1,0). Je ein API-Aufruf an Haiku und an
+Sonnet mit Structured Output funktioniert.
+
+## 2026-09-23: Fund – falsches Query-Embedding bei Frage #7 im alten Stack
+
+Beim Gegencheck nach dem Upgrade wich genau eine Retrieval-Liste ab: Frage #7
+(„Gibt es Mengenrabatte“, Typ `luecke`) in allen drei bge-m3-Varianten.
+Ursache: **torch 2.8 hat auf MPS (Apple-GPU) für diese 8-Token-Anfrage ein
+falsches Embedding berechnet.** Der Cosinus zwischen der MPS- und der
+CPU-Berechnung im selben alten Stack liegt bei 0,26. Das habe ich in einem
+Wegwerf-venv mit dem alten Stack nachgestellt. Alle anderen geprüften Fragen
+und alle Chunk-Embeddings waren korrekt. Der neue Stack rechnet auf MPS und
+CPU identisch und stimmt mit der alten CPU-Berechnung überein.
+
+Auswirkung auf die veröffentlichten UC3-Ergebnisse:
+- Recall ist nicht betroffen, weil `luecke`-Fragen nicht in den Recall
+  eingehen.
+- Die Tabelle „Lücken-Fragen: Top-1-Ähnlichkeit“ für bge-m3 ist verzerrt.
+  Das Minimum von etwa 0,21 stammt von #7, korrekt wäre etwa 0,45. Die
+  Trennbarkeit von Lücken per Schwelle wirkte dadurch besser, als sie ist.
+- Die Antworten zu #7 in sections, contextual und articles v1 sowie articles
+  v2 bekamen einen falschen Kontext (bekannte Probleme, Passwort usw. statt
+  der Preisseiten). Alle vier bestanden `luecke_ok`. Mit dem korrekten,
+  preisnahen Kontext wäre die Versuchung größer, doch inhaltlich zu antworten.
+  Diese vier Lücken-Ergebnisse sind daher eher optimistisch.
+- corpus ist nicht betroffen, weil dort kein Retrieval stattfindet.
+- Ob die e5-Query-Embeddings ebenfalls betroffen waren, ist offen. e5 ist
+  gelöscht, und eine Prüfung würde 1,1 GB Download kosten.
+
+Entscheidung: dokumentieren, nicht neu messen, weil UC3 abgeschlossen ist und
+es keine weiteren API-Läufe geben soll.
+
+**Nachtrag, 2026-09-23: doch nachgemessen.** Julian hat entschieden, die vier
+betroffenen Antworten zu #7 mit dem neuen Stack neu zu erzeugen und zu bewerten
+(4 Haiku- und 4 Judge-Aufrufe, etwa 2 Cent). Die alten Zeilen sind nach
+`data/superseded_q7.jsonl` verschoben. Mit korrektem Embedding enthält der
+Kontext jetzt `tarif-wechseln.md` und `erstattungen.md`, bei sections und
+contextual zusätzlich die veraltete Preisseite. **Ergebnis:** Alle vier
+bestehen weiterhin `luecke_ok` und `treu`. Haiku verweist trotz preisnahem
+Kontext sauber an den Support, ohne inhaltlich zu antworten. Die
+Qualitätstabellen in `evals/answer_results*.md` und im README bleiben
+unverändert. Die Kosten für sections v1 ändern sich im Rundungsbereich
+(2,00 → 2,01 USD pro 1000). Der Verdacht „eher optimistisch“ hat sich damit
+nicht bestätigt. Die Retrieval-Tabelle zur Top-1-Ähnlichkeit der
+Lücken-Fragen ist nicht neu berechnet, weil das den gelöschten e5-Download
+erfordern würde. Lektion: **GPU-Ergebnisse
+stichprobenartig gegen CPU prüfen**, besonders bei älteren
+torch-/MPS-Versionen.

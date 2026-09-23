@@ -1,6 +1,6 @@
 # Antwort-Eval: Lauf v1 – erster Antwort-Prompt
 
-Stand: 2026-09-23 15:51 · 27 Fragen × 4 Varianten · Antwortmodell `claude-haiku-4-5`, Judge `claude-sonnet-5`, Retrieval `bge-m3`
+Stand: 2026-09-23 16:15 · 27 Fragen × 4 Varianten · Antwortmodell `claude-haiku-4-5`, Judge `claude-sonnet-5`, Retrieval `bge-m3`
 
 Varianten: `sections` Top-4 Abschnitte · `contextual` Top-4 Abschnitte mit Kontextsatz · `articles` Top-3 ganze Artikel · `corpus` alle 20 Artikel (Prompt Caching)
 
@@ -104,9 +104,9 @@ Preise: Input 1,00 · Cache-Write 1,25 · Cache-Read 0,10 · Output 5,00 USD pro
 
 | Variante | Ø Input-Tokens | davon Cache-Read | Ø Output-Tokens | Input | Cache-Write | Cache-Read | Output | **Summe / 1000** |
 |---|---|---|---|---|---|---|---|---|
-| sections | 1,021 | 0 | 195 | 1.02 | 0.00 | 0.00 | 0.98 | **2.00 USD** |
-| contextual | 1,477 | 0 | 201 | 1.48 | 0.00 | 0.00 | 1.00 | **2.48 USD** |
-| articles | 2,284 | 0 | 232 | 2.28 | 0.00 | 0.00 | 1.16 | **3.45 USD** |
+| sections | 1,035 | 0 | 195 | 1.04 | 0.00 | 0.00 | 0.98 | **2.01 USD** |
+| contextual | 1,476 | 0 | 202 | 1.48 | 0.00 | 0.00 | 1.01 | **2.48 USD** |
+| articles | 2,287 | 0 | 233 | 2.29 | 0.00 | 0.00 | 1.16 | **3.45 USD** |
 | corpus | 13,072 | 12,549 | 254 | 0.04 | 0.60 | 1.25 | 1.27 | **3.17 USD** |
 
 Einordnung `corpus`: Im Lauf kam auf 27 Anfragen ein Cache-Write. Ohne Caching wären es **14.34 USD** pro 1000 Anfragen, bei durchgehend warmem Cache (nur Reads) **2.61 USD**. Der Cache hält 5 Minuten; bei weniger Traffic fallen mehr Writes an.
@@ -115,9 +115,9 @@ Einordnung `corpus`: Im Lauf kam auf 27 Anfragen ein Cache-Write. Ohne Caching w
 
 | Variante | Median | p95 | davon Retrieval Median |
 |---|---|---|---|
-| sections | 2.67 | 3.48 | 99 ms |
+| sections | 2.67 | 3.48 | 98 ms |
 | contextual | 2.80 | 3.69 | 92 ms |
-| articles | 3.19 | 4.59 | 90 ms |
+| articles | 3.19 | 4.59 | 92 ms |
 | corpus | 3.46 | 5.32 | 0 ms |
 
 p95 aus 27 Messungen je Variante ist nur grob belastbar.

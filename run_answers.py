@@ -122,7 +122,7 @@ def main(run):
                 response = client.messages.create(
                     model=ANSWER_MODEL,
                     max_tokens=1024,
-                    temperature=0,
+                    extra_body={"temperature": 0},  # SDK 1.x: nicht mehr in der Signatur, Haiku 4.5 honoriert es
                     system=cfg["prompt"],
                     messages=[{"role": "user", "content": [
                         context_block,
