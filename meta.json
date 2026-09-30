@@ -1,10 +1,14 @@
 {
-  "title": "Context Engineering: Retrieval vs. Kontextfenster",
+  "title": "Context Engineering: Retrieval vs. Context Window",
   "status": "done",
   "tags": [
     "rag",
     "context-engineering",
     "evals"
   ],
-  "summary": "Retrieval vs. Kontextfenster: Messung von 4 Varianten auf 27 Fragen"
+  "summary": "Four ways to give a support assistant its knowledge, measured on 27 questions: for a small knowledge base, whole articles beat chunked retrieval.",
+  "metrics": [
+    "23/27 = 85% alles_ok (all criteria met)",
+    "3.29 USD per 1000 requests"
+  ]
 }

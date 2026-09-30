@@ -1,226 +1,228 @@
-# UC3 — Context Engineering: Retrieval vs. Kontextfenster
+🇩🇪 [Deutsche Version](README_DE.md)
 
-## Kurzfassung
+# UC3 — Context Engineering: Retrieval vs. Context Window
 
-**Die Frage:** Ein KI-Assistent soll Kundenfragen aus der Hilfe-Doku einer App beantworten, und zwar mit Quellenangabe. Wie gibt man ihm am besten die richtigen Informationen mit? Gemessen wurden vier Wege an 27 realistischen Kundenfragen. Die Doku umfasst 20 Hilfeartikel und enthält absichtlich eingebaute Fallen, zum Beispiel eine veraltete Preisseite.
+## Summary
 
-**Was dabei herauskam:**
+**The question:** An AI assistant is meant to answer customer questions from an app's help documentation, with a source citation. What is the best way to give it the right information? Four approaches were measured on 27 realistic customer questions. The documentation consists of 20 help articles and contains deliberately built-in traps, for example an outdated pricing page.
 
-1. **Bei einer kleinen Wissensbasis reicht der einfache Weg.** Man kann dem Assistenten die drei passendsten Artikel komplett mitgeben oder gleich alle 20. Beide Wege sind im Rahmen der Messgenauigkeit gleich gut. Sie liefern durchgehend öfter die inhaltlich richtige Antwort als die Variante, die Artikel in einzelne Absätze zerlegt. Eine aufwendige Such-Pipeline lohnt sich bei 20 Artikeln nicht.
-2. **Ein bekannter Zusatztrick brachte hier nichts.** Beim sogenannten Contextual Retrieval bekommt jeder Textbaustein vorab eine KI-erzeugte Einordnung. In diesem Setup verbesserte das nichts. Ein besseres, kostenloses Suchmodell brachte einen Teil desselben Effekts ohne Mehraufwand.
-3. **Die Anweisung an die KI war ein größerer Hebel als die Architektur.** Ein präziserer Prompt hob die beste Variante von 19 auf 23 von 27 vollständig richtigen Antworten. Außerdem gilt: Mehr Material ist nicht gratis. Je mehr Text die KI sieht, desto eher erfindet sie Verbindungen zwischen Quellen, die so nirgends stehen.
-4. **Veraltete Inhalte sind ein Redaktionsproblem, kein Technikproblem.** Eine alte, nicht gekennzeichnete Preisseite wurde bei passenden Fragen öfter gefunden als die aktuelle. Die billigste Lösung ist, alte Seiten zu löschen oder sichtbar als veraltet zu markieren.
-5. **Kosten: rund 3 USD pro 1000 Anfragen.** Wer alle Artikel mitschickt, braucht Zwischenspeicherung (Caching). Ohne sie kosten 1000 Anfragen 14,34 USD, mit ihr 2,61 USD. Wie viel davon ankommt, hängt davon ab, wie dicht die Anfragen eintreffen.
+**What came out of it:**
 
-**Wie belastbar ist das?** Bei 27 Fragen liegt die Messunsicherheit bei etwa ±15 Prozentpunkten. Unterschiede von 3–4 Fragen sind deshalb Tendenzen, keine Beweise. Die Richtung der Ergebnisse ist aber über mehrere Messungen hinweg stimmig.
+1. **With a small knowledge base, the simple approach is enough.** You can give the assistant the three best-matching articles in full, or simply all 20. Within the measurement precision, both approaches are equally good. They consistently deliver the correct content more often than the variant that splits articles into individual sections. An elaborate search pipeline does not pay off with 20 articles.
+2. **A well-known add-on technique did not help here.** In so-called Contextual Retrieval, every text chunk gets an AI-generated contextual description up front. In this setup it improved nothing. A better, free search model delivered part of the same effect without extra effort.
+3. **The instruction to the AI was a bigger lever than the architecture.** A more precise prompt raised the best variant from 19 to 23 out of 27 fully correct answers. Also: more material is not free. The more text the AI sees, the more likely it is to invent connections between sources that are not stated anywhere.
+4. **Outdated content is an editorial problem, not a technical one.** An old, unmarked pricing page was retrieved more often than the current one for matching questions. The cheapest fix is to delete old pages or visibly mark them as outdated.
+5. **Cost: about 3 USD per 1000 requests.** Sending all articles requires caching. Without it, 1000 requests cost 14.34 USD; with it, 2.61 USD. How much of that saving is realized depends on how densely the requests arrive.
+
+**How robust is this?** With 27 questions, the measurement uncertainty is about ±15 percentage points. Differences of 3–4 questions are therefore tendencies, not proof. The direction of the results is, however, consistent across several measurements.
 
 ---
 
 ## Problem
 
-Die Hilfe-Doku der fiktiven Habit-Tracker-App **FocusFlow** (20 deutsche Artikel, je etwa 200–260 Wörter, zusammen etwa 12,5k Tokens) soll die Grundlage für einen Support-Assistenten sein. Er beantwortet Kundenfragen ausschließlich aus dieser Doku und nennt die Quelle.
+The help documentation of the fictional habit-tracker app **FocusFlow** (20 German articles, each about 200–260 words, about 12.5k tokens in total) is meant to be the basis for a support assistant. It answers customer questions exclusively from this documentation and names the source.
 
-Die zentrale Frage des Context Engineering ist: **Welchen Kontext bekommt das Modell pro Frage?** Verglichen werden:
+The central question of context engineering is: **Which context does the model get per question?** Compared are:
 
-1. **Klassisches Chunking:** Die Artikel werden an Überschriften in Abschnitte zerlegt, die Top-k Abschnitte werden per Embedding-Suche gefunden.
-2. **Contextual Retrieval:** wie 1, aber jeder Abschnitt bekommt vor dem Embedding einen LLM-erzeugten Kontextsatz zum Gesamtartikel ([Anthropic](https://www.anthropic.com/news/contextual-retrieval)).
-3. **Ganze Artikel:** Die Top-3 Artikel werden komplett übergeben.
-4. **Ganzer Korpus im Kontextfenster:** kein Retrieval, alle 20 Artikel im Prompt, mit Prompt Caching.
+1. **Classic chunking:** The articles are split into sections at headings; the top-k sections are found via embedding search.
+2. **Contextual Retrieval:** as in 1, but before embedding, each section gets an LLM-generated context sentence about the whole article ([Anthropic](https://www.anthropic.com/news/contextual-retrieval)).
+3. **Whole articles:** The top-3 articles are passed in full.
+4. **Whole corpus in the context window:** no retrieval, all 20 articles in the prompt, with prompt caching.
 
-Der Korpus enthält vier absichtlich eingebaute Fallen, die in echten Wikis typisch sind:
-- eine **veraltete Preisseite** (2024, andere Preise, 7-Tage-Testphase), nicht als veraltet markiert
-- **bewusste Lücken**, zum Beispiel Teamlizenzen, App-Sprachen und Rechnungen mit USt-ID
-- **Mehrquellen-Fragen**, die sich nur mit zwei Artikeln zusammen beantworten lassen
-- **ähnlich klingende Artikel mit gegenteiliger Aussage** („Abo kündigen“ und „Konto löschen“)
+The corpus contains four deliberately built-in traps that are typical of real wikis:
+- an **outdated pricing page** (2024, different prices, 7-day trial), not marked as outdated
+- **deliberate gaps**, for example team licenses, app languages and invoices with a VAT ID
+- **multi-source questions** that can only be answered by combining two articles
+- **similar-sounding articles with opposite statements** ("Abo kündigen" (cancel subscription) and "Konto löschen" (delete account))
 
-Details dazu stehen in [docs/CORPUS_NOTES.md](docs/CORPUS_NOTES.md).
+Details are in [docs/CORPUS_NOTES.md](docs/CORPUS_NOTES.md).
 
-Adressat ist, wer entscheiden muss, wie viel Architektur ein Support-Assistent über einer kleinen Wissensbasis braucht.
+The intended reader is anyone who has to decide how much architecture a support assistant over a small knowledge base needs.
 
-## PM-Entscheidung
+## PM Decision
 
-**Ein kontrollierter Korpus statt echter Doku.** Die Fallen sind bekannt, deshalb lässt sich messen, ob ein Ansatz an ihnen scheitert. Echte Doku hätte die Fehlerursachen verdeckt.
+**A controlled corpus instead of real documentation.** The traps are known, so it is possible to measure whether an approach fails on them. Real documentation would have obscured the causes of errors.
 
-**Retrieval und Antwort werden getrennt gemessen.** Zuerst lief nur das Retrieval (Recall@k, lokal und ohne API-Kosten), erst danach die Antwortstufe. Sonst hätte man nicht unterscheiden können, ob eine falsche Antwort am Finden oder am Formulieren liegt.
+**Retrieval and answering are measured separately.** First only retrieval was run (Recall@k, local and without API costs), and only then the answer stage. Otherwise it would have been impossible to tell whether a wrong answer was caused by finding or by formulating.
 
-**Lokale Embeddings, mehrsprachig.** Sie kosten nichts, keine Daten verlassen den Rechner, und das Vorgehen lässt sich nachvollziehen. Geplant war `multilingual-e5-base`, `bge-m3` lief als kostenlose Gegenprobe mit. Nachdem die Gegenprobe fast überall gewonnen hatte, bin ich auf bge-m3 gewechselt.
+**Local, multilingual embeddings.** They cost nothing, no data leaves the machine, and the process is traceable. The plan was `multilingual-e5-base`; `bge-m3` ran alongside as a free cross-check. After the cross-check won almost everywhere, I switched to bge-m3.
 
-**Vier getrennte Bewertungsspalten statt eines Gesamturteils:**
-- `quellen_ok`: automatisch aus der Quellenzeile
-- `kernaussage_ok`: Judge vergleicht mit der Goldset-Aussage
-- `treu`: Judge prüft, ob jede Behauptung durch den mitgegebenen Kontext gedeckt ist (Faithfulness)
-- `luecke_ok`: nur Support-Verweis, keine erfundene Antwort
+**Four separate scoring columns instead of one overall verdict:**
+- `quellen_ok`: automatically from the source line
+- `kernaussage_ok`: judge compares against the Goldset statement
+- `treu`: judge checks whether every claim is covered by the provided context (faithfulness)
+- `luecke_ok`: only a referral to support, no invented answer
 
-Erst durch diese Trennung wurde der Zielkonflikt zwischen Vollständigkeit und Faithfulness sichtbar.
+Only this separation made the trade-off between completeness and faithfulness visible.
 
-**Antwortmodell Haiku 4.5, Judge Sonnet 5.** Haiku wurde gewählt, damit die Kosten mit UC1 und UC2 vergleichbar sind. Der Judge ist ein anderes Modell als das bewertete, damit Haiku nicht seine eigenen Antworten benotet. Der Judge wurde an einer Stichprobe von Hand kalibriert.
+**Answer model Haiku 4.5, judge Sonnet 5.** Haiku was chosen so that costs are comparable with UC1 and UC2. The judge is a different model from the one being evaluated, so that Haiku does not grade its own answers. The judge was calibrated by hand on a sample.
 
-**Bewusst weggelassen:**
-- feste Chunk-Fenster mit Überlappung: Die Doku ist durch Überschriften strukturiert, die Artikel sind kurz.
-- Vektor-Datenbank: numpy reicht für 104 Vektoren.
-- LangChain und LlamaIndex: Der Code läuft direkt gegen das SDK.
+**Deliberately left out:**
+- fixed chunk windows with overlap: the documentation is structured by headings, and the articles are short.
+- vector database: numpy is enough for 104 vectors.
+- LangChain and LlamaIndex: the code runs directly against the SDK.
 
-Alle Entscheidungen stehen datiert in [docs/decisions.md](docs/decisions.md).
+All decisions are recorded with dates in [docs/decisions.md](docs/decisions.md).
 
-## Architekturskizze
+## Architecture Sketch
 
 ```mermaid
 flowchart LR
-    subgraph V["Vorbereitung (einmalig)"]
-        C["corpus/<br/>20 Artikel"] --> CH["chunk.py<br/>sections · articles · contextual"]
-        CH -- "104× Haiku<br/>Kontextsatz" --> CH
-        CH --> E["retrieve.py<br/>bge-m3 lokal (MPS)<br/>→ numpy-Vektoren"]
+    subgraph V["Preparation (one-off)"]
+        C["corpus/<br/>20 articles"] --> CH["chunk.py<br/>sections · articles · contextual"]
+        CH -- "104× Haiku<br/>context sentence" --> CH
+        CH --> E["retrieve.py<br/>bge-m3 local (MPS)<br/>→ numpy vectors"]
     end
-    subgraph P["Pro Frage"]
-        Q["Kundenfrage"] --> R{"Variante"}
-        R -- "sections / contextual<br/>Top-4" --> K["Kontext mit<br/>Datei, Titel, Datum"]
+    subgraph P["Per question"]
+        Q["Customer question"] --> R{"Variant"}
+        R -- "sections / contextual<br/>Top-4" --> K["Context with<br/>file, title, date"]
         R -- "articles Top-3" --> K
-        R -- "corpus: alle 20<br/>(Prompt Cache)" --> K
+        R -- "corpus: all 20<br/>(prompt cache)" --> K
         E -.-> R
-        K --> H["Haiku 4.5<br/>Antwort + Quellenzeile"]
+        K --> H["Haiku 4.5<br/>answer + source line"]
     end
-    subgraph M["Messen"]
-        G["evals/goldset.csv<br/>27 Fragen"] --> S
-        H --> S["score_answers.py<br/>quellen_ok automatisch"]
+    subgraph M["Measure"]
+        G["evals/goldset.csv<br/>27 questions"] --> S
+        H --> S["score_answers.py<br/>quellen_ok automatic"]
         H --> J["Sonnet 5 Judge<br/>kernaussage_ok · treu · luecke_ok<br/>veraltet_gekennzeichnet"]
         J --> S
-        S --> O["evals/answer_results*.md<br/>nach Variante × Typ × Herkunft"]
+        S --> O["evals/answer_results*.md<br/>by variant × type × origin"]
     end
 ```
 
-Die Skripte sind einfach gehalten, jede Stufe schreibt Dateien, die die nächste liest:
+The scripts are kept simple; each stage writes files that the next one reads:
 
-| Skript | Aufgabe | API-Kosten |
+| Script | Task | API cost |
 |---|---|---|
-| `load_corpus.py` | Artikel parsen (Titel, Datum, Abschnitte), Goldset laden | – |
-| `chunk.py` | drei Chunk-Varianten, Kontextsätze mit Haiku (gecacht in `data/contexts.json`) | einmalig 0,14 USD |
-| `retrieve.py` | Embeddings (lokal, gecacht) und Cosinus-Suche | – |
-| `eval_retrieval.py` | Recall@1/3/5 für 2 Modelle × 3 Varianten | – |
-| `run_answers.py [v1\|v2]` | Antworten je Variante | Haiku |
-| `judge_answers.py [v1\|v2]` | Judge-Urteile mit Structured Output | Sonnet 5 |
-| `score_answers.py [v1\|v2]` | Auswertung, Vergleich v1/v2, Judge-Stichprobe | – |
+| `load_corpus.py` | parse articles (title, date, sections), load Goldset | – |
+| `chunk.py` | three chunk variants, context sentences with Haiku (cached in `data/contexts.json`) | one-time 0.14 USD |
+| `retrieve.py` | embeddings (local, cached) and cosine search | – |
+| `eval_retrieval.py` | Recall@1/3/5 for 2 models × 3 variants | – |
+| `run_answers.py [v1\|v2]` | answers per variant | Haiku |
+| `judge_answers.py [v1\|v2]` | judge verdicts with structured output | Sonnet 5 |
+| `score_answers.py [v1\|v2]` | scoring, v1/v2 comparison, judge sample | – |
 
-## Evaluationsergebnisse
+## Evaluation Results
 
-### Retrieval (Recall@3 über Chunks, 23 Fragen mit Quelle)
+### Retrieval (Recall@3 over chunks, 23 questions with a source)
 
-| Embedding | sections (Baseline) | articles | contextual |
+| Embedding | sections (baseline) | articles | contextual |
 |---|---|---|---|
 | multilingual-e5-base | 0.70 | 0.78 | 0.83 |
 | **bge-m3** | 0.78 | **1.00** | 0.83 |
 
-- Contextual Retrieval bringt bei e5 +3 Fragen, bei bge-m3 nur +1. Das stärkere Modell übernimmt also einen Teil des Effekts, ohne dafür API-Aufrufe zu brauchen.
-- Bei `articles` ist Top-3 aus 20 Artikeln schon 15 % des Korpus und liefert etwa 720 Wörter Kontext. Ein Teil des Vorsprungs ist deshalb einfach mehr Text.
-- Die **veraltete Preisseite** rankt bei den Fragen, die ihre Begriffe benutzen („4,99“, „7 Tage testen“), fast immer vor der aktuellen. Das Retrieval kann diese Falle nicht lösen.
+- Contextual Retrieval adds +3 questions with e5, but only +1 with bge-m3. The stronger model therefore takes over part of the effect without needing any API calls.
+- With `articles`, the top 3 out of 20 articles already make up 15% of the corpus and provide about 720 words of context. Part of the lead is therefore simply more text.
+- The **outdated pricing page** almost always ranks ahead of the current one for questions that use its terms ("4,99", "7 Tage testen" (7-day trial)). Retrieval cannot solve this trap.
 - Details: [evals/retrieval_results.md](evals/retrieval_results.md)
 
-### Antworten: Lauf v1 (27 Fragen je Variante)
+### Answers: run v1 (27 questions per variant)
 
-`alles_ok` bedeutet, dass alle zutreffenden Spalten ok sind.
+`alles_ok` means that all applicable columns are ok.
 
-| Variante | quellen_ok | kernaussage_ok | treu | luecke_ok | **alles_ok** |
+| Variant | quellen_ok | kernaussage_ok | treu | luecke_ok | **alles_ok** |
 |---|---|---|---|---|---|
-| sections (Top-4 Abschnitte) | 22/27 | 17/23 | 24/27 | 4/4 | **19/27** |
-| contextual (Top-4 mit Kontextsatz) | 21/27 | 15/23 | 25/27 | 3/4 | **17/27** |
-| articles (Top-3 Artikel) | 26/27 | 21/23 | 21/27 | 4/4 | **19/27** |
-| corpus (alle 20, Cache) | 27/27 | 21/23 | 21/27 | 4/4 | **20/27** |
+| sections (top-4 sections) | 22/27 | 17/23 | 24/27 | 4/4 | **19/27** |
+| contextual (top-4 with context sentence) | 21/27 | 15/23 | 25/27 | 3/4 | **17/27** |
+| articles (top-3 articles) | 26/27 | 21/23 | 21/27 | 4/4 | **19/27** |
+| corpus (all 20, cache) | 27/27 | 21/23 | 21/27 | 4/4 | **20/27** |
 
-- **Mehr Kontext bringt bessere Inhalte, aber schlechtere Faithfulness.** Bei den Mehrquellen-Fragen kommt corpus auf 3/4, sections auf 1/4. Mit viel Kontext schmückt Haiku dagegen häufiger aus, etwa mit „Drittländer wie die USA“ oder „vielleicht ein veralteter Browser-Cache“.
-- **Contextual schadet in der Antwortstufe.** Die generischen Kontextsätze ziehen bei Preisfragen die alte Seite nach vorn. Haiku sieht dann nur sie und antwortet „Ja, 7 Tage Testphase!“.
+- **More context yields better content but worse faithfulness.** On the multi-source questions, corpus reaches 3/4, sections 1/4. With a lot of context, however, Haiku embellishes more often, for example with "Drittländer wie die USA" (third countries such as the USA) or "vielleicht ein veralteter Browser-Cache" (perhaps an outdated browser cache).
+- **Contextual hurts in the answer stage.** For pricing questions, the generic context sentences pull the old page to the top. Haiku then sees only that page and answers "Ja, 7 Tage Testphase!" (Yes, 7-day trial!).
 
-### Antworten: Lauf v2, geschärfter Prompt (nur articles und corpus)
+### Answers: run v2, sharpened prompt (articles and corpus only)
 
-Geändert wurde nur der Antwort-Prompt:
-- knapp antworten
-- keine Aussagen, die nicht im Kontext stehen, auch keine naheliegenden Folgerungen oder Beispiele
-- sachlicher Ton ohne Emojis und Floskeln
-- bei Widerspruch die neuere Quelle nennen und die ältere als veraltet kennzeichnen
+Only the answer prompt was changed:
+- answer concisely
+- no statements that are not in the context, including no obvious inferences or examples
+- factual tone without emojis or filler phrases
+- in case of a contradiction, name the newer source and mark the older one as outdated
 
-| Variante | alles_ok v1 → v2 | treu v1 → v2 | kernaussage_ok v1 → v2 | Ø Wörter |
+| Variant | alles_ok v1 → v2 | treu v1 → v2 | kernaussage_ok v1 → v2 | Avg. words |
 |---|---|---|---|---|
 | articles | 19 → **23**/27 | 21 → 25 | 21 → 21 | 93 → 70 |
 | corpus | 20 → 20/27 | 21 → 21 | 21 → 19 | 101 → 74 |
 
-- **Bei articles wirkt der Prompt:** 4 von 6 Faithfulness-Verstößen sind weg, die Antworten etwa 25 % kürzer. Das ist der beste Wert aller Varianten.
-- **Bei corpus verschieben sich die Fehler nur.** „Knapp“ kostet Vollständigkeit bei Mehrquellen-Fragen. Außerdem entstehen neue Erfindungen, die Widersprüche mit ausgedachten Regeln auflösen, etwa „Testphase nur im App Store“.
-- Details: [evals/answer_results.md](evals/answer_results.md) (v1) und [evals/answer_results_v2.md](evals/answer_results_v2.md) (v2 mit Vergleich je Frage)
+- **With articles, the prompt works:** 4 of 6 faithfulness violations are gone, and the answers are about 25% shorter. This is the best result of all variants.
+- **With corpus, the errors merely shift.** "Knapp" (concise) costs completeness on multi-source questions. In addition, new inventions appear that resolve contradictions with made-up rules, for example "Testphase nur im App Store" (trial only in the App Store).
+- Details: [evals/answer_results.md](evals/answer_results.md) (v1) and [evals/answer_results_v2.md](evals/answer_results_v2.md) (v2 with per-question comparison)
 
-### Die Fallen im Ergebnis
+### The traps in the results
 
-| Falle | Befund |
+| Trap | Finding |
 |---|---|
-| Veraltete Preisseite | Das Retrieval bevorzugt die alte Seite. Mit Datum im Kontext und der Regel „neuere Quelle gilt“ antwortet Haiku meist richtig und legt den Widerspruch offen. Wenn nur die alte Seite im Kontext landet (contextual), hilft keine Regel. |
-| Lücken | 4/4 in fast allen Varianten. Haiku verweist sauber an den Support. Zwei Ausreißer bei derselben Frage (Datenimport): Einmal liefert Haiku verwandte Informationen als Teilantwort mit (contextual v1), einmal erfindet es die Negativaussage „keine Importfunktion“ (corpus v2). |
-| Mehrquellen | Die Schwachstelle der Abschnitt-Varianten (1/4). Ganze Artikel oder der ganze Korpus liefern beide Teile eher mit. |
-| Ähnliche Artikel | Inhaltlich werden Abo kündigen und Konto löschen fast immer korrekt auseinandergehalten (`kernaussage_ok` 15 von 16). Die Fehler dort sind Ausschmückungen (`treu`), vor allem bei „Konto versehentlich gelöscht“ (#21), wo Haiku tröstende, aber nicht gedeckte Hinweise ergänzt. |
+| Outdated pricing page | Retrieval prefers the old page. With the date in the context and the rule "neuere Quelle gilt" (the newer source applies), Haiku usually answers correctly and discloses the contradiction. If only the old page ends up in the context (contextual), no rule helps. |
+| Gaps | 4/4 in almost all variants. Haiku cleanly refers to support. Two outliers on the same question (data import): once Haiku includes related information as a partial answer (contextual v1), once it invents the negative statement "keine Importfunktion" (no import function) (corpus v2). |
+| Multi-source | The weak spot of the section variants (1/4). Whole articles or the whole corpus are more likely to deliver both parts. |
+| Similar articles | In terms of content, cancelling a subscription and deleting an account are almost always kept apart correctly (`kernaussage_ok` 15 of 16). The errors there are embellishments (`treu`), especially for "Konto versehentlich gelöscht" (account accidentally deleted) (#21), where Haiku adds reassuring but unsupported hints. |
 
-### Judge-Kalibrierung
+### Judge calibration
 
-Ich habe 10 zufällige Urteile von Sonnet 5 von Hand geprüft (Seed 42, gestreut über Varianten, Typen und Kriterien) und stimme **10 von 10** zu. Ein Fall ist ein Grenzfall, weil die Kernaussage zwei Aussagen ohne gekennzeichnete Pflichtaussage enthielt. Die Übereinstimmung liegt damit bei 9–10/10, der Judge gilt als kalibriert ([evals/judge_stichprobe.md](evals/judge_stichprobe.md)).
+I checked 10 random verdicts from Sonnet 5 by hand (seed 42, spread across variants, types and criteria) and agree with **10 of 10**. One case is borderline, because the core statement contained two statements without a marked mandatory statement. Agreement is therefore 9–10/10, and the judge is considered calibrated ([evals/judge_stichprobe.md](evals/judge_stichprobe.md)).
 
-**Arbeitsteilung Mensch/Claude:** Ich habe die Methode entschieden, also Kriterien, Scoring-Regeln und Varianten, und die Judge-Kriterien abgenommen. Claude hat die Domänenfakten des fiktiven Unternehmens gegen den Korpus geprüft. Dabei fiel eine Überinterpretation in einer Goldset-Erwartung auf (#18), die korrigiert wurde.
+**Division of work between human and Claude:** I decided the method, i.e. criteria, scoring rules and variants, and signed off on the judge criteria. Claude checked the domain facts of the fictional company against the corpus. This surfaced an over-interpretation in one Goldset expectation (#18), which was corrected.
 
-## Kosten & Latenz
+## Cost & Latency
 
-**Pflichtzahlen für die empfohlene Variante `articles` v2** (Top-3 ganze Artikel, geschärfter Prompt):
+**Required figures for the recommended variant `articles` v2** (top-3 whole articles, sharpened prompt):
 
-| Kennzahl | Wert |
+| Metric | Value |
 |---|---|
-| **Kosten pro 1000 Anfragen** | **3,29 USD** (Haiku 4.5, gemessen aus `usage`; Retrieval lokal und kostenlos) |
-| **p95-Latenz** | **4,50 s** (Median 2,62 s; davon Retrieval etwa 0,1 s) |
-| **Qualität** | **23/27 = 85 % alles_ok** (95-%-Konfidenzintervall etwa ±13 Prozentpunkte) |
+| **Cost per 1000 requests** | **3.29 USD** (Haiku 4.5, measured from `usage`; retrieval local and free) |
+| **p95 latency** | **4.50 s** (median 2.62 s; of which retrieval about 0.1 s) |
+| **Quality** | **23/27 = 85% alles_ok** (95% confidence interval about ±13 percentage points) |
 
-Alle Varianten im Vergleich:
+All variants compared:
 
-| Variante | Kosten / 1000 | Median | p95 |
+| Variant | Cost / 1000 | Median | p95 |
 |---|---|---|---|
-| sections v1 | 2,01 USD | 2,67 s | 3,48 s |
-| contextual v1 | 2,48 USD (+ einmalig 0,14 USD Indexierung) | 2,80 s | 3,69 s |
-| articles v1 / **v2** | 3,45 / **3,29 USD** | 3,19 / **2,62 s** | 4,59 / **4,50 s** |
-| corpus v1 / v2 | 3,17 / 2,87 USD | 3,46 / 3,29 s | 5,32 / 6,35 s |
+| sections v1 | 2.01 USD | 2.67 s | 3.48 s |
+| contextual v1 | 2.48 USD (+ one-time 0.14 USD indexing) | 2.80 s | 3.69 s |
+| articles v1 / **v2** | 3.45 / **3.29 USD** | 3.19 / **2.62 s** | 4.59 / **4.50 s** |
+| corpus v1 / v2 | 3.17 / 2.87 USD | 3.46 / 3.29 s | 5.32 / 6.35 s |
 
-**Caching ist der Kostenhebel beim ganzen Korpus.** Ohne Cache kosten 1000 Anfragen 14,34 USD, bei durchgehend warmem Cache 2,61 USD (Lauf v1; v2: 14,14 → 2,31 USD). Ein Cache-Eintrag hält 5 Minuten. Bei dünnem Traffic wird der Cache häufiger neu geschrieben, und der Vorteil schrumpft. Wie stark das bei realen Traffic-Mustern wirkt, ist **Input für UC8**.
+**Caching is the cost lever for the whole corpus.** Without a cache, 1000 requests cost 14.34 USD; with a consistently warm cache, 2.61 USD (run v1; v2: 14.14 → 2.31 USD). A cache entry lasts 5 minutes. With sparse traffic, the cache is rewritten more often and the advantage shrinks. How strongly this plays out under real traffic patterns is **input for UC8**.
 
-Die Experimente haben insgesamt 2,92 USD gekostet: Kontextsätze 0,14, Lauf v1 mit Judge und Neu-Scoring 1,85, Lauf v2 mit Judge 0,93 USD. Der Judge macht davon etwa 80 % aus.
+The experiments cost 2.92 USD in total: context sentences 0.14, run v1 with judge and re-scoring 1.85, run v2 with judge 0.93 USD. The judge accounts for about 80% of that.
 
-## Grenzen
+## Limitations
 
-- **Kleine Stichprobe:** Bei n=27 und einer Trefferquote um 80 % ergibt das Binomial-Konfidenzintervall (95 %) etwa **±15 Prozentpunkte**, also rund ±4 Fragen. Unterschiede von 3–4 Fragen, auch 19 → 23 in v2, liegen innerhalb dieser Spanne. Die Kernaussagen stützen sich deshalb auf Richtungen, die sich über Retrieval, v1 und v2 hinweg wiederholen, nicht auf einzelne Differenzen. In den Typ-Spalten (n=3–12) sind die Zahlen nur anekdotisch.
-- **Einzelläufe:** Je Stand gibt es einen Lauf, Wiederholungen wurden bewusst nicht gemacht. Haiku ist trotz temperature 0 nicht deterministisch.
-- **17 von 27 Goldset-Erwartungen hat Claude entworfen.** Sie wurden nur maschinell gegen den Korpus geprüft, nicht von mir abgenommen. Als Gegenmaßnahme sind alle Metriken nach Herkunft aufgeschlüsselt. Dabei zeigte sich kein systematischer Unterschied, allerdings bei n=5 je menschlicher Gruppe.
-- **Scoring-Regel nach dem Lauf angepasst:** `quellen_ok` bei veralteten Seiten erlaubt jetzt ein Zitat der alten Seite, wenn die Antwort sie als veraltet kennzeichnet. Die strenge Regel hatte das gewünschte transparente Verhalten bestraft. Die Zahlen vor und nach der Änderung stehen in [docs/decisions.md](docs/decisions.md).
-- **Künstlicher Korpus:** 20 kurze, sauber strukturierte Artikel. Bei Hunderten von Artikeln oder unstrukturierter Doku kann das Ergebnis zugunsten von Retrieval kippen.
-- **Ein Judge-Modell:** Kalibriert wurde an 10 von rund 340 Urteilen.
-- **Nachträglicher Fund (MPS-Fehler im alten Stack):** torch 2.8 hat auf der Apple-GPU für Frage #7 (Lücke „Mengenrabatte“) ein falsches Query-Embedding berechnet. Der Recall ist nicht betroffen. Die Lücken-Ergebnisse zu #7 in den Retrieval-Varianten (4 Antworten) sind aber eher optimistisch, weil der Kontext falsch war. Details in [docs/decisions.md](docs/decisions.md). Seit dem Upgrade auf Python 3.13 und torch 2.14 rechnen GPU und CPU identisch. **Nachgemessen am 2026-09-23 mit dem neuen Stack, Ergebnis:** Alle vier Antworten zu #7 (sections, contextual und articles v1, articles v2) bestehen weiterhin `luecke_ok` und `treu`, obwohl der Kontext jetzt die preisnahen Artikel enthält, bei sections und contextual sogar die veraltete Preisseite. Die Qualitätstabellen bleiben unverändert. Die ersetzten Zeilen liegen in `data/superseded_q7.jsonl`. Nicht nachgemessen ist die Retrieval-Tabelle „Top-1-Ähnlichkeit der Lücken-Fragen“ in `evals/retrieval_results.md`, die nicht ins README eingeht.
+- **Small sample:** With n=27 and a hit rate around 80%, the binomial confidence interval (95%) is about **±15 percentage points**, i.e. roughly ±4 questions. Differences of 3–4 questions, including 19 → 23 in v2, lie within this range. The key findings therefore rest on directions that repeat across retrieval, v1 and v2, not on individual differences. In the type columns (n=3–12), the numbers are only anecdotal.
+- **Single runs:** There is one run per version; repetitions were deliberately not done. Haiku is not deterministic despite temperature 0.
+- **Claude drafted 17 of 27 Goldset expectations.** They were only checked mechanically against the corpus, not signed off by me. As a countermeasure, all metrics are broken down by origin. This showed no systematic difference, though with n=5 per human group.
+- **Scoring rule adjusted after the run:** `quellen_ok` for outdated pages now allows citing the old page if the answer marks it as outdated. The strict rule had penalized the desired transparent behavior. The numbers before and after the change are in [docs/decisions.md](docs/decisions.md).
+- **Artificial corpus:** 20 short, cleanly structured articles. With hundreds of articles or unstructured documentation, the result may tip in favor of retrieval.
+- **One judge model:** Calibration was done on 10 of about 340 verdicts.
+- **Later finding (MPS bug in the old stack):** torch 2.8 computed a wrong query embedding on the Apple GPU for question #7 (gap "Mengenrabatte" (volume discounts)). Recall is not affected. However, the gap results for #7 in the retrieval variants (4 answers) are rather optimistic, because the context was wrong. Details in [docs/decisions.md](docs/decisions.md). Since the upgrade to Python 3.13 and torch 2.14, GPU and CPU compute identically. **Re-measured on 2026-09-23 with the new stack, result:** All four answers to #7 (sections, contextual and articles v1, articles v2) still pass `luecke_ok` and `treu`, even though the context now contains the pricing-related articles, and for sections and contextual even the outdated pricing page. The quality tables remain unchanged. The replaced rows are in `data/superseded_q7.jsonl`. Not re-measured is the retrieval table "Top-1-Ähnlichkeit der Lücken-Fragen" (top-1 similarity of the gap questions) in `evals/retrieval_results.md`, which does not feed into the README.
 
 ## Learnings
 
-- **Erst die Korpusgröße anschauen, dann die Architektur wählen.** Bei etwa 12k Tokens passt alles ins Kontextfenster, und Caching macht das bezahlbar. Die RAG-Pipeline musste sich gegen „alles mitschicken“ erst beweisen, und das gelang ihr nicht.
-- **Die Stufen getrennt messen.** Die Retrieval-Eval hat gezeigt, dass die Veraltet-Falle nicht am Finden scheitert, sondern am Umgang mit dem Gefundenen. Ohne die Trennung wäre das eine Vermutung geblieben.
-- **Die Gegenprobe ist billig und aufschlussreich.** Das zweite Embedding-Modell hat nichts gekostet und die ursprüngliche Wahl umgeworfen.
-- **Kriterien getrennt ausweisen.** Ein Gesamtscore hätte articles v1 und sections v1 als gleich gut gezeigt (je 19/27). Getrennt sieht man, dass die eine Variante an Faithfulness scheitert, die andere an Inhalten.
-- **Der Prompt schlägt die Architektur,** aber nicht überall: Dieselbe Prompt-Änderung half bei 3 Artikeln und verschob die Fehler bei 20. Prompt und Kontextmenge müssen zusammen getestet werden.
-- **Content-Qualität vor Modell-Qualität.** Die veraltete Seite ist mit einem Löschvorgang behoben. Kein Retrieval-Trick hat sie zuverlässig neutralisiert.
-- **Regeländerungen nach dem Lauf offenlegen.** Eine Regel, die nach dem Blick auf die Ergebnisse geändert wird, ist legitim, aber nur mit beiden Zahlenständen daneben.
+- **Look at the corpus size first, then choose the architecture.** At about 12k tokens, everything fits into the context window, and caching makes that affordable. The RAG pipeline first had to prove itself against "send everything", and it did not manage to.
+- **Measure the stages separately.** The retrieval eval showed that the outdated-page trap does not fail at finding, but at handling what was found. Without the separation, that would have remained a guess.
+- **The cross-check is cheap and revealing.** The second embedding model cost nothing and overturned the original choice.
+- **Report criteria separately.** An overall score would have shown articles v1 and sections v1 as equally good (19/27 each). Separately, you can see that one variant fails on faithfulness and the other on content.
+- **The prompt beats the architecture,** but not everywhere: the same prompt change helped with 3 articles and shifted the errors with 20. Prompt and context size have to be tested together.
+- **Content quality before model quality.** The outdated page is fixed with a single deletion. No retrieval trick reliably neutralized it.
+- **Disclose rule changes made after the run.** A rule changed after looking at the results is legitimate, but only with both sets of numbers next to it.
 
-## Was ich anders machen würde
+## What I Would Do Differently
 
-- **Pro Goldset-Frage genau eine Pflichtaussage.** Mehrteilige Kernaussagen machen `kernaussage_ok` zur Ermessensfrage. Der einzige Grenzfall der Judge-Kalibrierung kam genau daher.
-- **Die Kosten pro Experiment vorab abschätzen und nennen,** einschließlich Judge. Der Judge war mit etwa 80 % der größte Posten, das war vorher nicht offensichtlich. Dasselbe gilt für lokale Downloads: Die Embedding-Modelle belegen etwa 5 GB.
-- Das Goldset größer anlegen oder von vornherein mit Wiederholungsläufen planen, damit Unterschiede von 3–4 Fragen belastbar werden.
-- Contextual Retrieval erst testen, wenn der Korpus zu groß für das Kontextfenster ist. Bei 20 Artikeln war die Frage absehbar akademisch.
+- **Exactly one mandatory statement per Goldset question.** Multi-part core statements turn `kernaussage_ok` into a judgment call. The only borderline case in the judge calibration came from exactly this.
+- **Estimate and state the cost per experiment up front,** including the judge. At about 80%, the judge was the largest item, which was not obvious beforehand. The same applies to local downloads: the embedding models take up about 5 GB.
+- Make the Goldset larger or plan repeated runs from the start, so that differences of 3–4 questions become robust.
+- Test Contextual Retrieval only once the corpus is too large for the context window. With 20 articles, the question was predictably academic.
 
-## Benutzung
+## Usage
 
 ```bash
-uv venv && uv pip install -r requirements.txt   # Python-Version aus .python-version (3.13)
+uv venv && uv pip install -r requirements.txt   # Python version from .python-version (3.13)
 echo "ANTHROPIC_API_KEY=..." > .env              # gitignored
 
-.venv/bin/python chunk.py                 # Chunks + Kontextsätze (aus Cache: kostenlos)
-.venv/bin/python eval_retrieval.py        # Retrieval-Eval, lokal (lädt beim ersten Mal ~5 GB Modelle)
-.venv/bin/python run_answers.py v2        # Antworten (überspringt bereits vorhandene)
-.venv/bin/python judge_answers.py v2      # Judge (überspringt bereits vorhandene)
-.venv/bin/python score_answers.py v2      # Auswertung ohne API-Kosten, beliebig oft
+.venv/bin/python chunk.py                 # chunks + context sentences (from cache: free)
+.venv/bin/python eval_retrieval.py        # retrieval eval, local (downloads ~5 GB of models on first run)
+.venv/bin/python run_answers.py v2        # answers (skips existing ones)
+.venv/bin/python judge_answers.py v2      # judge (skips existing ones)
+.venv/bin/python score_answers.py v2      # scoring without API costs, can be rerun any time
 ```
 
-Alle Rohdaten liegen im Repo (`data/*.jsonl`). Die Auswertung lässt sich ohne API-Aufrufe reproduzieren. Die Messungen liefen auf Python 3.9 mit sentence-transformers 5.1 und anthropic 0.125. Seit dem 2026-09-23 läuft das Repo auf Python 3.13 mit sentence-transformers 6.1 und anthropic 1.8 (Apple M5, 16 GB).
+All raw data is in the repo (`data/*.jsonl`). The scoring can be reproduced without API calls. The measurements ran on Python 3.9 with sentence-transformers 5.1 and anthropic 0.125. Since 2026-09-23, the repo runs on Python 3.13 with sentence-transformers 6.1 and anthropic 1.8 (Apple M5, 16 GB).
